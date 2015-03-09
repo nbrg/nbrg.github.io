@@ -3,6 +3,26 @@ sirens:
   slug: sirens
   lineups:
     2015:
-      - yorkshire-terror
+      bench: topper
+      lineup: ragequit
+      captain:
+        - get-shirty
+        - corporal-punishment
+      players:
+        - get-shirty
+        - corporal-punishment
+        - ruby-whipper
+        - dread-pirate-roberts
+        - flash-burn
+        - betty-rocker
+        - unsteddie
+        - kp-karnage
+        - metallikez
+        - natural-born-killer
+        - nasty-noodle
+        - yorkshire-terror
+        - hardcore-bunny
+        - crush-n-over
+
     2014:
       - yorkshire-terror

@@ -1,8 +1,97 @@
+betty-rocker:
+  name: Betty Rocker
+  nickname: Betty
+  number: 1956
+  real_name: Ghilaine Hammond-Baillie
+  slug: betty-rocker
+
+corporal-punishment:
+  name: Corporal Punishment
+  nickname: Patch
+  number: 790
+  real_name: Caz Buckingham
+  slug: corporal-punishment
+
+crush-n-over:
+  name: Crush n Over
+  nickname: Crush
+  number: 81
+  real_name: Angela Cushway
+  slug: crush-n-over
+
+dread-pirate-roberts:
+  name: Dread Pirate Roberts
+  nickname: Dread
+  number: 913
+  real_name: Caitlin Roberts
+  slug: dread-pirate-roberts
+
+flash-burn:
+  name: Flash Burn
+  nickname: Flash
+  number: 350
+  real_name: Amanda Lockton
+  slug: flash-burn
+
+get-shirty:
+  name: Get Shirty
+  nickname: Shirty
+  number: 14
+  real_name: Emma Shirt
+  slug: get-shirty
+
+hardcore-bunny:
+  name: Hardcore Bunny
+  nickname: Bunny
+  number: 212
+  real_name: Regan Liddle
+  slug: hardcore-bunny
+
+kp-karnage:
+  name: KP Karnage
+  nickname: KP
+  number: 0089
+  real_name: Katie Peterson
+  slug: kp-karnage
+
+metallikez:
+  name: Metallikez
+  nickname: Kez
+  number: 210
+  real_name: Kerrie-anne Busch
+  slug: metallikez
+
+nasty-noodle:
+  name: Nasty Noodle
+  nickname: Noodle
+  number: 807
+  real_name: Rachel Ang
+  slug: nasty-noodle
+
+natural-born-killer:
+  name: Natural Born Killer
+  nickname: Nat
+  number: 66
+  real_name: Natalie Aiken
+  slug: natural-born-killer
+
+ruby-whipper:
+  name: Ruby Whipper
+  nickname: Ruby
+  number: 78
+  real_name: Kelly Polson
+  slug: ruby-whipper
+
+unsteddie:
+  name: Unsteddie
+  nickname: Eddie
+  number: 161
+  real_name: Edwina Foulsham
+  slug: unsteddie
+
 yorkshire-terror:
   name: Yorkshire Terror
   nickname: Yorkie
+  number: 85
+  real_name: Sara Peterson
   slug: yorkshire-terror
-
-ragequit:
-  name: Ragequit
-  slug: ragequit
