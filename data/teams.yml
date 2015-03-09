@@ -1,0 +1,8 @@
+sirens:
+  name: Sirens
+  slug: sirens
+  lineups:
+    2015:
+      - yorkshire-terror
+    2014:
+      - yorkshire-terror

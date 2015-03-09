@@ -1,0 +1,8 @@
+<h1>Team: <%= team.name %></h1>
+<h2>Lineup: <%= year %></h2>
+<ul>
+  <% lineup.each do |slug| %>
+    <% player = data.players[slug] %>
+    <li><a href="/players/<%= player.slug %>"><%= player.name %></a></li>
+  <% end %>
+</ul>
