@@ -1,6 +1,11 @@
+amytville-horror:
+  name: AmyTville Horror
+  number: 309
+  real_name: Amye Saunders
+  slug: amytville-horror
+
 betty-rocker:
   name: Betty Rocker
-  nickname: Betty
   number: 1956
   real_name: Ghilaine Hammond-Baillie
   slug: betty-rocker
@@ -19,12 +24,24 @@ crush-n-over:
   real_name: Angela Cushway
   slug: crush-n-over
 
+dominateviks:
+  name: DominateViks
+  number: 12
+  real_name: Vikki Smith
+  slug: dominateviks
+
 dread-pirate-roberts:
   name: Dread Pirate Roberts
   nickname: Dread
   number: 913
   real_name: Caitlin Roberts
   slug: dread-pirate-roberts
+
+e-liminate-her:
+  name: E Liminate-HER
+  number: 1313
+  real_name: Elizabeth Gharbi
+  slug: e-liminate-her
 
 flash-burn:
   name: Flash Burn
@@ -54,12 +71,26 @@ kp-karnage:
   real_name: Katie Peterson
   slug: kp-karnage
 
+kix-butwell:
+  name: Kix Butwell
+  nickname: Kix
+  number: 6ft
+  real_name: Jessee Brown
+  slug: kix-butwell
+
 metallikez:
   name: Metallikez
   nickname: Kez
   number: 210
   real_name: Kerrie-anne Busch
   slug: metallikez
+
+miss-priss:
+  name: Miss Priss
+  nickname: Priss
+  number: 68
+  real_name: Sonia Collingwood
+  slug: miss-priss
 
 nasty-noodle:
   name: Nasty Noodle
@@ -70,10 +101,22 @@ nasty-noodle:
 
 natural-born-killer:
   name: Natural Born Killer
-  nickname: Nat
   number: 66
   real_name: Natalie Aiken
   slug: natural-born-killer
+
+pain-fonda:
+  name: Pain Fonda
+  nickname: Pain
+  number: 247
+  real_name: Jess Canabou
+  slug: pain-fonda
+
+psy-chlo:
+  name: Psy-chlo
+  number: 05
+  real_name: Chloe Harness
+  slug: psy-chlo
 
 ruby-whipper:
   name: Ruby Whipper
@@ -82,9 +125,15 @@ ruby-whipper:
   real_name: Kelly Polson
   slug: ruby-whipper
 
+swift-justice:
+  name: Swift Justice
+  nickname: Swiftie
+  number: 98
+  real_name: Lisa Justice
+  slug: swift-justice
+
 unsteddie:
   name: Unsteddie
-  nickname: Eddie
   number: 161
   real_name: Edwina Foulsham
   slug: unsteddie
