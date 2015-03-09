@@ -3,26 +3,48 @@ sirens:
   slug: sirens
   lineups:
     2015:
-      bench: topper
+      bench: topper-gnarly
       lineup: ragequit
       captain:
         - get-shirty
         - corporal-punishment
       players:
-        - get-shirty
+        - betty-rocker
         - corporal-punishment
-        - ruby-whipper
+        - crush-n-over
         - dread-pirate-roberts
         - flash-burn
-        - betty-rocker
-        - unsteddie
+        - get-shirty
+        - hardcore-bunny
         - kp-karnage
         - metallikez
-        - natural-born-killer
         - nasty-noodle
+        - natural-born-killer
+        - ruby-whipper
+        - unsteddie
         - yorkshire-terror
-        - hardcore-bunny
-        - crush-n-over
 
     2014:
-      - yorkshire-terror
+      bench: topper-gnarly
+      lineup: chesty-la-boom
+      captain: get-shirty
+      players:
+        - amytville-horror
+        - corporal-punishment
+        - crush-n-over
+        - dominateviks
+        - dread-pirate-roberts
+        - e-liminate-her
+        - flash-burn
+        - get-shirty
+        - hardcore-bunny
+        - kp-karnage
+        - kix-butwell
+        - metallikez
+        - miss-priss
+        - nasty-noodle
+        - pain-fonda
+        - psy-chlo
+        - ruby-whipper
+        - swift-justice
+        - yorkshire-terror
