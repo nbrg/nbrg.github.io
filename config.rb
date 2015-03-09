@@ -18,6 +18,13 @@ data.players.each do |id,_|
   }
 end
 
+ignore '/staff/staff.html'
+data.staff.each do |id,_|
+  proxy "/staff/#{id}", '/staff/staff.html', locals: {
+    id: id,
+  }
+end
+
 ignore '/teams/team.html'
 ignore '/teams/lineup.html'
 data.teams.each do |id,team|

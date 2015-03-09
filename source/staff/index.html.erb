@@ -1,0 +1,6 @@
+<h1>Staff</h1>
+<ul>
+  <% data.staff.each do |id,staff| %>
+    <li><a href="/staff/<%= id %>"><%= staff.name %></a></li>
+  <% end %>
+</ul>

@@ -1,8 +1,16 @@
-<h1>Team: <%= team.name %></h1>
-<h2>Lineup: <%= year %></h2>
+<% captains = [lineup.captain].flatten.map { |id| data.players[id] } %>
+<h1><%= team.name %> (<%= year %>)</h1>
 <ul>
-  <% lineup.each do |slug| %>
+  <% lineup.players.each do |slug| %>
     <% player = data.players[slug] %>
-    <li><a href="/players/<%= player.slug %>"><%= player.name %></a></li>
+    <li>
+      <a href="/players/<%= player.slug %>"><%= player.name %></a>
+      <% if captains.include? player %>
+        (Captain)
+      <% end %>
+    </li>
   <% end %>
 </ul>
+
+<p><strong>Bench Manager:</strong> <a href="/staff/<%= lineup.bench %>"><%= data.staff[lineup.bench].name %></a></p>
+<p><strong>Lineup Manager:</strong> <a href="/staff/<%= lineup.lineup %>"><%= data.staff[lineup.lineup].name %></a>
