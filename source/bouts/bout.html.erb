@@ -1,0 +1,12 @@
+<% against = data.leagues[bout.against] %>
+<h1>NBRG vs <%= against.nickname %></h1>
+<% if bout.tournament %>
+  <p><strong>Tournament:</strong> <%= data.tournaments[bout.tournament].name %></p>
+<% end %>
+<% if bout.won %>
+  <p><strong>Winner:</strong> <%= bout.won == 'them' ? against.name : 'Northern Beaches Roller Girls' %></p>
+<% end %>
+<% if bout.score %>
+  <p>NBRG <%= bout.score.us %></p>
+  <p><%= against.nickname %> <%= bout.score.them %></p>
+<% end %>

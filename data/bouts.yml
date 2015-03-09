@@ -1,0 +1,116 @@
+- date: 2015-07-18
+  against: iwrdl
+  tournament: 2015-5x5
+  slug: 2015-07-18-nbrg-vs-iwrdl
+
+- date: 2015-06-27
+  against: bmrdl
+  tournament: 2015-5x5
+  slug: 2015-06-27-nbrg-vs-bmrdl
+
+- date: 2015-05-23
+  against: ccrg
+  tournament: 2015-5x5
+  slug: 2015-05-23-nbrg-vs-ccrg
+
+- date: 2015-03-21
+  against: hard
+  tournament: 2015-5x5
+  slug: 2015-03-21-nbrg-vs-hard
+
+- date: 2014-10-05
+  against: wird
+  tournament: 2014-errd-smackdown
+  won: them
+  score:
+    us: 104
+    them: 241
+  slug: 2014-10-05-nbrg-vs-wird
+
+- date: 2014-10-05
+  against: ccrg
+  tournament: 2014-errd-smackdown
+  won: them
+  score:
+    us: 162
+    them: 188
+  slug: 2014-10-05-nbrg-vs-ccrg
+
+- date: 2014-10-04
+  against: wsr
+  tournament: 2014-errd-smackdown
+  won: them
+  score:
+    us: 71
+    them: 332
+  slug: 2014-10-04-nbrg-vs-wsr
+
+- date: 2014-08-30
+  against: ccrg
+  tournament: 2014-5x5
+  won: them
+  score:
+    us: 159
+    them: 171
+  slug: 2014-08-30-nbrg-vs-ccrg
+
+- date: 2014-08-16
+  against: srdl
+  won: them
+  score:
+    us: 14
+    them: 285
+  slug: 2014-08-16-nbrg-vs-srdl
+
+- date: 2014-07-26
+  nickname: Rollergeddon
+  against: nrdl
+  won: us
+  score:
+    us: 163
+    them: 135
+  slug: 2014-07-26-nbrg-vs-nrdl
+
+- date: 2014-07-19
+  against: ccrg
+  tournament: 2014-5x5
+  won: them
+  score:
+    us: 110
+    them: 247
+  slug: 2014-07-19-nbrg-vs-ccrg
+
+- date: 2014-07-05
+  against: s2d2
+  won: us
+  score:
+    us: 149
+    them: 143
+  slug: 2014-07-05-nbrg-vs-s2d2
+
+- date: 2014-06-28
+  against: hard
+  tournament: 2014-5x5
+  won: us
+  score:
+    us: 180
+    them: 151
+  slug: 2014-06-28-nbrg-vs-hard
+
+- date: 2014-05-31
+  against: iwrdl
+  tournament: 2014-5x5
+  won: us
+  score:
+    us: 186
+    them: 184
+  slug: 2014-05-31-nbrg-vs-iwrdl
+
+- date: 2014-04-26
+  against: ocd
+  tournament: 2014-5x5
+  won: us
+  score:
+    us: 163
+    them: 92
+  slug: 2014-04-26-nbrg-vs-ocd

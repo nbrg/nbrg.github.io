@@ -37,8 +37,15 @@ data.teams.each do |id,team|
   end
 
   proxy "/teams/#{id}", '/teams/team.html', locals: {
-    team: team
+    team: team,
   } 
+end
+
+ignore '/bouts/bout.html'
+data.bouts.each do |bout|
+  proxy "/bouts/#{bout.slug}", '/bouts/bout.html', locals: {
+    bout: bout,
+  }
 end
 
 # Per-page layout changes:
