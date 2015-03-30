@@ -29,6 +29,8 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :directory_indexes
+
 page "/feed.xml", layout: false
 
 ###
@@ -46,14 +48,14 @@ page "/feed.xml", layout: false
 
 ignore '/players/player.html'
 data.players.each do |id,player|
-  proxy "/players/#{id}", '/players/player.html', locals: {
+  proxy "/players/#{id}.html", '/players/player.html', locals: {
     player: player,
   }
 end
 
 ignore '/staff/staff.html'
 data.staff.each do |id,staff|
-  proxy "/staff/#{id}", '/staff/staff.html', locals: {
+  proxy "/staff/#{id}.html", '/staff/staff.html', locals: {
     staff: staff,
   }, page: {
     title: "Staff: #{staff.name}",
@@ -64,21 +66,21 @@ ignore '/teams/team.html'
 ignore '/teams/lineup.html'
 data.teams.each do |id,team|
   team.lineups.each do |year,lineup|
-    proxy "/teams/#{id}/#{year}", '/teams/lineup.html', locals: {
+    proxy "/teams/#{id}/#{year}.html", '/teams/lineup.html', locals: {
       team: team,
       year: year,
       lineup: lineup,
     }
   end
 
-  proxy "/teams/#{id}", '/teams/team.html', locals: {
+  proxy "/teams/#{id}.html", '/teams/team.html', locals: {
     team: team,
   } 
 end
 
 ignore '/bouts/bout.html'
 data.bouts.each do |bout|
-  proxy "/bouts/#{bout.slug}", '/bouts/bout.html', locals: {
+  proxy "/bouts/#{bout.slug}.html", '/bouts/bout.html', locals: {
     bout: bout,
   }
 end
