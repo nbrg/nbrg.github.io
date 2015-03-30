@@ -12,16 +12,18 @@
 ###
 
 ignore '/players/player.html'
-data.players.each do |id,_|
+data.players.each do |id,player|
   proxy "/players/#{id}", '/players/player.html', locals: {
-    id: id,
+    player: player,
   }
 end
 
 ignore '/staff/staff.html'
-data.staff.each do |id,_|
+data.staff.each do |id,staff|
   proxy "/staff/#{id}", '/staff/staff.html', locals: {
-    id: id,
+    staff: staff,
+  }, page: {
+    title: "Staff: #{staff.name}",
   }
 end
 
