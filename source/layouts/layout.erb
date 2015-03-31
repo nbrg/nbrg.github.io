@@ -14,6 +14,20 @@
   </head>
   
   <body class="<%= page_classes %>">
+    <header>
+      <h1>Northern Beaches Roller Girls</h1>
+      <nav>
+        <ul>
+          <li><%= link_to 'Home', '/index.html' %></li>
+          <li><%= link_to 'The Sirens', '/teams/sirens/2015.html' %></li>
+          <li><%= link_to 'Media', '/media.html' %></li>
+          <li><%= link_to 'Join Us', '/join.html' %></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
+    <footer>
+      <p>Site by <a href="http://www.jagregory.com">James Gregory</a>. <a href="mailto:james@jagregory.com">Get in touch</a>.</p>
+    </footer>
   </body>
 </html>
