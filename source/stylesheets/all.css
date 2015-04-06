@@ -1,9 +1,22 @@
 @charset "utf-8";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #f9f9f9;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: #101F2D;
+}
+
+a {
+  color: #348080;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EF3124;
 }
 
 h1, h2 {
@@ -16,6 +29,10 @@ header {
   border-bottom: 5px solid #101F2D;
   padding-bottom: .5rem;
   position: relative;
+}
+
+header a:hover {
+  color: #348080;
 }
 
 header h1 {
@@ -89,4 +106,12 @@ footer a {
   margin-left: 30px;
   padding: 1rem 2rem;
   background: #DFEEEF;
+}
+
+article img, aside img {
+  max-width: 100%;
+}
+
+article p, aside p {
+  line-height: 1.5rem;
 }
