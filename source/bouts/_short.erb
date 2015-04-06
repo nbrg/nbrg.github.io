@@ -6,7 +6,7 @@
     <span class="badge won">Won</span>
   <% end %>
 <% end %>
-<%= date_tag bout.date %>
+<%= date_tag bout.datetime %>
 <% if bout.score %>
-  <p class="scores"><strong>Scores:</strong> <%= bout.score.them %> to <%= bout.score.us %></p>
+  <p class="scores"><strong>Scores:</strong> <%= data.leagues[bout.against].nickname %> <%= bout.score.them %>, NBRG <%= bout.score.us %></p>
 <% end %>

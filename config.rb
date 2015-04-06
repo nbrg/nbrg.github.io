@@ -134,7 +134,11 @@ helpers do
   end
 
   def date_tag(date)
-    "<time datetime=\"#{date.strftime('%F')}\">#{date.strftime('%-d %b, %Y')}</time>"
+    "<time datetime=\"#{date.strftime('%FT%T')}\">#{date.strftime('%-d %b, %Y')}</time>"
+  end
+
+  def time_tag(date)
+    "<time datetime=\"#{date.strftime('%FT%T')}\">#{date.strftime('%l:%M %P')}</time>"
   end
 end
 

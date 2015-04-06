@@ -1,18 +1,22 @@
 <% against = data.leagues[bout.against] %>
-<section class="bout">
-  <h1>
-    <img src="/images/leagues/nbrg.png" /> Northern Beaches Roller Girls
-    <span class="vs">vs.</span>
-    <img src="/images/leagues/<%= against.nickname.downcase %>.png" /> <%= against.name %>
-  </h1>
-  <% if bout.tournament %>
-    <p><strong>Tournament:</strong> <%= data.tournaments[bout.tournament].name %></p>
-  <% end %>
-  <% if bout.won %>
-    <p><strong>Winner:</strong> <%= bout.won == 'them' ? against.name : 'Northern Beaches Roller Girls' %></p>
-  <% end %>
-  <% if bout.score %>
-    <p>NBRG <%= bout.score.us %></p>
-    <p><%= against.nickname %> <%= bout.score.them %></p>
-  <% end %>
-</section>
+<div class="bout">
+  <h1><%= bout.nickname %></h1>
+  
+  <section class="meta">
+    <p><%= date_tag(bout.datetime) %></p>
+    <% if bout.tournament %>
+      <p><a href="/tournaments/<%= data.tournaments[bout.tournament].slug %>">
+        <%= data.tournaments[bout.tournament].name %></a>
+      </p>
+    <% end %>
+  </section>
+
+  <section class="scoreboard">
+    <img src="/images/leagues/nbrg.png" /> NBRG
+    <div class="when">
+      <%= time_tag(bout.datetime) %>
+    </div>
+
+    <%= against.nickname %> <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
+  </section>
+</div>

@@ -1,28 +1,32 @@
-- date: 2015-07-18
+- datetime: 2015-07-18T15:00:00+10:00
   against: iwrdl
-  tournament: 2015-5x5
+  nickname: "5x5 Battlegrounds: Round 5"
   slug: 2015-07-18-nbrg-vs-iwrdl
+  tournament: 2015-5x5
 
-- date: 2015-06-27
+- datetime: 2015-06-27T14:00:00+10:00
   against: bmrdl
-  tournament: 2015-5x5
+  nickname: "5x5 Battlegrounds: Round 4"
   slug: 2015-06-27-nbrg-vs-bmrdl
+  tournament: 2015-5x5
 
-- date: 2015-05-23
+- datetime: 2015-05-23T15:00:00+10:00
   against: ccrg
-  tournament: 2015-5x5
+  nickname: "5x5 Battlegrounds: Round 3"
   slug: 2015-05-23-nbrg-vs-ccrg
-
-- date: 2015-03-21
-  against: hard
   tournament: 2015-5x5
+
+- datetime: 2015-03-21T15:00:00+11:00
+  against: hard
+  nickname: "5x5 Battlegrounds: Round 1"
   slug: 2015-03-21-nbrg-vs-hard
+  tournament: 2015-5x5
   won: us
   score:
     us: 264
     them: 123
 
-- date: 2014-10-05
+- datetime: 2014-10-05T18:30:00+11:00
   against: wird
   tournament: 2014-errd-smackdown
   won: them
@@ -31,7 +35,7 @@
     them: 241
   slug: 2014-10-05-nbrg-vs-wird
 
-- date: 2014-10-05
+- datetime: 2014-10-05T13:00:00+11:00
   against: ccrg
   tournament: 2014-errd-smackdown
   won: them
@@ -40,7 +44,7 @@
     them: 188
   slug: 2014-10-05-nbrg-vs-ccrg
 
-- date: 2014-10-04
+- datetime: 2014-10-04T09:30:00+10:00
   against: wsr
   tournament: 2014-errd-smackdown
   won: them
@@ -49,7 +53,7 @@
     them: 332
   slug: 2014-10-04-nbrg-vs-wsr
 
-- date: 2014-08-30
+- datetime: 2014-08-30T18:00:00+10:00
   against: ccrg
   tournament: 2014-5x5
   won: them
@@ -58,7 +62,7 @@
     them: 171
   slug: 2014-08-30-nbrg-vs-ccrg
 
-- date: 2014-08-16
+- datetime: 2014-08-16T18:30:00+10:00
   against: srdl
   won: them
   score:
@@ -66,7 +70,7 @@
     them: 285
   slug: 2014-08-16-nbrg-vs-srdl
 
-- date: 2014-07-26
+- datetime: 2014-07-26T16:30:00+10:00
   nickname: Rollergeddon
   against: nrdl
   won: us
@@ -75,7 +79,7 @@
     them: 135
   slug: 2014-07-26-nbrg-vs-nrdl
 
-- date: 2014-07-19
+- datetime: 2014-07-19T15:00:00+10:00
   against: ccrg
   tournament: 2014-5x5
   won: them
@@ -84,7 +88,7 @@
     them: 247
   slug: 2014-07-19-nbrg-vs-ccrg
 
-- date: 2014-07-05
+- datetime: 2014-07-05T15:00:00+10:00
   against: s2d2
   won: us
   score:
@@ -92,7 +96,7 @@
     them: 143
   slug: 2014-07-05-nbrg-vs-s2d2
 
-- date: 2014-06-28
+- datetime: 2014-06-28T15:00:00+10:00
   against: hard
   tournament: 2014-5x5
   won: us
@@ -101,7 +105,7 @@
     them: 151
   slug: 2014-06-28-nbrg-vs-hard
 
-- date: 2014-05-31
+- datetime: 2014-05-31T15:00:00+10:00
   against: iwrdl
   tournament: 2014-5x5
   won: us
@@ -110,7 +114,7 @@
     them: 184
   slug: 2014-05-31-nbrg-vs-iwrdl
 
-- date: 2014-04-26
+- datetime: 2014-04-26T15:00:00+10:00
   against: ocd
   tournament: 2014-5x5
   won: us
