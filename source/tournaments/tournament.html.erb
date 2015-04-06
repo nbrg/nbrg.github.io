@@ -1,0 +1,11 @@
+<h1><%= tournament.name %></h1>
+<ul>
+  <% bouts_for_tournament(tournament).each do |bout| %>
+    <li>
+      <a href="/bouts/<%= bout.slug %>">
+        <%= bout.nickname || "#{data.leagues[bout.against].nickname} vs. NBRG" %>
+      </a>
+      <time datetime="<%= bout.date %>"></time>
+    </li>
+  <% end %>
+</ul>

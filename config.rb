@@ -85,6 +85,13 @@ data.bouts.each do |bout|
   }
 end
 
+ignore '/tournaments/tournament.html'
+data.tournaments.each do |id,tournament|
+  proxy "/tournaments/#{tournament.slug}.html", '/tournaments/tournament.html', locals: {
+    tournament: tournament,
+  }
+end
+
 # Per-page layout changes:
 #
 # With no layout
@@ -116,6 +123,14 @@ end
 helpers do
   def page_title
     yield_content(:title) || current_page.metadata[:page]['title']
+  end
+
+  def tournaments
+    data.tournaments.values.sort_by { |t| t.date.from }
+  end
+
+  def bouts_for_tournament(tournament)
+    data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:date)
   end
 end
 
