@@ -12,16 +12,24 @@
   </section>
 
   <section class="scoreboard">
-    <div class="team">
+    <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
       <img src="/images/leagues/nbrg.png" />
       <span>NBRG</span>
+      <% if bout.score %>
+        <p><strong>Score:</strong> <%= bout.score.us %></p>
+      <% end %>
     </div>
     
-    <div class="when">
-      <%= time_tag(bout.datetime) %>
-    </div>
+    <% if !bout.score %>
+      <div class="when">
+        <%= time_tag(bout.datetime) %>
+      </div>
+    <% end %>
     
-    <div class="team">
+    <div class="team <%= bout.won ? bout.won == 'them' ? 'winner' : 'loser' : '' %>">
+      <% if bout.score %>
+        <p><strong>Score:</strong> <%= bout.score.them %></p>
+      <% end %>
       <span><%= against.nickname %></span>
       <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
     </div>
