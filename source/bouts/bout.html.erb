@@ -12,11 +12,18 @@
   </section>
 
   <section class="scoreboard">
-    <img src="/images/leagues/nbrg.png" /> NBRG
+    <div class="team">
+      <img src="/images/leagues/nbrg.png" />
+      <span>NBRG</span>
+    </div>
+    
     <div class="when">
       <%= time_tag(bout.datetime) %>
     </div>
-
-    <%= against.nickname %> <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
+    
+    <div class="team">
+      <span><%= against.nickname %></span>
+      <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
+    </div>
   </section>
 </div>

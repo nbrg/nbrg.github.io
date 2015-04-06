@@ -1,4 +1,54 @@
 .bout {
+  .scoreboard {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    min-height: 8rem;
+
+    .when {
+      padding: .5rem;
+
+      time {
+        font-size: 2rem;
+      }
+    }
+
+    .team {
+      margin: .5rem 1rem 0 1rem;
+      line-height: 1.2rem;
+      position: relative;
+
+      span {
+        background: #000;
+        color: #FFF;
+        display: inline-block;
+        padding: .25rem 1rem;
+      }
+
+      img {
+        width: 8rem;
+        position: absolute;
+        top: -200%;
+      }
+
+      &:first-child span {
+        padding-left: 8rem;
+        margin-left: 1rem;
+      }
+
+      &:last-child {
+        span {
+          padding-right: 8rem;
+          margin-right: 1rem;
+        }
+
+        img {
+          right: 0;
+        }
+      }
+    }
+  }
 }
 
 .bouts {
