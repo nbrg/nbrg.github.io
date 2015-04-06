@@ -87,6 +87,16 @@
       }
     }
   }
+
+  .venue {
+    margin-top: 1rem;
+    border-top: 3px solid rgba(76,174,181,1);
+
+    .map {
+      height: 300px;
+      margin: 0 -2rem;
+    }
+  }
 }
 
 .bouts {

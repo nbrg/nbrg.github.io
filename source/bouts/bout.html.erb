@@ -34,4 +34,14 @@
       <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
     </div>
   </section>
+
+  <% if bout.venue %>
+    <section class="venue" data-map data-lat="<%= bout.venue.lat %>" data-lon="<%= bout.venue.lon %>">
+      <h2><%= bout.venue.name %></h2>
+      <p><%= bout.venue.address %></p>
+    </section>
+  <% end %>
 </div>
+<script type="text/javascript">
+  NBRG.bouts.map()
+</script>
