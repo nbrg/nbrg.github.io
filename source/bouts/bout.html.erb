@@ -1,12 +1,18 @@
 <% against = data.leagues[bout.against] %>
-<h1>NBRG vs <%= against.nickname %></h1>
-<% if bout.tournament %>
-  <p><strong>Tournament:</strong> <%= data.tournaments[bout.tournament].name %></p>
-<% end %>
-<% if bout.won %>
-  <p><strong>Winner:</strong> <%= bout.won == 'them' ? against.name : 'Northern Beaches Roller Girls' %></p>
-<% end %>
-<% if bout.score %>
-  <p>NBRG <%= bout.score.us %></p>
-  <p><%= against.nickname %> <%= bout.score.them %></p>
-<% end %>
+<section class="bout">
+  <h1>
+    <img src="/images/leagues/nbrg.png" /> Northern Beaches Roller Girls
+    <span class="vs">vs.</span>
+    <img src="/images/leagues/<%= against.nickname.downcase %>.png" /> <%= against.name %>
+  </h1>
+  <% if bout.tournament %>
+    <p><strong>Tournament:</strong> <%= data.tournaments[bout.tournament].name %></p>
+  <% end %>
+  <% if bout.won %>
+    <p><strong>Winner:</strong> <%= bout.won == 'them' ? against.name : 'Northern Beaches Roller Girls' %></p>
+  <% end %>
+  <% if bout.score %>
+    <p>NBRG <%= bout.score.us %></p>
+    <p><%= against.nickname %> <%= bout.score.them %></p>
+  <% end %>
+</section>

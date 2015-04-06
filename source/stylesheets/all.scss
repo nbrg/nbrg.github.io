@@ -21,6 +21,7 @@ a {
 
 h1, h2 {
   font-family: 'Rockwell Bold', Rockwell, serif;
+  font-weight: normal;
 }
 
 header {
@@ -140,4 +141,4 @@ aside .sponsors {
   padding: .1rem .25rem .2rem .25rem;
 }
 
-@import 'tournaments';
+@import 'bouts';
