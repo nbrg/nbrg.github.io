@@ -17,6 +17,10 @@
   against: hard
   tournament: 2015-5x5
   slug: 2015-03-21-nbrg-vs-hard
+  won: us
+  score:
+    us: 264
+    them: 123
 
 - date: 2014-10-05
   against: wird
