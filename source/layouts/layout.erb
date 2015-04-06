@@ -3,10 +3,17 @@
     <%= yield %>
   </article>
   <aside>
-    <h2>Sponsors</h2>
-    <a href="http://www.thesandshotel.com.au/">
-      <img src="http://www.nbrg.com.au/wp-content/uploads/2014/11/thesands.png" />
-      Narrabeen Sands Hotel
-    </a>
+    <section class="sponsors">
+      <h2>Sponsors</h2>
+      <ul>
+        <% data.sponsors.select(&:sidebar).each do |sponsor| %>
+          <li>
+            <a href="<%= sponsor.url %>">
+              <img src="/images/sponsors/<%= sponsor.logo %>" />
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </section>
   </aside>
 <% end %>
