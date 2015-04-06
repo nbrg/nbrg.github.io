@@ -113,11 +113,11 @@ end
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def page_title
+    yield_content(:title) || current_page.metadata[:page]['title']
+  end
+end
 
 set :css_dir, 'stylesheets'
 

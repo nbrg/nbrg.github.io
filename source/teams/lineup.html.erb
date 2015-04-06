@@ -1,3 +1,4 @@
+<% content_for(:title, "#{team.name} (#{year})") %>
 <% captains = [lineup.captain].flatten.map { |id| data.players[id] } %>
 <h1><%= team.name %> (<%= year %>)</h1>
 <ul>

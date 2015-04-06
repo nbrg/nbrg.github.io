@@ -1,3 +1,9 @@
+---
+title: Media
+---
+
+# Media
+
 The Northern Beaches Roller Girls have obtained great local support from media institutions such as The Manly Daily. The league welcomes media support to gain awareness about the sport and the achievements of the Northern Beaches Roller Girls.
 
 Want to support the Northern Beaches Roller Girls and feature an article on the league?
