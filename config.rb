@@ -132,6 +132,10 @@ helpers do
   def bouts_for_tournament(tournament)
     data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:date)
   end
+
+  def date_tag(date)
+    "<time datetime=\"#{date.strftime('%F')}\">#{date.strftime('%-d %b, %Y')}</time>"
+  end
 end
 
 set :css_dir, 'stylesheets'

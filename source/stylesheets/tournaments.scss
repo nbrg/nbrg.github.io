@@ -1,0 +1,32 @@
+.bouts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .won {
+    background: green;
+  }
+
+  .lost {
+    background: maroon;
+  }
+
+  time {
+    display: block;
+    font-size: .8rem;
+    color: #777;
+  }
+
+  .scores {
+    margin: 0;
+    font-size: .8rem;
+
+    strong {
+      font-weight: normal;
+    }
+  }
+}

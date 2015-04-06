@@ -1,14 +1,26 @@
 <h1>Tournaments</h1>
 <% tournaments.reverse.each do |tournament| %>
-  <section>
+  <section class="tournament">
     <h2><a href="/tournaments/<%= tournament.slug %>"><%= tournament.name %></a></h2>
-    <ul>
+    <p>
+      From <%= date_tag tournament.date.from %> to <%= date_tag tournament.date.to %>.
+    </p>
+    <h3>Bouts</h3>
+    <ul class="bouts">
       <% bouts_for_tournament(tournament).each do |bout| %>
         <li>
           <a href="/bouts/<%= bout.slug %>">
             <%= bout.nickname || "#{data.leagues[bout.against].nickname} vs. NBRG" %>
           </a>
-          <time datetime="<%= bout.date %>"></time>
+          <% if bout.score %>
+            <% if bout.won == 'us' %>
+              <span class="badge won">Won</span>
+            <% end %>
+          <% end %>
+          <%= date_tag bout.date %>
+          <% if bout.score %>
+            <p class="scores"><strong>Scores:</strong> <%= bout.score.them %> to <%= bout.score.us %></p>
+          <% end %>
         </li>
       <% end %>
     </ul>
