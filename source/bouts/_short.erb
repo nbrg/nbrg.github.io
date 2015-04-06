@@ -1,0 +1,12 @@
+<a href="/bouts/<%= bout.slug %>">
+  <%= bout.nickname || "#{data.leagues[bout.against].nickname} vs. NBRG" %>
+</a>
+<% if bout.score %>
+  <% if bout.won == 'us' %>
+    <span class="badge won">Won</span>
+  <% end %>
+<% end %>
+<%= date_tag bout.date %>
+<% if bout.score %>
+  <p class="scores"><strong>Scores:</strong> <%= bout.score.them %> to <%= bout.score.us %></p>
+<% end %>

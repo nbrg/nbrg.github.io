@@ -8,20 +8,7 @@
     <h3>Bouts</h3>
     <ul class="bouts">
       <% bouts_for_tournament(tournament).each do |bout| %>
-        <li>
-          <a href="/bouts/<%= bout.slug %>">
-            <%= bout.nickname || "#{data.leagues[bout.against].nickname} vs. NBRG" %>
-          </a>
-          <% if bout.score %>
-            <% if bout.won == 'us' %>
-              <span class="badge won">Won</span>
-            <% end %>
-          <% end %>
-          <%= date_tag bout.date %>
-          <% if bout.score %>
-            <p class="scores"><strong>Scores:</strong> <%= bout.score.them %> to <%= bout.score.us %></p>
-          <% end %>
-        </li>
+        <li><%= partial 'bouts/short', locals: { bout: bout } %></li>
       <% end %>
     </ul>
   </section>
