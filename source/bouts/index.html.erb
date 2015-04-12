@@ -1,6 +1,6 @@
 <h1>Bouts</h1>
 <ul class="bouts">
-  <% data.bouts.sort_by(&:date).reverse.each do |bout| %>
+  <% data.bouts.sort_by(&:date).each do |bout| %>
     <li><%= partial 'bouts/short', locals: { bout: bout } %></li>
   <% end %>
 </ul>
