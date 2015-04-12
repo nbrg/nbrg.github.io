@@ -6,7 +6,9 @@
     <span class="badge won">Won</span>
   <% end %>
 <% end %>
-<%= date_tag bout.datetime %>
+<p class="meta">
+  <%= date_tag bout.datetime %><% if bout.tournament %> &mdash; <a href="/tournaments/<%= data.tournaments[bout.tournament].slug %>"><%= data.tournaments[bout.tournament].name %></a><% end %>
+</p>
 <% if bout.score %>
   <p class="scores"><strong>Scores:</strong> <%= data.leagues[bout.against].nickname %> <%= bout.score.them %>, NBRG <%= bout.score.us %></p>
 <% end %>
