@@ -1,5 +1,24 @@
 ;(function(global) {
+  function sixMonthsAgo() {
+    var date = new Date()
+    date.setMonth(date.getMonth() - 6)
+    return date
+  }
+
   NBRG.bouts = {
+    list: function() {
+      var bouts = document.querySelectorAll('.bouts li')
+      for (var i = 0; i < bouts.length; i++) {
+        var bout = bouts[i],
+          timeel = bout.querySelector('time')
+        var time = moment(timeel.getAttribute('datetime'))
+        
+        if (!time.isBefore(moment(), 'day')) {
+          bout.className += ' future'
+        }
+      }
+    },
+
     map: function() {
       var containers = document.querySelectorAll('[data-map]')
       for (var i = 0; i < containers.length; i++) {
