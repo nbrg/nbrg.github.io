@@ -1,2 +1,6 @@
-<h1>Player</h1>
-<h2><%= player.name %></h2>
+<div class="player">
+  <h1><em>Player profile</em> <%= player.name %></h1>
+  <% if player.photo %>
+    <img src="/images/players/<%= player.photo %>" alt="" />
+  <% end %>
+</div>

@@ -1,6 +1,7 @@
 amytville-horror:
   name: AmyTville Horror
   number: 309
+  photo: amytville-horror.jpg
   real_name: Amye Saunders
   slug: amytville-horror
 
@@ -14,6 +15,7 @@ corporal-punishment:
   name: Corporal Punishment
   nickname: Patch
   number: 790
+  photo: corporal-punishment.jpg
   real_name: Caz Buckingham
   slug: corporal-punishment
 
@@ -21,12 +23,14 @@ crush-n-over:
   name: Crush n Over
   nickname: Crush
   number: 81
+  photo: crush-n-over.jpg
   real_name: Angela Cushway
   slug: crush-n-over
 
 dominateviks:
   name: DominateViks
   number: 12
+  photo: dominateviks.jpg
   real_name: Vikki Smith
   slug: dominateviks
 
@@ -34,12 +38,14 @@ dread-pirate-roberts:
   name: Dread Pirate Roberts
   nickname: Dread
   number: 913
+  photo: dread-pirate-roberts.jpg
   real_name: Caitlin Roberts
   slug: dread-pirate-roberts
 
 e-liminate-her:
   name: E Liminate-HER
   number: 1313
+  photo: e-liminate-her.jpg
   real_name: Elizabeth Gharbi
   slug: e-liminate-her
 
@@ -47,6 +53,7 @@ flash-burn:
   name: Flash Burn
   nickname: Flash
   number: 350
+  photo: flash-burn.jpg
   real_name: Amanda Lockton
   slug: flash-burn
 
@@ -54,6 +61,7 @@ get-shirty:
   name: Get Shirty
   nickname: Shirty
   number: 14
+  photo: get-shirty.jpg
   real_name: Emma Shirt
   slug: get-shirty
 
@@ -61,6 +69,7 @@ hardcore-bunny:
   name: Hardcore Bunny
   nickname: Bunny
   number: 212
+  photo: hardcore-bunny.jpg
   real_name: Regan Liddle
   slug: hardcore-bunny
 
@@ -68,6 +77,7 @@ kp-karnage:
   name: KP Karnage
   nickname: KP
   number: 0089
+  photo: kp-karnage.jpg
   real_name: Katie Peterson
   slug: kp-karnage
 
@@ -75,6 +85,7 @@ kix-butwell:
   name: Kix Butwell
   nickname: Kix
   number: 6ft
+  photo: kix-butwell.jpg
   real_name: Jessee Brown
   slug: kix-butwell
 
@@ -82,6 +93,7 @@ metallikez:
   name: Metallikez
   nickname: Kez
   number: 210
+  photo: metallikez.jpg
   real_name: Kerrie-anne Busch
   slug: metallikez
 
@@ -89,6 +101,7 @@ miss-priss:
   name: Miss Priss
   nickname: Priss
   number: 68
+  photo: miss-priss.jpg
   real_name: Sonia Collingwood
   slug: miss-priss
 
@@ -96,6 +109,7 @@ nasty-noodle:
   name: Nasty Noodle
   nickname: Noodle
   number: 807
+  photo: nasty-noodle.jpg
   real_name: Rachel Ang
   slug: nasty-noodle
 
@@ -109,12 +123,14 @@ pain-fonda:
   name: Pain Fonda
   nickname: Pain
   number: 247
+  photo: pain-fonda.jpg
   real_name: Jess Canabou
   slug: pain-fonda
 
 psy-chlo:
   name: Psy-chlo
   number: 05
+  photo: psy-chlo.jpg
   real_name: Chloe Harness
   slug: psy-chlo
 
@@ -122,6 +138,7 @@ ruby-whipper:
   name: Ruby Whipper
   nickname: Ruby
   number: 78
+  photo: ruby-whipper.jpg
   real_name: Kelly Polson
   slug: ruby-whipper
 
@@ -129,6 +146,7 @@ swift-justice:
   name: Swift Justice
   nickname: Swiftie
   number: 98
+  photo: swift-justice.jpg
   real_name: Lisa Justice
   slug: swift-justice
 
@@ -142,5 +160,6 @@ yorkshire-terror:
   name: Yorkshire Terror
   nickname: Yorkie
   number: 85
+  photo: yorkshire-terror.jpg
   real_name: Sara Peterson
   slug: yorkshire-terror
