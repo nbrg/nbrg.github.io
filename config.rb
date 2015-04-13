@@ -129,8 +129,12 @@ helpers do
     data.tournaments.values.sort_by { |t| t.date.from }
   end
 
+  def upcoming_bouts
+    data.bouts.select { |b| b.datetime >= Date.today }.sort_by(&:datetime)
+  end
+
   def bouts_for_tournament(tournament)
-    data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:date)
+    data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:datetime)
   end
 
   def date_tag(date)

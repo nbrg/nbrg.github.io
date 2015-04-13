@@ -10,8 +10,8 @@
       var bouts = document.querySelectorAll('.bouts li')
       for (var i = 0; i < bouts.length; i++) {
         var bout = bouts[i],
-          timeel = bout.querySelector('time')
-        var time = moment(timeel.getAttribute('datetime'))
+          timeel = bout.querySelector('time'),
+          time = moment(timeel.getAttribute('datetime'))
         
         if (!time.isBefore(moment(), 'day')) {
           bout.className += ' future'
