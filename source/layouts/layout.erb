@@ -7,7 +7,7 @@
       <h2>Up next</h2>
       <ul class="bouts">
         <% upcoming_bouts.each do |bout| %>
-          <li><%= partial 'bouts/short', locals: { bout: bout } %></li>
+          <li><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
         <% end %>
       </ul>
     </section>

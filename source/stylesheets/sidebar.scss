@@ -1,0 +1,46 @@
+.sidebar {
+  h2 {
+    background: #fff;
+    margin: 0 -2rem 1rem -2rem;
+    padding: 1rem 2rem .25rem 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.sidebar .sponsors {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.sidebar .upcoming {
+  .bouts li {
+    display: none;
+    text-align: center;
+    position: relative;
+
+    &:first-child {
+      display: block;
+    }
+
+    img {
+      width: 2.75rem;
+      position: absolute;
+      top: -.75rem;
+    }
+
+    img.them {
+      left: -1.25rem;
+    }
+
+    img.us {
+      right: -1.25rem;
+    }
+  }
+}

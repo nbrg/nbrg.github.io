@@ -107,7 +107,7 @@ footer {
 
   > aside {
     width: 350px;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     background: #DFEEEF;
   }
 }
@@ -122,18 +122,6 @@ article, aside {
   }
 }
 
-aside .sponsors {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
 .badge {
   background: #ccc;
   border-radius: 50px;
@@ -145,3 +133,4 @@ aside .sponsors {
 }
 
 @import 'bouts';
+@import 'sidebar';
