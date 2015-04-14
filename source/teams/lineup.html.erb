@@ -1,15 +1,13 @@
 <% content_for(:title, "#{team.name} (#{year})") %>
-<% captains = [lineup.captain].flatten.map { |id| data.players[id] } %>
+<% captains = [lineup.captain].flatten.map { |id| data.players[id] }.sort_by(&:name) %>
+<% players = lineup.players.map {|id| data.players[id] }.sort_by(&:name) %>
 <h1><%= team.name %> (<%= year %>)</h1>
-<ul>
-  <% lineup.players.each do |slug| %>
-    <% player = data.players[slug] %>
-    <li>
-      <a href="/players/<%= player.slug %>"><%= player.name %></a>
-      <% if captains.include? player %>
-        (Captain)
-      <% end %>
-    </li>
+<ul class="lineup">
+  <% captains.each do |player| %>
+    <%= partial 'teams/player', locals: { player: player, captain: true } %>
+  <% end %>
+  <% (players - captains).each do |player| %>
+    <%= partial 'teams/player', locals: { player: player, captain: false } %>
   <% end %>
 </ul>
 
