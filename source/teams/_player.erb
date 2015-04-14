@@ -1,12 +1,10 @@
-<li>
-  <a href="/players/<%= player.slug %>">
-    <h2>
-      <%= player.name %>
-      <span class="number"><%= player.number %></span>
-      <% if captain %><em class="role">Captain</em><% end %>
-    </h2>
-    <% if player.photo %>
-      <img src="/images/players/<%= player.photo %>" alt="" />
-    <% end %>
-  </a>
-</li>
+<a href="/players/<%= player.slug %>">
+  <h2>
+    <%= player.name %>
+    <span class="number"><%= player.number %></span>
+    <% if role %><em class="role"><%= role %></em><% end %>
+  </h2>
+  <% if player.photo %>
+    <img src="/images/players/<%= player.photo %>" alt="" />
+  <% end %>
+</a>

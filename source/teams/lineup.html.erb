@@ -4,14 +4,16 @@
 <h1><%= team.name %> (<%= year %>)</h1>
 <ul class="lineup">
   <% captains.each do |player| %>
-    <%= partial 'teams/player', locals: { player: player, captain: true } %>
+    <li><%= partial 'teams/player', locals: { player: player, role: 'Captain' } %></li>
   <% end %>
 </ul>
 <ul class="lineup">
   <% (players - captains).each do |player| %>
-    <%= partial 'teams/player', locals: { player: player, captain: false } %>
+    <li><%= partial 'teams/player', locals: { player: player, role: nil } %></li>
   <% end %>
 </ul>
 
-<p><strong>Bench Manager:</strong> <a href="/staff/<%= lineup.bench %>"><%= data.staff[lineup.bench].name %></a></p>
-<p><strong>Lineup Manager:</strong> <a href="/staff/<%= lineup.lineup %>"><%= data.staff[lineup.lineup].name %></a>
+<ul class="lineup">
+  <li><%= partial 'teams/player', locals: { player: data.staff[lineup.bench], role: 'Bench Manager' } %></li>
+  <li><%= partial 'teams/player', locals: { player: data.staff[lineup.lineup], role: 'Lineup Manager' } %></li>
+</ul>
