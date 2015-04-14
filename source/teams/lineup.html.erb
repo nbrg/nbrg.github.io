@@ -6,6 +6,8 @@
   <% captains.each do |player| %>
     <%= partial 'teams/player', locals: { player: player, captain: true } %>
   <% end %>
+</ul>
+<ul class="lineup">
   <% (players - captains).each do |player| %>
     <%= partial 'teams/player', locals: { player: player, captain: false } %>
   <% end %>
