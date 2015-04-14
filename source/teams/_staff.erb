@@ -1,0 +1,9 @@
+<a href="/staff/<%= staff.slug %>">
+  <h2>
+    <em class="role"><%= role %></em>
+    <%= staff.name %>
+  </h2>
+  <% if staff.photo %>
+    <img src="/images/staff/<%= staff.photo %>" alt="" />
+  <% end %>
+</a>

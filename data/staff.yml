@@ -1,6 +1,7 @@
 chesty-la-boom:
   name: Chesty La Boom
   nickname: BOOM
+  photo: chesty-la-boom.jpg
   real_name: Annette Vitetta
   slug: chesty-la-boom
 
@@ -12,5 +13,6 @@ ragequit:
 topper-gnarly:
   name: Topper Gnarly
   nickname: Topper
+  photo: topper-gnarly.jpg
   real_name: James Polson
   slug: topper-gnarly

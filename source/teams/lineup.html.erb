@@ -14,6 +14,6 @@
 </ul>
 
 <ul class="lineup">
-  <li><%= partial 'teams/player', locals: { player: data.staff[lineup.bench], role: 'Bench Manager' } %></li>
-  <li><%= partial 'teams/player', locals: { player: data.staff[lineup.lineup], role: 'Lineup Manager' } %></li>
+  <li><%= partial 'teams/staff', locals: { staff: data.staff[lineup.bench], role: 'Bench Manager' } %></li>
+  <li><%= partial 'teams/staff', locals: { staff: data.staff[lineup.lineup], role: 'Lineup Manager' } %></li>
 </ul>
