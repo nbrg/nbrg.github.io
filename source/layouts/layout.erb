@@ -7,11 +7,11 @@
   </article>
   <aside class="sidebar">
     <%= yield_content(:sidebar) %>
-    <section class="upcoming">
+    <section class="upcoming" data-hide-none=".bouts li">
       <h2><span>Up next</span></h2>
       <ul class="bouts">
         <% upcoming_bouts.each do |bout| %>
-          <li><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
+          <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
         <% end %>
       </ul>
     </section>
@@ -28,7 +28,4 @@
       </ul>
     </section>
   </aside>
-  <script type="text/javascript">
-    NBRG.sidebar()
-  </script>
 <% end %>
