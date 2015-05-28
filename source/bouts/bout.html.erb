@@ -1,7 +1,7 @@
 <% against = data.leagues[bout.against] %>
 <div class="bout">
   <h1><%= bout.nickname %></h1>
-  
+
   <section class="meta">
     <p><%= date_tag(bout.datetime) %></p>
     <% if bout.tournament %>
@@ -19,13 +19,13 @@
         <p><strong>Score:</strong> <%= bout.score.us %></p>
       <% end %>
     </div>
-    
+
     <% if !bout.score %>
       <div class="when">
         <%= time_tag(bout.datetime) %>
       </div>
     <% end %>
-    
+
     <div class="team <%= bout.won ? bout.won == 'them' ? 'winner' : 'loser' : '' %>">
       <% if bout.score %>
         <p><strong>Score:</strong> <%= bout.score.them %></p>
@@ -37,7 +37,7 @@
 
   <% if bout.venue %>
     <section class="venue" data-map data-lat="<%= bout.venue.lat %>" data-lon="<%= bout.venue.lon %>">
-      <h2><%= bout.venue.name %></h2>
+      <h2><span><%= bout.venue.name %></span></h2>
       <p><%= bout.venue.address %></p>
     </section>
   <% end %>

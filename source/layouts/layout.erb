@@ -1,14 +1,14 @@
 <% wrap_layout :outside do %>
   <article>
     <% if current_article %>
-      <h1><%= current_article.title %></h1>
+      <h1><span><%= current_article.title %></span></h1>
     <% end %>
     <%= yield %>
   </article>
   <aside class="sidebar">
     <%= yield_content(:sidebar) %>
     <section class="upcoming" data-hide-none=".bouts li">
-      <h2><span>Up next</span></h2>
+      <h1><span>Up next</span></h1>
       <ul class="bouts">
         <% upcoming_bouts.each do |bout| %>
           <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
@@ -16,7 +16,7 @@
       </ul>
     </section>
     <section class="sponsors">
-      <h2><span>Sponsors</span></h2>
+      <h1><span>Sponsors</span></h1>
       <ul>
         <% data.sponsors.select(&:sidebar).each do |sponsor| %>
           <li>

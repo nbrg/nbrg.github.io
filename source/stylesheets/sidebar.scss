@@ -1,19 +1,15 @@
+@import 'mixins';
+
 .sidebar {
-  h2 {
+  h1 {
     background: #fff;
     margin: 3rem -2rem 1rem -2rem;
     padding: 0 2rem 1rem 1rem;
     font-size: .8rem;
     font-weight: bold;
     text-transform: uppercase;
-    border-top: 1px solid lighten(#348080, 50%);
 
-    span {
-      border-top: 1px solid lighten(#348080, 15%);
-      display: inline-block;
-      padding-top: .75rem;
-      margin-top: -1px;
-    }
+    @include highlight-border-top;
   }
 }
 
@@ -35,7 +31,8 @@
     text-align: center;
     position: relative;
 
-    h3 {
+    h2 {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       font-size: 1rem;
       font-weight: normal;
     }
