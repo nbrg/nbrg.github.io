@@ -131,6 +131,12 @@ article, aside {
   padding: .1rem .25rem .2rem .25rem;
 }
 
+time {
+  font-size: .8rem;
+  color: #777;
+}
+
+@import 'blog';
 @import 'bouts';
 @import 'sidebar';
 @import 'player';

@@ -1,0 +1,7 @@
+<% wrap_layout :outside do %>
+  <article class="post alone">
+    <h2><span><%= current_article.title %></span></h2>
+    <%= date_tag current_article.date %>
+    <%= current_article.body %>
+  </article>
+<% end %>

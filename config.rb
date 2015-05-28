@@ -11,7 +11,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "blog-post"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -74,7 +74,7 @@ data.teams.each do |id,team|
 
   proxy "/teams/#{id}.html", '/teams/team.html', locals: {
     team: team,
-  } 
+  }
 end
 
 ignore '/bouts/bout.html'
