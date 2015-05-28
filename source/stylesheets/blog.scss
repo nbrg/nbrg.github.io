@@ -1,23 +1,5 @@
 @import 'mixins';
 
-article {
-  p {
-    text-align: justify;
-  }
-
-  h1 {
-    margin: 4rem 0 0 0;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  time {
-    text-align: center;
-    display: block;
-    margin-bottom: 3rem;
-  }
-}
-
 article.post.short {
   margin-bottom: 4rem;
 
