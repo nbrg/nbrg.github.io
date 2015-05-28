@@ -1,9 +1,6 @@
 <h3><a href="/bouts/<%= bout.slug %>"><%= data.leagues[bout.against].nickname %> vs. NBRG</a></h3>
 <img class="them" src="/images/leagues/<%= data.leagues[bout.against].nickname.downcase %>.png" alt="" />
 <img class="us" src="/images/leagues/nbrg.png" alt="" />
-<% if bout.tournament %>
-  <a href="/tournaments/<%= data.tournaments[bout.tournament].slug %>"><%= data.tournaments[bout.tournament].name %></a>
-<% end %>
 <p class="meta">
   <%= datetime_tag bout.datetime %>
 </p>
