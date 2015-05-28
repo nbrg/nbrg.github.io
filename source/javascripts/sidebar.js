@@ -1,5 +1,5 @@
 ;(function(global) {
-  global.sidebar = function() {
+  function hideOldGames() {
     var upcoming = document.querySelector('.sidebar .upcoming'),
       bouts = upcoming.querySelectorAll('.bouts li'),
       today = moment().startOf('day')
@@ -21,5 +21,23 @@
     if (!bouts.length || removed === bouts.length) {
       upcoming.remove()
     }
+  }
+
+  function makeWholeBoutClickable() {
+    var bouts = document.querySelectorAll('.sidebar .upcoming .bouts li')
+
+    for (var i = 0; i < bouts.length; i++) {
+      var bout = bouts[i],
+        url = bout.querySelector('a').getAttribute('href')
+      bout.style.cursor = 'pointer'
+      bout.onclick = function() {
+        window.location.href = url
+      }
+    }
+  }
+
+  global.sidebar = function() {
+    hideOldGames()
+    makeWholeBoutClickable()
   }
 })(NBRG)
