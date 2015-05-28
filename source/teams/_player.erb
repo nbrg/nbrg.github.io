@@ -1,10 +1,12 @@
 <a href="/players/<%= player.slug %>">
+  <% if player.photo %>
+    <div class="photo-circle">
+      <img src="/images/players/<%= player.photo %>" alt="" />
+    </div>
+  <% end %>
   <h2>
     <% if role %><em class="role"><%= role %></em><% end %>
     <%= player.name %>
     <span class="number"><%= player.number %></span>
   </h2>
-  <% if player.photo %>
-    <img src="/images/players/<%= player.photo %>" alt="" />
-  <% end %>
 </a>

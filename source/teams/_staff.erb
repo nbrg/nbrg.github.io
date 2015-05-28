@@ -1,9 +1,11 @@
 <a href="/staff/<%= staff.slug %>">
+  <% if staff.photo %>
+    <div class="photo-circle">
+      <img src="/images/staff/<%= staff.photo %>" alt="" />
+    </div>
+  <% end %>
   <h2>
     <em class="role"><%= role %></em>
     <%= staff.name %>
   </h2>
-  <% if staff.photo %>
-    <img src="/images/staff/<%= staff.photo %>" alt="" />
-  <% end %>
 </a>

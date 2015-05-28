@@ -5,19 +5,14 @@
   prior_lineups = (data.teams[team.slug].lineups.keys - [year])
 %>
 
-<h1><%= team.name %> (<%= year %>)</h1>
+<h1><%= team.name %></h1>
 
 <% if prior_lineups.length > 0 %>
-  <% content_for(:sidebar) do %>
-    <nav>
-      Other years:
-      <ul>
-        <% (data.teams[team.slug].lineups.keys - [year]).each do |prior| %>
-          <li><a href="/teams/<%= team.slug %>/<%= prior %>"><%= prior %></a></li>
-        <% end %>
-      </ul>
-    </nav>
-  <% end %>
+  <ul class="years">
+    <% data.teams[team.slug].lineups.keys.each do |prior| %>
+      <li class="<%= prior == year ? 'current' : '' %>"><a href="/teams/<%= team.slug %>/<%= prior %>"><%= prior %></a></li>
+    <% end %>
+  </ul>
 <% end %>
 
 <ul class="lineup">
