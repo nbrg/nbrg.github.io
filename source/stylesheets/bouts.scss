@@ -107,39 +107,49 @@
 
 .bouts {
   list-style: none;
-  margin: 0;
   padding: 0;
 
+  &.list {
+    width: 544px;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  time {
+    margin: 0;
+  }
+
+  .meta {
+    margin-top: 0;
+  }
+
+  h2 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
   li {
-    margin-bottom: 1rem;
+    width: 240px;
+    text-align: center;
+    position: relative;
+    padding: 0 1.25px;
+    margin: 0 1rem 2rem 1rem;
 
-    &.future:before {
-      content: 'Upcoming: ';
-      font-weight: bold;
+    img {
+      width: 2.75rem;
+      position: absolute;
+      top: 0;
     }
-  }
 
-  .won {
-    background: green;
-  }
+    img.them {
+      left: 0;
+    }
 
-  .lost {
-    background: maroon;
-  }
-
-  p.meta {
-    color: #777;
-    display: block;
-    font-size: .8rem;
-    margin: 0;
-  }
-
-  .scores {
-    font-size: .8rem;
-    margin: 0;
-
-    strong {
-      font-weight: normal;
+    img.us {
+      right: 0;
     }
   }
 }

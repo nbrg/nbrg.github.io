@@ -1,5 +1,5 @@
 <h1>Bouts</h1>
-<ul class="bouts">
+<ul class="bouts list">
   <% data.bouts.sort_by(&:date).each do |bout| %>
     <li><%= partial 'bouts/short', locals: { bout: bout } %></li>
   <% end %>

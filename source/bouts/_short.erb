@@ -1,14 +1,6 @@
-<a href="/bouts/<%= bout.slug %>">
-  <%= bout.nickname || "#{data.leagues[bout.against].nickname} vs. NBRG" %>
-</a>
-<% if bout.score %>
-  <% if bout.won == 'us' %>
-    <span class="badge won">Won</span>
-  <% end %>
-<% end %>
+<h2><a href="/bouts/<%= bout.slug %>"><%= data.leagues[bout.against].nickname %> vs. NBRG</a></h2>
+<img class="them" src="/images/leagues/<%= data.leagues[bout.against].nickname.downcase %>.png" alt="" width="44" />
+<img class="us" src="/images/leagues/nbrg.png" alt="" width="44" />
 <p class="meta">
-  <%= date_tag bout.datetime %><% if bout.tournament %> &mdash; <a href="/tournaments/<%= data.tournaments[bout.tournament].slug %>"><%= data.tournaments[bout.tournament].name %></a><% end %>
+  <%= datetime_tag bout.datetime %>
 </p>
-<% if bout.score %>
-  <p class="scores"><strong>Scores:</strong> <%= data.leagues[bout.against].nickname %> <%= bout.score.them %>, NBRG <%= bout.score.us %></p>
-<% end %>

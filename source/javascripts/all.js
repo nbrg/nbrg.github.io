@@ -2,4 +2,3 @@
 //= require hideif
 //= require nbrg
 //= require bouts
-//= require sidebar

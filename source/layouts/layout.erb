@@ -21,7 +21,7 @@
         <% data.sponsors.select(&:sidebar).each do |sponsor| %>
           <li>
             <a href="<%= sponsor.url %>">
-              <img src="/images/sponsors/<%= sponsor.logo %>" />
+              <img src="/images/sponsors/<%= sponsor.logo %>" width="204" />
             </a>
           </li>
         <% end %>

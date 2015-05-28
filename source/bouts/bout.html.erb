@@ -13,7 +13,7 @@
 
   <section class="scoreboard">
     <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
-      <img src="/images/leagues/nbrg.png" />
+      <img src="/images/leagues/nbrg.png" width="128" />
       <span>NBRG</span>
       <% if bout.score %>
         <p><strong>Score:</strong> <%= bout.score.us %></p>
@@ -31,7 +31,7 @@
         <p><strong>Score:</strong> <%= bout.score.them %></p>
       <% end %>
       <span><%= against.nickname %></span>
-      <img src="/images/leagues/<%= against.nickname.downcase %>.png" />
+      <img src="/images/leagues/<%= against.nickname.downcase %>.png" width="128" />
     </div>
   </section>
 
