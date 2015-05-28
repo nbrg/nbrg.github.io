@@ -47,14 +47,14 @@ page "/feed.xml", layout: false
 
 ignore '/players/player.html'
 data.players.each do |id,player|
-  proxy "/players/#{id}.html", '/players/player.html', locals: {
+  proxy "/players/#{id}.html", '/players/player.html', layout: 'one-column', locals: {
     player: player,
   }
 end
 
 ignore '/staff/staff.html'
 data.staff.each do |id,staff|
-  proxy "/staff/#{id}.html", '/staff/staff.html', locals: {
+  proxy "/staff/#{id}.html", '/staff/staff.html', layout: 'one-column', locals: {
     staff: staff,
   }, page: {
     title: "Staff: #{staff.name}",
@@ -65,7 +65,7 @@ ignore '/teams/team.html'
 ignore '/teams/lineup.html'
 data.teams.each do |id,team|
   team.lineups.each do |year,lineup|
-    proxy "/teams/#{id}/#{year}.html", '/teams/lineup.html', locals: {
+    proxy "/teams/#{id}/#{year}.html", '/teams/lineup.html', layout: 'one-column', locals: {
       team: team,
       year: year,
       lineup: lineup,

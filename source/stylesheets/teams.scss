@@ -24,21 +24,32 @@ article .lineup {
 
   li {
     width: 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
   }
 
   h2 {
     font-size: 1rem;
     margin: 0;
     padding: 0 .25rem;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   a {
     color: inherit;
-    padding: 13px 0 0 60px;
+    padding: 0 10px 0 65px;
     margin: 0 1rem;
     position: relative;
     height: 60px;
     display: block;
+
+    &:hover {
+      background: #efefef;
+    }
   }
 
   span.number {
@@ -53,13 +64,12 @@ article .lineup {
   }
 
   .photo-circle {
-    margin-top: .25rem;
     border-radius: 100px;
     overflow: hidden;
     height: 50px;
     width: 50px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: 5px;
   }
 }
