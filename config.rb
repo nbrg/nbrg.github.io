@@ -92,7 +92,6 @@ data.tournaments.each do |id,tournament|
 end
 
 # Per-page layout changes:
-page '/', layout: 'outside'
 #
 # With no layout
 # page "/path/to/file.html", layout: false
