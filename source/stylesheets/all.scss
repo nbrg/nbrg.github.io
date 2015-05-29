@@ -19,11 +19,11 @@ body {
 }
 
 a {
-  color: #348080;
+  color: $nbrg_teal;
   text-decoration: none;
 
   &:hover {
-    color: #EF3124;
+    color: $nbrg_red;
   }
 }
 
