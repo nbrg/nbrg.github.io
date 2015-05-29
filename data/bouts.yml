@@ -9,17 +9,13 @@
   nickname: "5x5 Battlegrounds: Round 4"
   slug: 2015-06-27-nbrg-vs-bmrdl
   tournament: 2015-5x5
-  venue:
-    name: Hurstville Aquatic Leisure Centre
-    address: 'Cnr. King Georges & Forest Rd, Hurstville NSW 2221'
-    lat: -33.962853
-    lon: 151.091307
 
 - datetime: 2015-05-23T15:00:00+10:00
   against: ccrg
   nickname: "5x5 Battlegrounds: Round 3"
   slug: 2015-05-23-nbrg-vs-ccrg
   tournament: 2015-5x5
+  venue: hurstville
 
 - datetime: 2015-03-21T15:00:00+11:00
   against: hard
