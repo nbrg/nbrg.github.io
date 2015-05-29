@@ -1,6 +1,21 @@
+---
+article_class: bout-list
+---
 <h1>Bouts</h1>
-<ul class="bouts list">
-  <% data.bouts.sort_by(&:date).each do |bout| %>
-    <li><%= partial 'bouts/short', locals: { bout: bout } %></li>
-  <% end %>
-</ul>
+<section data-hide-none=".bouts li">
+  <h2>Upcoming Bouts</h2>
+  <ul class="bouts">
+    <% upcoming_bouts.each do |bout| %>
+      <li data-hide-if="datePast"><%= partial 'bouts/short', locals: { bout: bout } %></li>
+    <% end %>
+  </ul>
+</section>
+
+<section data-hide-none=".bouts li">
+  <h2>Previous Bouts</h2>
+  <ul class="bouts">
+    <% data.bouts.sort_by(&:datetime).reverse.each do |bout| %>
+      <li data-hide-if="dateFuture"><%= partial 'bouts/short', locals: { bout: bout } %></li>
+    <% end %>
+  </ul>
+</section>

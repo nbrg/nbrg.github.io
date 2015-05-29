@@ -124,12 +124,20 @@ helpers do
     yield_content(:title) || current_page.metadata[:page]['title']
   end
 
+  def article_class
+    current_page.metadata[:page]['article_class'] || ''
+  end
+
   def tournaments
     data.tournaments.values.sort_by { |t| t.date.from }
   end
 
   def upcoming_bouts
     data.bouts.select { |b| b.datetime >= Date.today }.sort_by(&:datetime)
+  end
+
+  def past_bouts
+    data.bouts.select { |b| b.datetime < Date.today }.sort_by(&:datetime).reverse
   end
 
   def bouts_for_tournament(tournament)

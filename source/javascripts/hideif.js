@@ -20,6 +20,10 @@
       // hide if the time is in the past
       return moment(time.getAttribute('datetime'))
         .isBefore(moment(), 'day')
+    },
+
+    dateFuture: function(el) {
+      return !hiders.datePast(el)
     }
   }
 
