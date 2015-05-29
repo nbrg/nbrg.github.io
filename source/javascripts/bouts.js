@@ -44,11 +44,10 @@
     var bouts = document.querySelectorAll('.bouts li')
 
     for (var i = 0; i < bouts.length; i++) {
-      var bout = bouts[i],
-        url = bout.querySelector('a').getAttribute('href')
+      var bout = bouts[i]
       bout.style.cursor = 'pointer'
       bout.onclick = function() {
-        window.location.href = url
+        window.location.href = this.querySelector('a').getAttribute('href')
       }
     }
   }
