@@ -23,17 +23,24 @@
       js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=252371018122650";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
+
     <header>
       <h1>Northern Beaches Roller Girls</h1>
       <nav>
+        <%
+          pages = [
+            ['Home', '/'],
+            ['Bouts & Events', '/bouts/'],
+            ['The Sirens', '/teams/sirens/2015/'],
+            ['Media', '/media/'],
+            ['Join Us', '/join/'],
+            ['About', '/about/'],
+          ]
+        %>
         <ul>
-          <li><%= link_to 'Home', '/index.html' %></li>
-          <li><%= link_to 'Bouts & Events', '/bouts/index.html' %></li>
-          <li><%= link_to 'The Sirens', '/teams/sirens/2015.html' %></li>
-          <li><%= link_to 'Media', '/media.html' %></li>
-          <li><%= link_to 'Join Us', '/join.html' %></li>
-          <li><%= link_to 'About', '/about.html' %></li>
+          <% pages.each do |title,url| %>
+            <li class="<%= current_page.url == url ? 'current' : '' %>"><%= link_to title, url %></li>
+          <% end %>
         </ul>
       </nav>
     </header>
