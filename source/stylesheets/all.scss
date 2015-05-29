@@ -85,16 +85,22 @@ header {
     background-repeat: no-repeat;
     background-position: left -5px;
     background-size: 70px;
-    padding: .9rem 0 0 4rem;
+    padding: .95rem 0 0 4rem;
     font-family: $font_open_sans;
     font-size: .8rem;
     font-weight: bold;
-    height: 220px;
     margin: 0;
     cursor: default;
     color: #333;
     z-index: 1;
     position: absolute;
+    height: 50px;
+
+    a {
+      color: #333;
+      display: block;
+      height: 50px;
+    }
   }
 
   &.landing {
@@ -102,7 +108,6 @@ header {
 
     > h1 {
       font-family: $font_rockwell_bold;
-      color: #fff;
       font-size: 2rem;
       text-shadow: -1px -1px 0 $nbrg_teal, 1px -1px 0 $nbrg_teal, -1px 1px 0 $nbrg_teal, 1px 1px 0 $nbrg_teal;
       padding: 7.5rem 0 0 0;
@@ -113,6 +118,11 @@ header {
       margin: 0 auto;
       z-index: 0;
       position: relative;
+
+      a {
+        color: #fff;
+        height: 170px;
+      }
 
       span {
         display: inline-block;
@@ -151,6 +161,10 @@ header {
 
         p {
           margin: 0;
+        }
+
+        p + p {
+          margin-top: .5rem;
         }
       }
 
@@ -259,6 +273,15 @@ article, aside {
 time {
   font-size: .8rem;
   color: #777;
+}
+
+section.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
 }
 
 @import 'blog';

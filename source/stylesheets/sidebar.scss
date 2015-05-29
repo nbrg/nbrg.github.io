@@ -16,17 +16,15 @@
   }
 }
 
-.upcoming {
-  .bouts {
+section.upcoming ul.bouts {
+  margin: .7rem 0 0 0;
+
+  li {
+    display: none;
     margin: 0;
 
-    li {
-      display: none;
-      margin: 0;
-
-      &:first-child {
-        display: block;
-      }
+    &:first-child {
+      display: block;
     }
   }
 }
