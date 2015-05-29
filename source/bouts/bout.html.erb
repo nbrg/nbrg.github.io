@@ -7,25 +7,19 @@ article_class: bout
 
 <section class="scoreboard">
   <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
+    <h2><span>Northern Beaches Roller Girls</span></h2>
     <img src="/images/leagues/nbrg.png" width="128" />
-    <span>NBRG</span>
     <% if bout.score %>
-      <p><strong>Score:</strong> <%= bout.score.us %></p>
+      <p><%= bout.score.us %></p>
     <% end %>
   </div>
 
-  <% if !bout.score %>
-    <div class="when">
-      <%= time_tag(bout.datetime) %>
-    </div>
-  <% end %>
-
   <div class="team <%= bout.won ? bout.won == 'them' ? 'winner' : 'loser' : '' %>">
-    <% if bout.score %>
-      <p><strong>Score:</strong> <%= bout.score.them %></p>
-    <% end %>
-    <span><%= against.nickname %></span>
+    <h2><span><%= against.name %></span></h2>
     <img src="/images/leagues/<%= against.nickname.downcase %>.png" width="128" />
+    <% if bout.score %>
+      <p><%= bout.score.them %></p>
+    <% end %>
   </div>
 </section>
 

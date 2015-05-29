@@ -1,34 +1,26 @@
 @import 'mixins'
 
 article.bout
-  .scoreboard
-    align-items: center
-    display: -ms-flex
-    display: -webkit-flex
+  section.scoreboard
     display: flex
+    justify-content: space-around
     min-height: 8rem
-
-    .when
-      padding: .5rem
-      text-align: center
-      width: 33%
-
-      time
-        font-size: 2rem
 
     .team
       line-height: 1.2rem
       margin: .5rem 1rem 0 1rem
       position: relative
-      width: 50%
       min-height: 8rem
+      flex-grow: 1
+      width: 284px
 
-      span
-        background: #000
-        color: #FFF
-        display: inline-block
-        padding: .25rem 1rem
-        margin-top: 3rem
+      h2
+        padding: 0
+        margin: 1rem 0
+        font-size: .8rem
+        font-weight: bold
+        text-align: center
+        @include highlight-border-top
 
       img
         position: absolute
@@ -36,37 +28,24 @@ article.bout
         width: 8rem
 
       p
-        display: inline-block
         font-size: 2rem
         font-weight: 300
-        margin: -5px 0 0 0
-        padding: 0 5px
-        vertical-align: middle
+        margin: 0
+        text-align: center
 
-        strong
-          display: none
+      &:first-child
+        h2, p
+          margin-left: 1rem
+          padding-right: 1rem
+          padding-left: 8rem
 
-      &.winner
-        span
-          background: green
-
-        p
-          color: green
-
-      &.loser
-        span
-          background: maroon
-
-        p
-          color: maroon
-
-      &:first-child span
-        margin-left: 1rem
-        padding-left: 8rem
+        img
+          left: 0
 
       &:last-child
-        span
+        h2, p
           margin-right: 1rem
+          padding-left: 1rem
           padding-right: 8rem
 
         img
