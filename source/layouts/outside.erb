@@ -19,18 +19,9 @@
     <header class="<%= landing ? 'landing' : '' %>">
       <h1><a href="/"><span>Northern Beaches</span> <span>Roller Girls</span></a></h1>
       <nav>
-        <%
-          pages = [
-            ['Home', '/'],
-            ['Bouts', '/bouts/'],
-            ['The Sirens', '/teams/sirens/2015/'],
-            ['Media', '/media/'],
-            ['Join Us', '/join/'],
-          ]
-        %>
         <ul>
-          <% pages.each do |title,url| %>
-            <li class="<%= current_page.url == url ? 'current' : '' %>"><%= link_to title, url %></li>
+          <% data.menu.each do |page| %>
+            <li class="<%= current_page.url == page.url ? 'current' : '' %>"><%= link_to page.text, page.url %></li>
           <% end %>
         </ul>
       </nav>
