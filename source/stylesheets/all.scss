@@ -54,8 +54,8 @@ section h1 {
 }
 
 header {
-  background: linear-gradient(rgba(76,174,181,.7), rgba(76,174,181,.7)),
-    url(http://subtlepatterns.com/patterns/subtle_white_mini_waves.png);
+  background: url(/images/header.jpg) no-repeat 50% 60%;
+  background-size: cover;
   border-bottom: 5px solid #101F2D;
   padding-bottom: .5rem;
   position: relative;
@@ -65,9 +65,9 @@ header {
   }
 
   h1 {
-    background: url(/images/logo.png) no-repeat center center;
+    background: url(/images/logo.png) no-repeat center 115%;
     background-size: 125%;
-    height: 218px;
+    height: 600px;
     margin: 0 auto;
     overflow: hidden;
     text-indent: 100%;
@@ -136,7 +136,7 @@ footer {
 
   > aside {
     width: 350px;
-    padding: 0 1rem 0 2rem;
+    padding: 0 1rem;
   }
 }
 
