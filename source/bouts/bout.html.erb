@@ -5,6 +5,12 @@ article_class: bout
 <h1><%= bout.nickname || "NBRG vs. #{against.nickname}"  %></h1>
 <%= datetime_tag(bout.datetime) %>
 
+<% if bout.facebook_event %>
+<section class="event">
+  <p>Find out more about the whole day on <a href="<%= bout.facebook_event %>">the Facebook event</a>.</p>
+</section>
+<% end %>
+
 <section class="scoreboard">
   <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
     <h2><span>Northern Beaches Roller Girls</span></h2>
