@@ -73,17 +73,17 @@ header {
     background-image: url(/images/logo.png);
     background-repeat: no-repeat;
     background-position: left -5px;
-    background-size: 70px;
-    padding: .95rem 0 0 4rem;
+    background-size: 75px;
+    padding: 1rem 0 0 4rem;
     font-family: $font_open_sans;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: bold;
     margin: 0;
     cursor: default;
     color: #333;
     z-index: 1;
     position: absolute;
-    height: 50px;
+    height: 60px;
 
     a {
       color: #333;
@@ -165,7 +165,7 @@ header {
 
   nav {
     position: absolute;
-    font-size: .7rem;
+    font-size: .8rem;
     top: 0;
     left: 0;
     right: 0;
