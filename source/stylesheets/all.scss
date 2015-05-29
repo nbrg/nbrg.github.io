@@ -87,10 +87,16 @@ header {
     margin: 0 auto;
     width: $body_width;
     display: flex;
+    justify-content: center;
 
     section {
-      width: 33%;
+      flex-grow: 1;
+      max-width: 33.3333%;
     }
+  }
+
+  .bouts li {
+    width: auto;
   }
 
   section {
