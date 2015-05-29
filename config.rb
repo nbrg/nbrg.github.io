@@ -28,6 +28,12 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-53595551-1'
+  ga.development = false
+  ga.minify = true
+end
+
 activate :directory_indexes
 
 page "/feed.xml", layout: false
