@@ -2,7 +2,7 @@
 article_class: bout
 ---
 <% against = data.leagues[bout.against] %>
-<h1><%= bout.nickname %></h1>
+<h1><%= bout.nickname || "NBRG vs. #{against.nickname}"  %></h1>
 <%= datetime_tag(bout.datetime) %>
 
 <section class="scoreboard">
