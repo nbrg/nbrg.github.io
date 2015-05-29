@@ -2,6 +2,11 @@
 @import 'mixins';
 
 $body_width: 1000px;
+$font_open_sans: 'Open Sans', Helvetica, Arial, sans-serif;
+$font_rockwell_bold: 'Rockwell Bold', Rockwell, serif;
+$nbrg_red: #EE3124;
+$nbrg_teal: #348080;
+$nbrg_light_teal: lighten($nbrg_teal, 50%);
 
 * {
   box-sizing: border-box;
@@ -9,7 +14,7 @@ $body_width: 1000px;
 
 body {
   background: #fff;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: $font_open_sans;
   color: #101F2D;
 }
 
@@ -41,7 +46,7 @@ article {
 }
 
 h1, h2 {
-  font-family: 'Rockwell Bold', Rockwell, serif;
+  font-family: $font_rockwell_bold;
   font-weight: normal;
 }
 
@@ -60,16 +65,15 @@ section {
   }
 }
 
-$nbrg_red: #EE3124;
-$nbrg_teal: #348080;
-$nbrg_light_teal: lighten($nbrg_teal, 50%);
-
 header {
   $header_overlay: rgba(255,255,255,.85);
 
-  background: url(/images/header.jpg) no-repeat 50% 40%;
+  background-image: url(/images/header.jpg);
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid $nbrg_light_teal;
+  min-height: 200px;
   position: relative;
 
   a:hover {
@@ -77,66 +81,82 @@ header {
   }
 
   > h1 {
-    background: url(/images/logo.png) no-repeat center top;
-    background-size: 300px;
-    text-align: center;
-    padding-top: 6.5rem;
-    margin: 0 auto;
-    white-space: nowrap;
-    height: 500px;
-    color: #fff;
-    text-shadow:
-     -.5px -.5px 0 $nbrg_teal,
-      .5px -.5px 0 $nbrg_teal,
-      -.5px .5px 0 $nbrg_teal,
-       .5px .5px 0 $nbrg_teal;
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left -5px;
+    background-size: 70px;
+    padding: .9rem 0 0 4rem;
+    font-family: $font_open_sans;
+    font-size: .8rem;
+    font-weight: bold;
+    height: 220px;
+    margin: 0;
+    cursor: default;
+    color: #333;
+    z-index: 1;
+    position: absolute;
+  }
 
+  &.landing {
+    background-position: 50% 35%;
 
-    span {
-      display: inline-block;
+    > h1 {
+      font-family: $font_rockwell_bold;
+      color: #fff;
+      font-size: 2rem;
+      text-shadow: -1px -1px 0 $nbrg_teal, 1px -1px 0 $nbrg_teal, -1px 1px 0 $nbrg_teal, 1px 1px 0 $nbrg_teal;
+      padding: 7.5rem 0 0 0;
+      background-position: center 1rem;
+      text-align: center;
+      background-size: 300px;
+      height: 500px;
+      margin: 0 auto;
+      z-index: 0;
       position: relative;
-      // background: rgba(255,255,255,.35);
-      // border-radius: 15px;
-      // padding: 0 .5rem;
-      // box-shadow: 0 0 35px 0px rgba(255,255,255,.75);
+
+      span {
+        display: inline-block;
+        position: relative;
+        background: rgba(255,255,255,.35);
+        border-radius: 15px;
+        padding: 0 .5rem;
+        box-shadow: 0 0 35px 0px rgba(255,255,255,.75);
+      }
+
+      span:first-child {
+        left: -8rem;
+      }
+
+      span:last-child {
+        right: -2.5rem;
+      }
     }
 
-    span:first-child {
-      left: -8rem;
-    }
+    > div {
+      margin: 0 auto;
+      width: $body_width;
+      display: flex;
+      justify-content: center;
 
-    span:last-child {
-      right: -2.5rem;
-    }
-  }
+      section {
+        flex-grow: 1;
+        max-width: 33.3333%;
+        background: $header_overlay;
+        padding-bottom: 1rem;
 
-  .landing {
-    margin: 0 auto;
-    width: $body_width;
-    display: flex;
-    justify-content: center;
+        h1 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
 
-    section {
-      flex-grow: 1;
-      max-width: 33.3333%;
-    }
-  }
+        p {
+          margin: 0;
+        }
+      }
 
-  .bouts li {
-    width: auto;
-  }
-
-  section {
-    background: $header_overlay;
-    padding-bottom: 1rem;
-
-    h1 {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    p {
-      margin: 0;
+      .bouts li {
+        width: auto;
+      }
     }
   }
 

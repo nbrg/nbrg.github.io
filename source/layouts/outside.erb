@@ -24,7 +24,8 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <header class="landing">
+    <% landing = current_page.url == '/' %>
+    <header class="<%= landing ? 'landing' : '' %>">
       <h1><span>Northern Beaches</span> <span>Roller Girls</span></h1>
       <nav>
         <%
@@ -43,24 +44,26 @@
           <% end %>
         </ul>
       </nav>
-      <div class="landing">
-        <section class="upcoming" data-hide-none=".bouts li">
-          <h1><span>Come Watch Us</span></h1>
-          <ul class="bouts">
-            <% upcoming_bouts.each do |bout| %>
-              <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
-            <% end %>
-          </ul>
-        </section>
-        <section>
-          <h1><span>Join Us</span></h1>
-          <p>Om nom nom</p>
-        </section>
-        <section>
-          <h1><span>Social Media</span></h1>
-          <p>Om nom nom</p>
-        </section>
-      </div>
+      <% if landing %>
+        <div>
+          <section class="upcoming" data-hide-none=".bouts li">
+            <h1><span>Come Watch Us</span></h1>
+            <ul class="bouts">
+              <% upcoming_bouts.each do |bout| %>
+                <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
+              <% end %>
+            </ul>
+          </section>
+          <section>
+            <h1><span>Join Us</span></h1>
+            <p>Om nom nom</p>
+          </section>
+          <section>
+            <h1><span>Social Media</span></h1>
+            <p>Om nom nom</p>
+          </section>
+        </div>
+      <% end %>
     </header>
     <div id="columns">
       <%= yield %>
