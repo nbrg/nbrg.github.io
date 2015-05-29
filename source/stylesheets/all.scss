@@ -43,6 +43,10 @@ article {
     display: block;
     margin-bottom: 3rem;
   }
+
+  h1 + time, h1 + ul {
+    margin-top: -2rem;
+  }
 }
 
 h1, h2 {

@@ -1,44 +1,37 @@
+---
+article_class: bout
+---
 <% against = data.leagues[bout.against] %>
-<div class="bout">
-  <h1><%= bout.nickname %></h1>
+<h1><%= bout.nickname %></h1>
+<%= date_tag(bout.datetime) %>
 
-  <section class="meta">
-    <p><%= date_tag(bout.datetime) %></p>
-    <% if bout.tournament %>
-      <p><a href="/tournaments/<%= data.tournaments[bout.tournament].slug %>">
-        <%= data.tournaments[bout.tournament].name %></a>
-      </p>
+<section class="scoreboard">
+  <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
+    <img src="/images/leagues/nbrg.png" width="128" />
+    <span>NBRG</span>
+    <% if bout.score %>
+      <p><strong>Score:</strong> <%= bout.score.us %></p>
     <% end %>
-  </section>
+  </div>
 
-  <section class="scoreboard">
-    <div class="team <%= bout.won ? bout.won == 'us' ? 'winner' : 'loser' : '' %>">
-      <img src="/images/leagues/nbrg.png" width="128" />
-      <span>NBRG</span>
-      <% if bout.score %>
-        <p><strong>Score:</strong> <%= bout.score.us %></p>
-      <% end %>
+  <% if !bout.score %>
+    <div class="when">
+      <%= time_tag(bout.datetime) %>
     </div>
-
-    <% if !bout.score %>
-      <div class="when">
-        <%= time_tag(bout.datetime) %>
-      </div>
-    <% end %>
-
-    <div class="team <%= bout.won ? bout.won == 'them' ? 'winner' : 'loser' : '' %>">
-      <% if bout.score %>
-        <p><strong>Score:</strong> <%= bout.score.them %></p>
-      <% end %>
-      <span><%= against.nickname %></span>
-      <img src="/images/leagues/<%= against.nickname.downcase %>.png" width="128" />
-    </div>
-  </section>
-
-  <% if bout.venue %>
-    <section class="venue" data-map data-lat="<%= bout.venue.lat %>" data-lon="<%= bout.venue.lon %>">
-      <h2><span><%= bout.venue.name %></span></h2>
-      <p><%= bout.venue.address %></p>
-    </section>
   <% end %>
-</div>
+
+  <div class="team <%= bout.won ? bout.won == 'them' ? 'winner' : 'loser' : '' %>">
+    <% if bout.score %>
+      <p><strong>Score:</strong> <%= bout.score.them %></p>
+    <% end %>
+    <span><%= against.nickname %></span>
+    <img src="/images/leagues/<%= against.nickname.downcase %>.png" width="128" />
+  </div>
+</section>
+
+<% if bout.venue %>
+  <section class="venue" data-map data-lat="<%= bout.venue.lat %>" data-lon="<%= bout.venue.lon %>">
+    <h2><span><%= bout.venue.name %></span></h2>
+    <p><%= bout.venue.address %></p>
+  </section>
+<% end %>
