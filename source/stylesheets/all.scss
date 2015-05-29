@@ -50,21 +50,6 @@ h1, h2 {
   font-weight: normal;
 }
 
-section {
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  h1 {
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 3rem -1rem 1rem -1rem;
-    padding: 0 2rem 1rem 1rem;
-
-    @include highlight-border-top;
-  }
-}
-
 header {
   $header_overlay: rgba(255,255,255,.85);
 
@@ -275,18 +260,10 @@ time {
   color: #777;
 }
 
-section.social ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  margin: 1rem 0 0 0;
-  padding: 0;
-}
-
 @import 'blog';
 @import 'bouts';
-@import 'sidebar';
-@import 'player';
-@import 'teams';
 @import 'landing';
+@import 'player';
+@import 'sections';
+@import 'sidebar';
+@import 'teams';

@@ -7,29 +7,8 @@
   </article>
   <aside class="sidebar">
     <%= yield_content(:sidebar) %>
-    <section class="upcoming" data-hide-none=".bouts li">
-      <h1><span>Next Bout</span></h1>
-      <ul class="bouts">
-        <% upcoming_bouts.each do |bout| %>
-          <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
-        <% end %>
-      </ul>
-    </section>
-    <!-- <section class="social">
-      <h1><span>Facebook</span></h1>
-      <div class="fb-page" data-href="https://www.facebook.com/NorthernBeachesRollerGirls" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/NorthernBeachesRollerGirls"><a href="https://www.facebook.com/NorthernBeachesRollerGirls">Northern Beaches Roller Girls</a></blockquote></div></div>
-    </section> -->
-    <section class="sponsors">
-      <h1><span>Sponsors</span></h1>
-      <ul>
-        <% data.sponsors.select(&:sidebar).each do |sponsor| %>
-          <li>
-            <a href="<%= sponsor.url %>">
-              <img src="/images/sponsors/<%= sponsor.logo %>" width="204" />
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </section>
+    <%= partial 'sections/upcoming' %>
+    <%= partial 'sections/social' %>
+    <%= partial 'sections/sponsors' %>
   </aside>
 <% end %>

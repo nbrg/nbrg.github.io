@@ -1,0 +1,8 @@
+<section class="upcoming" data-hide-none=".bouts li">
+  <h1><span>Come Watch Us</span></h1>
+  <ul class="bouts">
+    <% upcoming_bouts.each do |bout| %>
+      <li data-hide-if="datePast"><%= partial 'bouts/sidebar', locals: { bout: bout } %></li>
+    <% end %>
+  </ul>
+</section>
