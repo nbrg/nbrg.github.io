@@ -3,6 +3,7 @@
   nickname: "5x5 Battlegrounds: Round 5"
   slug: 2015-07-18-nbrg-vs-iwrdl
   tournament: 2015-5x5
+  venue: niagara-park
 
 - datetime: 2015-06-27T14:00:00+10:00
   against: bmrdl
@@ -28,6 +29,7 @@
   nickname: "5x5 Battlegrounds: Round 1"
   slug: 2015-03-21-nbrg-vs-hard
   tournament: 2015-5x5
+  venue: niagara-park
   won: us
   score:
     us: 264
@@ -41,6 +43,7 @@
     us: 104
     them: 241
   slug: 2014-10-05-nbrg-vs-wird
+  venue: niagara-park
 
 - datetime: 2014-10-05T13:00:00+11:00
   against: ccrg
@@ -50,6 +53,7 @@
     us: 162
     them: 188
   slug: 2014-10-05-nbrg-vs-ccrg
+  venue: niagara-park
 
 - datetime: 2014-10-04T09:30:00+10:00
   against: wsr
@@ -59,6 +63,7 @@
     us: 71
     them: 332
   slug: 2014-10-04-nbrg-vs-wsr
+  venue: niagara-park
 
 - datetime: 2014-08-30T18:00:00+10:00
   against: ccrg

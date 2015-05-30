@@ -9,3 +9,9 @@ liverpool:
   address: '90a Memorial Avenue, Liverpool, New South Wales, 2170'
   lat: -33.9258453
   lon: 150.9148219
+
+niagara-park:
+  name: Niagara Park Stadium
+  address: '16 Washington Avenue, Niagara Park, New South Wales, 2250'
+  lat: -33.382878
+  lon: 151.352909
