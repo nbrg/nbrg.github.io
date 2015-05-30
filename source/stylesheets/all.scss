@@ -46,7 +46,7 @@ article {
 }
 
 h1, h2 {
-  font-family: $font_rockwell_bold;
+  font-family: $font_nbrg;
   font-weight: normal;
 }
 
@@ -92,7 +92,8 @@ header {
     background-position: 50% 35%;
 
     > h1 {
-      font-family: $font_rockwell_bold;
+      font-family: $font_nbrg;
+      font-weight: bold;
       font-size: 2rem;
       text-shadow: -1px -1px 0 $nbrg_teal, 1px -1px 0 $nbrg_teal, -1px 1px 0 $nbrg_teal, 1px 1px 0 $nbrg_teal;
       padding: 7.5rem 0 0 0;

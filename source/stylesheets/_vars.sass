@@ -1,5 +1,40 @@
-$font_open_sans: 'Open Sans', Helvetica, Arial, sans-serif
-$font_rockwell_bold: 'Rockwell Bold', Rockwell, serif
+@font-face
+	font-family: 'Nbrg'
+	src: url('/fonts/nbrg.eot')
+	src: local('☺'), url('/fonts/nbrg.woff') format('woff'), url('/fonts/nbrg.ttf') format('truetype'), url('/fonts/nbrg.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'Nbrg'
+	src: url('/fonts/nbrg-bold.eot')
+	src: local('☺'), url('/fonts/nbrg-bold.woff') format('woff'), url('/fonts/nbrg-bold.ttf') format('truetype'), url('/fonts/nbrg-bold.svg') format('svg')
+	font-weight: bold
+	font-style: normal
+
+@font-face
+	font-family: 'NbrgOpenSans'
+	src: url('/fonts/opensans.eot')
+	src: local('☺'), url('/fonts/opensans.woff') format('woff'), url('/fonts/opensans.ttf') format('truetype'), url('/fonts/opensans.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'NbrgOpenSans'
+	src: url('/fonts/opensans-light.eot')
+	src: local('☺'), url('/fonts/opensans-light.woff') format('woff'), url('/fonts/opensans-light.ttf') format('truetype'), url('/fonts/opensans-light.svg') format('svg')
+	font-weight: 300
+	font-style: normal
+
+@font-face
+	font-family: 'NbrgOpenSans'
+	src: url('/fonts/opensans-bold.eot')
+	src: local('☺'), url('/fonts/opensans-bold.woff') format('woff'), url('/fonts/opensans-bold.ttf') format('truetype'), url('/fonts/opensans-bold.svg') format('svg')
+	font-weight: bold
+	font-style: normal
+
+$font_open_sans: 'Open Sans', 'NbrgOpenSans', Helvetica, Arial, sans-serif
+$font_nbrg: Rockwell, Nbrg, serif
 $nbrg_red: #EE3124
 $nbrg_teal: #348080
 $nbrg_light_teal: lighten($nbrg_teal, 50%)
