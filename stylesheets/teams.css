@@ -1,0 +1,64 @@
+/* line 1, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+article .years {
+  list-style: none;
+  text-align: center;
+  padding: 0; }
+  /* line 6, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .years li {
+    display: inline-block;
+    margin: 0 .5rem; }
+    /* line 10, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+    article .years li.current a {
+      color: #000;
+      text-decoration: underline; }
+
+/* line 17, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+article .lineup {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-wrap: wrap; }
+  /* line 24, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup li {
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  /* line 31, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 .25rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  /* line 41, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup a {
+    color: inherit;
+    padding: 0 10px 0 65px;
+    margin: 0 1rem;
+    position: relative;
+    height: 60px;
+    display: block; }
+    /* line 49, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+    article .lineup a:hover {
+      background: #efefef; }
+  /* line 54, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup span.number {
+    float: right; }
+  /* line 58, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup em.role {
+    display: block;
+    color: #999;
+    font-size: .75rem;
+    font-style: normal; }
+  /* line 65, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup .photo-circle {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 5px;
+    top: 5px; }

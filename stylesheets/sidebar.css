@@ -1,0 +1,11 @@
+/* line 2, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+.sidebar h1 {
+  margin-bottom: 0; }
+/* line 7, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+.sidebar .sponsors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 12, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+  .sidebar .sponsors ul li {
+    margin-bottom: 1rem; }

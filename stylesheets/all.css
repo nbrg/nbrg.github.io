@@ -1,0 +1,491 @@
+/* line 7, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 11, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+body {
+  background: #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #101F2D; }
+
+/* line 17, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+a {
+  color: #348080;
+  text-decoration: none; }
+  /* line 21, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  a:hover {
+    color: #EE3124; }
+
+/* line 27, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article p {
+  text-align: justify; }
+/* line 31, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article h1 {
+  margin: 1rem 0 2rem 0;
+  font-size: 3rem;
+  text-align: center; }
+/* line 37, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article time {
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem; }
+/* line 43, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article h1 + time, article h1 + ul {
+  margin-top: -2rem; }
+
+/* line 48, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+h1, h2 {
+  font-family: "Rockwell Bold", Rockwell, serif;
+  font-weight: normal; }
+
+/* line 53, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+header {
+  background-image: url(/images/header.jpg);
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #cae9e9;
+  min-height: 200px;
+  position: relative; }
+  /* line 64, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  header a:hover {
+    color: #348080; }
+  /* line 68, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  header > h1 {
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left -5px;
+    background-size: 75px;
+    padding: 1rem 0 0 4rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+    margin: 0;
+    cursor: default;
+    color: #333;
+    z-index: 1;
+    position: absolute;
+    height: 60px; }
+    /* line 84, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+    header > h1 a {
+      color: #333;
+      display: block;
+      height: 50px; }
+  /* line 91, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  header.landing {
+    background-position: 50% 35%; }
+    /* line 94, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+    header.landing > h1 {
+      font-family: "Rockwell Bold", Rockwell, serif;
+      font-size: 2rem;
+      text-shadow: -1px -1px 0 #348080, 1px -1px 0 #348080, -1px 1px 0 #348080, 1px 1px 0 #348080;
+      padding: 7.5rem 0 0 0;
+      background-position: center 1rem;
+      text-align: center;
+      background-size: 300px;
+      height: 500px;
+      margin: 0 auto;
+      z-index: 0;
+      position: relative; }
+      /* line 107, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > h1 a {
+        color: #fff;
+        height: 170px; }
+      /* line 112, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > h1 span {
+        display: inline-block;
+        position: relative;
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 15px;
+        padding: 0 .5rem;
+        box-shadow: 0 0 35px 0px rgba(255, 255, 255, 0.75); }
+      /* line 121, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > h1 span:first-child {
+        left: -8rem; }
+      /* line 125, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > h1 span:last-child {
+        right: -2.5rem; }
+    /* line 130, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+    header.landing > div {
+      margin: 0 auto;
+      width: 1000px;
+      display: flex;
+      justify-content: center; }
+      /* line 136, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > div section {
+        flex-grow: 1;
+        max-width: 33.3333%;
+        background: rgba(255, 255, 255, 0.85);
+        padding-bottom: 1rem; }
+        /* line 142, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+        header.landing > div section h1 {
+          margin-top: 0;
+          margin-bottom: 0; }
+        /* line 147, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+        header.landing > div section p {
+          margin: 0; }
+        /* line 151, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+        header.landing > div section p + p {
+          margin-top: .5rem; }
+      /* line 156, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header.landing > div .bouts li {
+        width: auto; }
+  /* line 162, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  header nav {
+    position: absolute;
+    font-size: .8rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid #cae9e9;
+    text-transform: uppercase; }
+    /* line 172, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+    header nav ul {
+      list-style: none;
+      margin: 0 auto -2px auto;
+      width: 1000px;
+      text-align: center; }
+    /* line 179, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+    header nav li {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 1rem 0; }
+      /* line 184, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header nav li a {
+        text-decoration: none;
+        color: #666; }
+      /* line 189, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+      header nav li.current {
+        border-bottom: 2px solid #4bb6b6;
+        font-weight: bold; }
+        /* line 193, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+        header nav li.current a {
+          text-decoration: none;
+          color: #000; }
+
+/* line 202, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+footer {
+  background: #101F2D;
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: .75rem; }
+  /* line 208, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  footer p {
+    margin: 0 auto;
+    width: 940px; }
+  /* line 213, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+
+/* line 220, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+#columns {
+  background: #fff;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 auto;
+  width: 1000px; }
+  /* line 228, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  #columns > article {
+    padding: 1rem 2rem;
+    width: 100%; }
+  /* line 233, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+  #columns > aside {
+    width: 350px; }
+
+/* line 239, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article img, aside img {
+  max-width: 100%; }
+/* line 243, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+article p, aside p {
+  line-height: 1.5rem; }
+
+/* line 248, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+.badge {
+  background: #ccc;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: .5rem;
+  line-height: .6rem;
+  padding: .1rem .25rem .2rem .25rem; }
+
+/* line 258, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/all.scss */
+time {
+  font-size: .8rem;
+  color: #777; }
+
+/* line 3, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+article.post.short {
+  margin-bottom: 4rem; }
+  /* line 6, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short h2 {
+    border-top: 1px solid #cae9e9;
+    margin-bottom: 0; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    article.post.short h2 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+  /* line 11, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short:first-child h2, article.post.short:first-child h2 span {
+    border: none; }
+  /* line 15, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short time {
+    text-align: left;
+    margin-bottom: 0; }
+
+/* line 5, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout .event {
+  margin: -1rem 0 2rem 0; }
+  /* line 8, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .event p {
+    text-align: center; }
+/* line 11, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout section.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  min-height: 8rem; }
+  /* line 16, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout section.scoreboard .team {
+    line-height: 1.2rem;
+    margin: 0.5rem 1rem 0 1rem;
+    position: relative;
+    min-height: 8rem;
+    flex-grow: 1;
+    width: 284px; }
+    /* line 24, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team a {
+      color: inherit; }
+      /* line 27, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+      article.bout section.scoreboard .team a:hover {
+        color: #348080; }
+    /* line 30, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team h2 {
+      padding: 0;
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+      border-top: 1px solid #cae9e9;
+      min-height: 3.5rem; }
+      /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+      article.bout section.scoreboard .team h2 span {
+        border-top: 1px solid #4bb6b6;
+        display: inline-block;
+        padding-top: .75rem;
+        margin-top: -1px; }
+    /* line 39, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team img {
+      position: absolute;
+      top: 0;
+      width: 8rem; }
+    /* line 44, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team p {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0;
+      text-align: center; }
+    /* line 51, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:first-child h2, article.bout section.scoreboard .team:first-child p {
+      margin-left: 3rem;
+      padding-right: 1rem;
+      padding-left: 6rem; }
+    /* line 56, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:first-child img {
+      left: 0; }
+    /* line 60, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:last-child h2, article.bout section.scoreboard .team:last-child p {
+      margin-right: 3rem;
+      padding-left: 1rem;
+      padding-right: 6rem; }
+    /* line 65, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:last-child img {
+      right: 0; }
+/* line 68, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout .venue {
+  margin-top: 5rem; }
+  /* line 71, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .venue h2 {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-top: 1px solid #cae9e9; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    article.bout .venue h2 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+  /* line 76, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .venue .map {
+    height: 200px; }
+
+/* line 79, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+.bouts {
+  list-style: none;
+  padding: 0; }
+  /* line 83, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout-list .bouts {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 88, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout-list .bouts li {
+      flex-grow: 1;
+      margin: 0 2rem 2rem 2rem;
+      max-width: 15.75rem; }
+  /* line 93, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts time {
+    margin: 0; }
+  /* line 96, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts h2 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0; }
+  /* line 102, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts li {
+    width: 240px;
+    text-align: center;
+    position: relative;
+    padding: 0 1.25px;
+    margin: 0 1rem 2rem 1rem; }
+    /* line 109, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img {
+      width: 2.75rem;
+      position: absolute;
+      top: 0; }
+    /* line 114, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img.them {
+      left: 0; }
+    /* line 117, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img.us {
+      right: 0; }
+
+/* line 2, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/player.scss */
+article .player h1 em {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  color: #999; }
+
+/* line 3, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  /* line 7, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+  section h1 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 3rem -1rem 1rem -1rem;
+    padding: 0 2rem 1rem 1rem;
+    border-top: 1px solid #cae9e9; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    section h1 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+
+/* line 16, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section.upcoming ul.bouts {
+  margin: 0.7rem 0 0 0; }
+  /* line 19, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+  section.upcoming ul.bouts li {
+    display: none;
+    margin: 0; }
+    /* line 23, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+    section.upcoming ul.bouts li:first-child {
+      display: block; }
+
+/* line 26, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0; }
+
+/* line 2, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+.sidebar h1 {
+  margin-bottom: 0; }
+/* line 7, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+.sidebar .sponsors ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 12, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sidebar.scss */
+  .sidebar .sponsors ul li {
+    margin-bottom: 1rem; }
+
+/* line 1, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+article .years {
+  list-style: none;
+  text-align: center;
+  padding: 0; }
+  /* line 6, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .years li {
+    display: inline-block;
+    margin: 0 .5rem; }
+    /* line 10, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+    article .years li.current a {
+      color: #000;
+      text-decoration: underline; }
+
+/* line 17, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+article .lineup {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-wrap: wrap; }
+  /* line 24, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup li {
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  /* line 31, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 .25rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  /* line 41, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup a {
+    color: inherit;
+    padding: 0 10px 0 65px;
+    margin: 0 1rem;
+    position: relative;
+    height: 60px;
+    display: block; }
+    /* line 49, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+    article .lineup a:hover {
+      background: #efefef; }
+  /* line 54, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup span.number {
+    float: right; }
+  /* line 58, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup em.role {
+    display: block;
+    color: #999;
+    font-size: .75rem;
+    font-style: normal; }
+  /* line 65, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/teams.scss */
+  article .lineup .photo-circle {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 5px;
+    top: 5px; }

@@ -1,8 +1,0 @@
-<% content_for(:title, team.name) %>
-<h1>Team: <%= team.name %></h1>
-<h2>Lineups</h2>
-<ul>
-  <% team.lineups.each do |year,_| %>
-    <li><a href="/teams/<%= team.slug %>/<%= year %>"><%= year %></a></li>
-  <% end %>
-</ul>

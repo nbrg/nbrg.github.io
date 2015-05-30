@@ -1,0 +1,38 @@
+/* line 3, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  /* line 7, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+  section h1 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 3rem -1rem 1rem -1rem;
+    padding: 0 2rem 1rem 1rem;
+    border-top: 1px solid #cae9e9; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    section h1 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+
+/* line 16, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section.upcoming ul.bouts {
+  margin: 0.7rem 0 0 0; }
+  /* line 19, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+  section.upcoming ul.bouts li {
+    display: none;
+    margin: 0; }
+    /* line 23, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+    section.upcoming ul.bouts li:first-child {
+      display: block; }
+
+/* line 26, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/sections.sass */
+section.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0; }

@@ -1,0 +1,126 @@
+/* line 5, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout .event {
+  margin: -1rem 0 2rem 0; }
+  /* line 8, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .event p {
+    text-align: center; }
+/* line 11, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout section.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  min-height: 8rem; }
+  /* line 16, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout section.scoreboard .team {
+    line-height: 1.2rem;
+    margin: 0.5rem 1rem 0 1rem;
+    position: relative;
+    min-height: 8rem;
+    flex-grow: 1;
+    width: 284px; }
+    /* line 24, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team a {
+      color: inherit; }
+      /* line 27, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+      article.bout section.scoreboard .team a:hover {
+        color: #348080; }
+    /* line 30, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team h2 {
+      padding: 0;
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+      border-top: 1px solid #cae9e9;
+      min-height: 3.5rem; }
+      /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+      article.bout section.scoreboard .team h2 span {
+        border-top: 1px solid #4bb6b6;
+        display: inline-block;
+        padding-top: .75rem;
+        margin-top: -1px; }
+    /* line 39, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team img {
+      position: absolute;
+      top: 0;
+      width: 8rem; }
+    /* line 44, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team p {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0;
+      text-align: center; }
+    /* line 51, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:first-child h2, article.bout section.scoreboard .team:first-child p {
+      margin-left: 3rem;
+      padding-right: 1rem;
+      padding-left: 6rem; }
+    /* line 56, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:first-child img {
+      left: 0; }
+    /* line 60, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:last-child h2, article.bout section.scoreboard .team:last-child p {
+      margin-right: 3rem;
+      padding-left: 1rem;
+      padding-right: 6rem; }
+    /* line 65, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout section.scoreboard .team:last-child img {
+      right: 0; }
+/* line 68, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+article.bout .venue {
+  margin-top: 5rem; }
+  /* line 71, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .venue h2 {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-top: 1px solid #cae9e9; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    article.bout .venue h2 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+  /* line 76, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout .venue .map {
+    height: 200px; }
+
+/* line 79, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+.bouts {
+  list-style: none;
+  padding: 0; }
+  /* line 83, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  article.bout-list .bouts {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 88, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    article.bout-list .bouts li {
+      flex-grow: 1;
+      margin: 0 2rem 2rem 2rem;
+      max-width: 15.75rem; }
+  /* line 93, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts time {
+    margin: 0; }
+  /* line 96, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts h2 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0; }
+  /* line 102, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+  .bouts li {
+    width: 240px;
+    text-align: center;
+    position: relative;
+    padding: 0 1.25px;
+    margin: 0 1rem 2rem 1rem; }
+    /* line 109, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img {
+      width: 2.75rem;
+      position: absolute;
+      top: 0; }
+    /* line 114, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img.them {
+      left: 0; }
+    /* line 117, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/bouts.sass */
+    .bouts li img.us {
+      right: 0; }

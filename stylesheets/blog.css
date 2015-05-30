@@ -1,0 +1,20 @@
+/* line 3, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+article.post.short {
+  margin-bottom: 4rem; }
+  /* line 6, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short h2 {
+    border-top: 1px solid #cae9e9;
+    margin-bottom: 0; }
+    /* line 4, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/_mixins.scss */
+    article.post.short h2 span {
+      border-top: 1px solid #4bb6b6;
+      display: inline-block;
+      padding-top: .75rem;
+      margin-top: -1px; }
+  /* line 11, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short:first-child h2, article.post.short:first-child h2 span {
+    border: none; }
+  /* line 15, /Users/jagregory/dev/nbrg/static-site/source/stylesheets/blog.scss */
+  article.post.short time {
+    text-align: left;
+    margin-bottom: 0; }
