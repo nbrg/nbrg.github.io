@@ -41,6 +41,7 @@ activate :deploy do |deploy|
 end
 
 activate :directory_indexes
+activate :autoprefixer
 
 page "/feed.xml", layout: false
 
