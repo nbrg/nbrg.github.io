@@ -1,0 +1,50 @@
+sirens:
+  name: The Sirens
+  slug: sirens
+  lineups:
+    2015:
+      bench: topper-gnarly
+      lineup: ragequit
+      captain:
+        - get-shirty
+        - corporal-punishment
+      players:
+        - betty-rocker
+        - corporal-punishment
+        - crush-n-over
+        - dread-pirate-roberts
+        - flash-burn
+        - get-shirty
+        - hardcore-bunny
+        - kp-karnage
+        - metallikez
+        - nasty-noodle
+        - natural-born-killer
+        - ruby-whipper
+        - unsteddie
+        - yorkshire-terror
+
+    2014:
+      bench: topper-gnarly
+      lineup: chesty-la-boom
+      captain: get-shirty
+      players:
+        - amytville-horror
+        - corporal-punishment
+        - crush-n-over
+        - dominateviks
+        - dread-pirate-roberts
+        - e-liminate-her
+        - flash-burn
+        - get-shirty
+        - hardcore-bunny
+        - kp-karnage
+        - kix-butwell
+        - metallikez
+        - miss-priss
+        - nasty-noodle
+        - pain-fonda
+        - psy-chlo
+        - ruby-whipper
+        - swift-justice
+        - yorkshire-terror

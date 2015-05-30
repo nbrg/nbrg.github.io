@@ -1,0 +1,10 @@
+@mixin highlight-border-top {
+  border-top: 1px solid lighten(#348080, 50%);
+
+  span {
+    border-top: 1px solid lighten(#348080, 15%);
+    display: inline-block;
+    padding-top: .75rem;
+    margin-top: -1px;
+  }
+}

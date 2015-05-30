@@ -1,0 +1,6 @@
+<h1>Players</h1>
+<ul>
+  <% data.players.each do |slug,player| %>
+    <li><a href="/players/<%= slug %>"><%= player.name %></a></li>
+  <% end %>
+</ul>
