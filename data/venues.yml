@@ -1,5 +1,11 @@
 hurstville:
   name: Hurstville Aquatic Leisure Centre
-  address: 'Cnr. King Georges & Forest Rd, Hurstville NSW 2221'
+  address: 'Corner of King Georges & Forest Rd, Hurstville, New South Wales, 2221'
   lat: -33.962853
   lon: 151.091307
+
+liverpool:
+  name: Whitlam Leisure Centre
+  address: '90a Memorial Avenue, Liverpool, New South Wales, 2170'
+  lat: -33.9258453
+  lon: 150.9148219
