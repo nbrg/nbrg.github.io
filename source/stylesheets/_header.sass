@@ -1,0 +1,127 @@
+header
+  $header_overlay: rgba(255,255,255,.85)
+
+  background-image: url(/images/header.jpg)
+  background-position: 50% 40%
+  background-repeat: no-repeat
+  background-size: cover
+  border-bottom: 1px solid $nbrg_light_teal
+  min-height: 200px
+  position: relative
+
+  a:hover
+    color: #348080
+
+  > h1
+    background-image: url(/images/logo.png)
+    background-repeat: no-repeat
+    background-position: left -5px
+    background-size: 75px
+    padding: 1rem 0 0 4rem
+    font-family: $font_open_sans
+    font-size: .9rem
+    font-weight: bold
+    margin: 0
+    cursor: default
+    color: #333
+    z-index: 1
+    position: absolute
+    height: 60px
+
+    a
+      color: #333
+      display: block
+      height: 50px
+
+  &.landing
+    background-position: 50% 35%
+
+    > h1
+      font-family: $font_nbrg
+      font-weight: bold
+      font-size: 2rem
+      text-shadow: -1px -1px 0 $nbrg_teal, 1px -1px 0 $nbrg_teal, -1px 1px 0 $nbrg_teal, 1px 1px 0 $nbrg_teal
+      padding: 7.5rem 0 0 0
+      background-position: center 1rem
+      text-align: center
+      background-size: 300px
+      height: 500px
+      margin: 0 auto
+      z-index: 0
+      position: relative
+
+      a
+        color: #fff
+        height: 170px
+
+      span
+        display: inline-block
+        position: relative
+        background: rgba(255,255,255,.35)
+        border-radius: 15px
+        padding: 0 .5rem
+        box-shadow: 0 0 35px 0px rgba(255,255,255,.75)
+
+      span:first-child
+        left: -8rem
+
+      span:last-child
+        right: -2.5rem
+
+    > div
+      margin: 0 auto
+      width: $body_width
+      display: flex
+      justify-content: center
+
+      section
+        flex-grow: 1
+        max-width: 33.3333%
+        background: $header_overlay
+        padding-bottom: 1rem
+
+        h1
+          margin-top: 0
+          margin-bottom: 0
+
+        p
+          margin: 0
+
+        p + p
+          margin-top: .5rem
+
+      .bouts li
+        width: auto
+
+  nav
+    position: absolute
+    font-size: .8rem
+    top: 0
+    left: 0
+    right: 0
+    background: $header_overlay
+    border-bottom: 1px solid lighten(#348080, 50%)
+    text-transform: uppercase
+
+    ul
+      list-style: none
+      margin: 0 auto -2px auto
+      width: $body_width
+      text-align: center
+
+    li
+      display: inline-block
+      margin: 0 1rem
+      padding: 1rem 0
+
+      a
+        text-decoration: none
+        color: #666
+
+      &.current
+        border-bottom: 2px solid lighten(#348080, 15%)
+        font-weight: bold
+
+        a
+          text-decoration: none
+          color: #000

@@ -1,0 +1,89 @@
+@charset "utf-8"
+@import 'mixins'
+@import 'vars'
+
+$body_width: 980px
+
+*
+  box-sizing: border-box
+
+body
+  background: #fff
+  font-family: $font_open_sans
+  color: #101F2D
+  min-width: $body_width
+
+a
+  color: $nbrg_teal
+  text-decoration: none
+
+  &:hover
+    color: $nbrg_red
+
+article
+  p
+    text-align: justify
+
+  h1
+    margin: 1rem 0 2rem 0
+    font-size: 3rem
+    text-align: center
+
+  time
+    text-align: center
+    display: block
+    margin-bottom: 3rem
+
+  h1 + time, h1 + ul
+    margin-top: -2rem
+
+h1, h2
+  font-family: $font_nbrg
+  font-weight: normal
+
+footer
+  background: #101F2D
+  color: #fff
+  padding: .5rem 1rem
+  font-size: .75rem
+
+  p
+    margin: 0 auto
+    width: 940px
+
+  a
+    color: #fff
+    text-decoration: none
+    font-weight: bold
+
+#columns
+  background: #fff
+  display: flex
+  margin: 0 auto
+  width: $body_width
+
+  > article
+    padding: 1rem 2rem
+    width: 100%
+
+  > aside
+    width: 350px
+
+article, aside
+  img
+    max-width: 100%
+
+  p
+    line-height: 1.5rem
+
+time
+  font-size: .8rem
+  color: #777
+
+@import 'blog'
+@import 'bouts'
+@import 'header'
+@import 'members'
+@import 'sections'
+@import 'sidebar'
+@import 'teams'
