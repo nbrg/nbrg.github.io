@@ -157,6 +157,10 @@ helpers do
     data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:datetime)
   end
 
+  def bout_by_slug(slug)
+    data.bouts.select { |b| b.slug == slug }.first
+  end
+
   def datetime_tag(date, format='%-d %b, %Y at %l:%M%P')
     "<time datetime=\"#{date.strftime('%FT%T')}\">#{date.strftime(format)}</time>"
   end

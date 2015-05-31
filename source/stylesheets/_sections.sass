@@ -13,6 +13,9 @@ section
 
     @include highlight-border-top
 
+  h2
+    @include highlight-border-top
+
 section.upcoming ul.bouts
   margin: .7rem 0 0 0
 
@@ -30,3 +33,63 @@ section.social ul
   list-style: none
   margin: 1rem 0 0 0
   padding: 0
+
+section.bout-scoreboard
+  display: flex
+  justify-content: space-around
+  min-height: 8rem
+
+  .team
+    line-height: 1.2rem
+    margin: .5rem 1rem 0 1rem
+    position: relative
+    min-height: 8rem
+    flex-grow: 1
+    width: 284px
+
+    a
+      color: inherit
+
+      &:hover
+        color: $nbrg_teal
+
+    h2
+      padding: 0
+      margin: 1rem 0
+      font-size: .8rem
+      font-weight: bold
+      text-align: center
+      @include highlight-border-top
+      min-height: 3.5rem
+
+    img
+      position: absolute
+      top: 0
+      width: 8rem
+
+    p
+      font-size: 2rem
+      font-weight: 300
+      margin: 0
+      text-align: center
+
+    &:first-child
+      h2, p
+        margin-left: 3rem
+        padding-right: 1rem
+        padding-left: 6rem
+
+      img
+        left: 0
+
+    &:last-child
+      h2, p
+        margin-right: 3rem
+        padding-left: 1rem
+        padding-right: 6rem
+
+      img
+        right: 0
+
+section.venue .map
+  height: 200px

@@ -1,0 +1,13 @@
+---
+title: 'NBRG take on Blue Mountains'
+date: 2015-05-31
+tags: bouts
+---
+<% bout = bout_by_slug '2015-06-27-nbrg-vs-bmrdl' %>
+
+Round 4 of the [Five By Five tournament](http://5x5derby.com/) will see Northern Beaches Roller Girls take on the mountain ladies, Blue Mountains Roller Derby League. This will be the first time these two teams have faced each other, and based on the Five by Five so far it's set to be a great game.
+
+Find out more about the whole day on [the Facebook event](<%= bout.facebook_event %>), and be sure to keep an eye on [Downunder Derby TV](https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A) for a live feed of the whole day.
+
+<%= partial 'bouts/scoreboard', locals: { bout: bout } %>
+<%= partial 'bouts/venue', locals: { venue: data.venues[bout.venue] } %>

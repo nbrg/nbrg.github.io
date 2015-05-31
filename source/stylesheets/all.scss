@@ -12,6 +12,7 @@ body {
   background: #fff;
   font-family: $font_open_sans;
   color: #101F2D;
+  min-width: $body_width;
 }
 
 a {

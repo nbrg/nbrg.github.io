@@ -3,13 +3,8 @@
 article.post.short {
   margin-bottom: 4rem;
 
-  h2 {
-    @include highlight-border-top;
+  > h2 {
     margin-bottom: 0;
-  }
-
-  &:first-child h2, &:first-child h2 span {
-    border: none;
   }
 
   time {

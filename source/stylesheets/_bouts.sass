@@ -8,63 +8,6 @@ article.bout
     p
       text-align: center
 
-  section.scoreboard
-    display: flex
-    justify-content: space-around
-    min-height: 8rem
-
-    .team
-      line-height: 1.2rem
-      margin: .5rem 1rem 0 1rem
-      position: relative
-      min-height: 8rem
-      flex-grow: 1
-      width: 284px
-
-      a
-        color: inherit
-
-        &:hover
-          color: $nbrg_teal
-
-      h2
-        padding: 0
-        margin: 1rem 0
-        font-size: .8rem
-        font-weight: bold
-        text-align: center
-        @include highlight-border-top
-        min-height: 3.5rem
-
-      img
-        position: absolute
-        top: 0
-        width: 8rem
-
-      p
-        font-size: 2rem
-        font-weight: 300
-        margin: 0
-        text-align: center
-
-      &:first-child
-        h2, p
-          margin-left: 3rem
-          padding-right: 1rem
-          padding-left: 6rem
-
-        img
-          left: 0
-
-      &:last-child
-        h2, p
-          margin-right: 3rem
-          padding-left: 1rem
-          padding-right: 6rem
-
-        img
-          right: 0
-
   .venue
     margin-top: 5rem
 
@@ -72,9 +15,6 @@ article.bout
       margin: 0 -1rem
       padding: 0 1rem
       @include highlight-border-top
-
-    .map
-      height: 200px
 
 .bouts
   list-style: none
@@ -98,6 +38,7 @@ article.bout
     font-size: 1rem
     font-weight: normal
     margin: 0
+    border-top: none
 
   li
     width: 240px
