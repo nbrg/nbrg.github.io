@@ -1,7 +1,7 @@
 <%
   content_for(:title, "#{team.name} (#{year})")
-  captains = [lineup.captain].flatten.map { |id| data.players[id] }.sort_by(&:name)
-  players = lineup.players.map {|id| data.players[id] }.sort_by(&:name)
+  captains = [lineup.captain].flatten.map { |id| data.members[id] }.sort_by(&:name)
+  players = lineup.players.map {|id| data.members[id] }.sort_by(&:name)
   prior_lineups = (data.teams[team.slug].lineups.keys - [year])
 %>
 
@@ -17,15 +17,15 @@
 
 <ul class="lineup">
   <% captains.each do |player| %>
-    <li><%= partial 'teams/player', locals: { player: player, role: 'Captain' } %></li>
+    <li><%= partial 'teams/member', locals: { member: player, role: 'Captain' } %></li>
   <% end %>
 </ul>
 <ul class="lineup">
   <% (players - captains).each do |player| %>
-    <li><%= partial 'teams/player', locals: { player: player, role: nil } %></li>
+    <li><%= partial 'teams/member', locals: { member: player, role: nil } %></li>
   <% end %>
 </ul>
 <ul class="lineup">
-  <li><%= partial 'teams/staff', locals: { staff: data.staff[lineup.bench], role: 'Bench Manager' } %></li>
-  <li><%= partial 'teams/staff', locals: { staff: data.staff[lineup.lineup], role: 'Lineup Manager' } %></li>
+  <li><%= partial 'teams/member', locals: { member: data.members[lineup.bench], role: 'Bench Manager' } %></li>
+  <li><%= partial 'teams/member', locals: { member: data.members[lineup.lineup], role: 'Lineup Manager' } %></li>
 </ul>

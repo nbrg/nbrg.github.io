@@ -23,6 +23,13 @@ betty-rocker:
 
     **Favourite Quote:** "I may not be the coolest, I may not be the best, but there will never be another footprint on the earth quite the same as mine." -- Atmosphere
 
+chesty-la-boom:
+  name: Chesty La Boom
+  nickname: BOOM
+  photo: chesty-la-boom.jpg
+  real_name: Annette Vitetta
+  slug: chesty-la-boom
+
 corporal-punishment:
   name: Corporal Punishment
   nickname: Patch
@@ -157,6 +164,23 @@ psy-chlo:
   real_name: Chloe Harness
   slug: psy-chlo
 
+ragequit:
+  name: Ragequit
+  nickname: Rage
+  photo: ragequit.jpg
+  real_name: James Gregory
+  slug: ragequit
+  bio: |
+    **Why did you get involved in Roller Derby?** When my partner, Yorkshire Terror, had her first game in May 2014 I came along out of being a supportive partner and a small amount of curiosity, and didn't really know what I was getting myself into. One confusing and dizzying game later I was immediately hooked on the sport, and quickly started figuring out how it worked (I like puzzles). Learning about how inclusive and awesome the community and sport is just cemented the whole thing for me, and fast forward a year and I'm a lineup manager and spend way too much of my time thinking about Derby.
+
+    **Things that annoy me:** Inefficiency. Wilful ignorance. Gender stereotyping, and societal norms.
+
+    **Likes:** Rational thought. Insatiable curiosity. Making things.
+
+    **Favourite food:** Coffee. Cocktails. Beer. Any food which compliments those things.
+
+    **Favourite quote:** "He attacked everything in life with a mix of extraordinary genius and naive incompetence, and it was often difficult to tell which was which." -- Douglas Adams
+
 ruby-whipper:
   name: Ruby Whipper
   nickname: Ruby
@@ -172,6 +196,13 @@ swift-justice:
   photo: swift-justice.jpg
   real_name: Lisa Justice
   slug: swift-justice
+
+topper-gnarly:
+  name: Topper Gnarly
+  nickname: Topper
+  photo: topper-gnarly.jpg
+  real_name: James Polson
+  slug: topper-gnarly
 
 unsteddie:
   name: Unsteddie

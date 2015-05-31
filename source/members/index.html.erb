@@ -1,0 +1,6 @@
+<h1>Members</h1>
+<ul>
+  <% data.members.each do |slug,member| %>
+    <li><a href="/members/<%= slug %>"><%= member.name %></a></li>
+  <% end %>
+</ul>

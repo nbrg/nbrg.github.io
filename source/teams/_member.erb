@@ -1,0 +1,12 @@
+<a href="/members/<%= member.slug %>">
+  <% if member.photo %>
+    <div class="photo-circle">
+      <img src="/images/members/<%= member.photo %>" alt="" />
+    </div>
+  <% end %>
+  <h2>
+    <% if role %><em class="role"><%= role %></em><% end %>
+    <%= member.name %>
+    <span class="number"><%= member.number %></span>
+  </h2>
+</a>

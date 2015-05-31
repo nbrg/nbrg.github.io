@@ -1,0 +1,20 @@
+---
+article_class: member
+---
+<h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
+<% if member.photo %>
+  <img src="/images/members/<%= member.photo %>" alt="" />
+<% end %>
+
+<% lineups_for_player(member.slug).each do |team_id,lineup_id| %>
+  <% team = data.teams[team_id] %>
+  <p><%= member.nickname || member.name %> <%= lineup_id == 2015 ? 'is' : 'was' %> a
+  member of <a href="/teams/<%= team.slug %>/<%= lineup_id %>">the <%= lineup_id %> lineup
+  of <%= team.name %></a>.</p>
+<% end %>
+
+<% if member.bio %>
+<%= markdown member.bio %>
+<% end %>
+
+<blockquote>Portrait Photos kindly taken by <a href="http://www.willowbelle.com.au/">Willow Belle Portraits</a>.</p>

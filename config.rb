@@ -58,19 +58,10 @@ page "/feed.xml", layout: false
 # Page options, layouts, aliases and proxies
 ###
 
-ignore '/players/player.html'
-data.players.each do |id,player|
-  proxy "/players/#{id}.html", '/players/player.html', locals: {
-    player: player,
-  }
-end
-
-ignore '/staff/staff.html'
-data.staff.each do |id,staff|
-  proxy "/staff/#{id}.html", '/staff/staff.html', locals: {
-    staff: staff,
-  }, page: {
-    title: "Staff: #{staff.name}",
+ignore '/members/member.html'
+data.members.each do |id,member|
+  proxy "/members/#{id}.html", '/members/member.html', locals: {
+    member: member,
   }
 end
 
