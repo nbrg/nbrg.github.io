@@ -60,14 +60,14 @@ page "/feed.xml", layout: false
 
 ignore '/players/player.html'
 data.players.each do |id,player|
-  proxy "/players/#{id}.html", '/players/player.html', layout: 'one-column', locals: {
+  proxy "/players/#{id}.html", '/players/player.html', locals: {
     player: player,
   }
 end
 
 ignore '/staff/staff.html'
 data.staff.each do |id,staff|
-  proxy "/staff/#{id}.html", '/staff/staff.html', layout: 'one-column', locals: {
+  proxy "/staff/#{id}.html", '/staff/staff.html', locals: {
     staff: staff,
   }, page: {
     title: "Staff: #{staff.name}",
@@ -133,6 +133,10 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
+  def markdown(content)
+    Tilt['markdown'].new { content }.render
+  end
+
   def page_title
     yield_content(:title) || current_page.metadata[:page]['title']
   end
@@ -171,6 +175,17 @@ helpers do
 
   def time_tag(date)
     datetime_tag(date, '%l:%M%P')
+  end
+
+  def lineups_for_player(player)
+    id = player.is_a?(String) ? player : player.slug
+    lineups = []
+    data.teams.each { |team_id,team|
+      team['lineups']
+        .select { |lu_id,lu| lu['players'].include? id }
+        .each { |lu_id,_| lineups << [team_id,lu_id] }
+    }
+    lineups
   end
 end
 

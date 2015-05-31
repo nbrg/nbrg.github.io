@@ -7,10 +7,21 @@ amytville-horror:
 
 betty-rocker:
   name: Betty Rocker
+  nickname: Betty
   number: 1956
   photo: betty-rocker.jpg
   real_name: Ghilaine Hammond-Baillie
   slug: betty-rocker
+  bio: |
+    **Why did you start playing derby?** Because I loved skating and thought the possibility of being a derby girl was too cool to pass up
+
+    **Likes:** Baking and Sleeping in
+
+    **What annoys me the most:** The high risk of injury in this sport. It's sad when passionate players can't play any more
+
+    **Favourite Food:** Burgers and anything that's a Dessert
+
+    **Favourite Quote:** "I may not be the coolest, I may not be the best, but there will never be another footprint on the earth quite the same as mine." -- Atmosphere
 
 corporal-punishment:
   name: Corporal Punishment

@@ -1,6 +1,18 @@
-<div class="player">
-  <h1><em>Player profile</em> <%= player.name %></h1>
-  <% if player.photo %>
-    <img src="/images/players/<%= player.photo %>" alt="" />
-  <% end %>
-</div>
+---
+article_class: player
+---
+<h1><%= player.name %> <em>#<%= player.number %></em></h1>
+<% if player.photo %>
+  <img src="/images/players/<%= player.photo %>" alt="" />
+<% end %>
+
+<% lineups_for_player(player.slug).each do |team_id,lineup_id| %>
+  <% team = data.teams[team_id] %>
+  <p><%= player.nickname || player.name %> <%= lineup_id == 2015 ? 'is' : 'was' %> a
+  member of <a href="/teams/<%= team.slug %>/<%= lineup_id %>">the <%= lineup_id %> lineup
+  of <%= team.name %></a>.</p>
+<% end %>
+
+<% if player.bio %>
+<%= markdown player.bio %>
+<% end %>
