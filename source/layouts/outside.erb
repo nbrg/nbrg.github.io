@@ -6,7 +6,7 @@
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <link rel="icon" href="/images/favicon.png">
-    
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= page_title ? page_title + ' | Northern Beaches Roller Girls' : 'Northern Beaches Roller Girls' %></title>
 
@@ -22,7 +22,16 @@
       <nav>
         <ul>
           <% data.menu.each do |page| %>
-            <li class="<%= current_page.url == page.url ? 'current' : '' %>"><%= link_to page.text, page.url %></li>
+            <li class="<%= (page.items || []).any? ? 'nested' : '' %> <%= current_page.url == page.url || (page.items || []).any? {|p| p.url == current_page.url } ? 'current' : '' %>">
+              <%= link_to page.text, page.url || 'javascript:void(0)' %>
+              <% if page.items %>
+                <ul>
+                  <% page.items.each do |page| %>
+                    <li class="<%= current_page.url == page.url ? 'current' : '' %>"><%= link_to page.text, page.url %></li>
+                  <% end %>
+                </ul>
+              <% end %>
+            </li>
           <% end %>
         </ul>
       </nav>

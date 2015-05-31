@@ -105,9 +105,38 @@ header
 
     ul
       list-style: none
+      padding: 0
+      position: relative
+
+    > ul
       margin: 0 auto -2px auto
       width: $body_width
       text-align: center
+
+    ul ul
+      position: absolute
+      background: $header_overlay
+      top: 3rem
+      margin-left: -1rem
+      display: none
+      padding: 0
+
+      li
+        display: block
+        text-align: left
+        padding: 0
+        margin: 0
+
+        a
+          padding: .5rem 1rem
+          display: block
+
+        &.current
+          border-bottom: none
+          border-left: 2px solid lighten(#348080, 15%)
+
+    li:hover ul
+      display: block
 
     li
       display: inline-block
@@ -118,10 +147,14 @@ header
         text-decoration: none
         color: #666
 
+      &.nested
+        > a::after
+          content: ' ▿'
+
       &.current
         border-bottom: 2px solid lighten(#348080, 15%)
-        font-weight: bold
 
-        a
+        > a
+          font-weight: bold
           text-decoration: none
           color: #000
