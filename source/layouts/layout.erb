@@ -1,3 +1,4 @@
+<% landing = current_page.url == '/' %>
 <% wrap_layout :outside do %>
   <article class="<%= article_class %>">
     <% if current_article %>
@@ -7,8 +8,10 @@
   </article>
   <aside class="sidebar">
     <%= yield_content(:sidebar) %>
-    <%= partial 'sections/upcoming' %>
-    <%= partial 'sections/social' %>
+    <% unless landing %>
+      <%= partial 'sections/upcoming' %>
+      <%= partial 'sections/social' %>
+    <% end %>
     <%= partial 'sections/sponsors' %>
   </aside>
 <% end %>
