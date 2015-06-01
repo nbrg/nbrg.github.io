@@ -4,14 +4,16 @@
 - text: Bouts
   url: /bouts/
 
-- text: The Sirens
-  url: /teams/sirens/2015/
-
 - text: Juniors
   url: /juniors/
 
-- text: Media
-  url: /media/
-
 - text: Join Us
   url: /join/
+
+- text: About
+  items:
+    - text: Media
+      url: /media/
+
+    - text: The Sirens
+      url: /teams/sirens/2015/
