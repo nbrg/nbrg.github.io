@@ -80,6 +80,32 @@ time
   font-size: .8rem
   color: #777
 
+table.calendar
+  border-collapse: collapse
+  font-size: .8rem
+  width: 100%
+
+  thead th
+    padding: 0
+    @include highlight-border-bottom
+    width: 12.5%
+
+  tbody th, tbody td
+    text-align: left
+    padding: .25rem 0
+
+  td.event
+    text-transform: uppercase
+    font-size: .6rem
+    vertical-align: top
+
+    span
+      display: block
+      background: lighten($nbrg_red, 10%)
+      color: #fff
+      padding: .25rem
+      text-align: center
+
 @import 'blog'
 @import 'bouts'
 @import 'header'
