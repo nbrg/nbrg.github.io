@@ -1,2 +1,4 @@
+---
+title: About NBRG
+---
 # About
-

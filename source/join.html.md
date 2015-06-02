@@ -1,3 +1,6 @@
+---
+title: Joining NBRG
+---
 # Want to play Roller Derby?
 
 Ahoy there mateys! So you fancy joining this band of merry rollers, for more information and to join our mailing list please contact: [join@nbrg.com.au](mailto:join@nbrg.com.au)

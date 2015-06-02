@@ -1,6 +1,9 @@
 ---
 article_class: member
 ---
+<%
+  content_for(:title, member.name)
+%>
 <h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
 <% if member.photo %>
   <img src="/images/members/<%= member.photo %>" alt="" />

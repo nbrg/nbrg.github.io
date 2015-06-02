@@ -1,8 +1,12 @@
 ---
 article_class: bout
 ---
-<% against = data.leagues[bout.against] %>
-<h1><%= bout.nickname || "NBRG vs. #{against.nickname}"  %></h1>
+<%
+  against = data.leagues[bout.against]
+  page_title = bout.nickname || "NBRG vs. #{against.nickname}"
+  content_for(:title, page_title)
+%>
+<h1><%= page_title %></h1>
 <%= datetime_tag(bout.datetime) %>
 
 <% if bout.facebook_event %>
