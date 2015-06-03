@@ -42,6 +42,10 @@ end
 
 activate :directory_indexes
 activate :autoprefixer
+activate :sitemap do |sitemap|
+  sitemap.gzip = false
+  sitemap.hostname = 'http://' + `cat source/CNAME`.chomp
+end
 
 page "/feed.xml", layout: false
 
