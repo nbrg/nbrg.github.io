@@ -182,6 +182,20 @@ helpers do
     }
     lineups
   end
+
+  def photo_path(img)
+    photo = data.photos[img]
+    "/images/photos/#{photo.photographer}/#{img}"
+  end
+
+  def photograph(img)
+    photo = data.photos[img]
+    photographer = data.photographers[photo.photographer]
+    "<div class=\"photo\">
+      <img src=\"#{photo_path img}\" alt=\"\" title=\"Photograph by #{photographer.name}\" />
+      <p>Photograph by <a href=\"#{photographer.link}\">#{photographer.name}</a> &middot; <a href=\"#{photo.original_album_link}\">Album</a> &middot; <a href=\"#{photo.original_photo_link}\">Original</a></p>
+    </div>"
+  end
 end
 
 set :css_dir, 'stylesheets'
