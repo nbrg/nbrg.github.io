@@ -6,6 +6,22 @@ article_class: bout
   page_title = bout.nickname || "NBRG vs. #{against.nickname}"
   content_for(:title, page_title)
 %>
+<% content_for(:head) do %>
+  <meta property="og:title" content="<%= page_title %>" />
+  <meta property="og:type" content="nbrg_com_au:bout" />
+  <meta property="og:url" content="<%= hostname + current_page.url %>" />
+  <meta property="og:image" content="<%= hostname %>/images/logo.png" />
+  <meta property="og:description" content="Northern Beaches Roller Girls vs. <%= against.name %>" />
+  <meta property="og:teams" content="Northern Beaches Roller Girls" />
+  <meta property="og:teams" content="<%= against.name %>" />
+  <meta property="og:teams_abbr" content="NBRG" />
+  <meta property="og:teams_abbr" content="<%= against.nickname %>" />
+  <meta property="og:when" content="<%= bout.datetime.strftime('%FT%T') %>" />
+  <% if bout.venue %>
+  <meta property="og:venue" content="<%= venue.lat %>,<%= venue.lon %>" />
+  <% end %>
+<% end %>
+
 <h1><%= page_title %></h1>
 <%= datetime_tag(bout.datetime) %>
 
