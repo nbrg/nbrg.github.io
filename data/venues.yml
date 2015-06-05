@@ -45,3 +45,9 @@ katoomba:
   address: 'Catalina Ave, Katoomba, New South Wales, 2780'
   lat: -33.715798
   lon: 150.303779
+
+south-windsor:
+  name: Hawkesbury Indoor Stadium
+  address: '16 Stewart Street, South Windsor, New South Wales, 2756'
+  lat: -33.6268235
+  lon: 150.8042788
