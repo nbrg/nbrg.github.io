@@ -2,6 +2,14 @@
 pageable: true
 per_page: 10
 ---
+<% content_for(:head) do %>
+  <meta property="og:title" content="Northern Beaches Roller Girls" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= hostname %>" />
+  <meta property="og:image" content="<%= hostname %>/images/logo.png" />
+  <meta property="og:description" content="Northern Beaches Roller Girls are the heart and soul of Roller Derby on the Northern Beaches of Sydney." />
+<% end %>
+
 <% article = page_articles.first %>
 <article class="post short">
   <h2><span><%= link_to article.title, article %></span></h2>

@@ -1,6 +1,13 @@
 ---
 title: Junior Roller Derby
 ---
+<% content_for(:head) do %>
+  <meta property="og:title" content="Junior Roller Derby on the Northern Beaches" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%= hostname + current_page.url %>" />
+  <meta property="og:image" content="<%= hostname %>/images/juniors.jpg" />
+  <meta property="og:description" content="Northern Beaches Junior Rollers offers a positive environment for young people aged 5-17 years to develop skating skills & improve fitness while playing the sport of flat track Roller Derby!" />
+<% end %>
 
 # Junior Rollers
 

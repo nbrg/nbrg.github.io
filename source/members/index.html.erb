@@ -1,6 +1,14 @@
 ---
 title: League Members
 ---
+<% content_for(:head) do %>
+  <meta property="og:title" content="League Members" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%= hostname + current_page.url %>" />
+  <meta property="og:image" content="<%= hostname %>/images/logo.png" />
+  <meta property="og:description" content="Northern Beaches Roller Girls league members list." />
+<% end %>
+
 <h1>Members</h1>
 <ul>
   <% data.members.each do |slug,member| %>

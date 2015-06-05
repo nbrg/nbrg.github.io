@@ -2,6 +2,14 @@
 article_class: training
 title: Training with NBRG
 ---
+<% content_for(:head) do %>
+  <meta property="og:title" content="Northern Beaches Roller Girls Training Schedule" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%= hostname + current_page.url %>" />
+  <meta property="og:image" content="<%= hostname %>/images/logo.png" />
+  <meta property="og:description" content="Training sessions are usually 2 hours long but in general Roller Derby can sometimes take up a lot of your time, however you can choose to commit to a level that suits you personally. When you first start, i.e. when you are in Fresh Meat, the realistic time commitment per week is 2-4 hours made up over 1-2 days." />
+<% end %>
+
 # Training with NBRG
 
 <table class="calendar">
