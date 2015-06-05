@@ -18,7 +18,8 @@ article_class: bout
   <meta property="og:teams_abbr" content="<%= against.nickname %>" />
   <meta property="og:when" content="<%= bout.datetime.strftime('%FT%T') %>" />
   <% if bout.venue %>
-  <meta property="og:venue" content="<%= data.venues[bout.venue].lat %>,<%= data.venues[bout.venue].lon %>" />
+  <meta property="og:venue:latitude" content="<%= data.venues[bout.venue].lat %>" />
+  <meta property="og:venue:longitude" content="<%= data.venues[bout.venue].lon %>" />
   <% end %>
 <% end %>
 
