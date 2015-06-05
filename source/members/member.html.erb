@@ -6,7 +6,7 @@ article_class: member
 %>
 <h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
 <% if member.photo %>
-  <img src="/images/members/<%= member.photo %>" alt="" />
+  <%= photograph member.photo %>
 <% end %>
 
 <% lineups_for_player(member.slug).each do |team_id,lineup_id| %>
@@ -19,5 +19,3 @@ article_class: member
 <% if member.bio %>
 <%= markdown member.bio %>
 <% end %>
-
-<blockquote>Portrait Photos kindly taken by <a href="http://www.willowbelle.com.au/">Willow Belle Portraits</a>.</p>

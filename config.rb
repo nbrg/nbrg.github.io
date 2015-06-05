@@ -185,16 +185,16 @@ helpers do
 
   def photo_path(img)
     photo = data.photos[img]
+    raise "Unrecognised photo #{img}" unless photo
     "/images/photos/#{photo.photographer}/#{img}"
   end
 
   def photograph(img)
     photo = data.photos[img]
+    raise "Unrecognised photo #{img}" unless photo
     photographer = data.photographers[photo.photographer]
-    "<div class=\"photo\">
-      <img src=\"#{photo_path img}\" alt=\"\" title=\"Photograph by #{photographer.name}\" />
-      <p>Photograph by <a href=\"#{photographer.link}\">#{photographer.name}</a> &middot; <a href=\"#{photo.original_album_link}\">Album</a> &middot; <a href=\"#{photo.original_photo_link}\">Original</a></p>
-    </div>"
+
+    partial '_photograph', locals: { image: img, photo: photo, photographer: photographer }
   end
 end
 
