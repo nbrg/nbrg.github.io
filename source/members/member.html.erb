@@ -9,6 +9,7 @@ article_class: member
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="<%= hostname + current_page.url %>" />
   <meta property="og:image" content="<%= hostname + photo_path(member.photo) %>" />
+  <meta property="og:description" content="<%= member.name %> <%= lineups_for_player(member.slug).include?(['sirens', 2015]) ? 'is a member of the 2015 Northern Beaches Roller Girls Sirens lineup' : 'was a member of the Northern Beaches Roller Girls Sirens' %>." />
 <% end %>
 
 <h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
