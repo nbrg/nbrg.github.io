@@ -4,6 +4,13 @@ article_class: member
 <%
   content_for(:title, member.name)
 %>
+<% content_for(:head) do %>
+  <meta property="og:title" content="<%= member.name %>" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="<%= current_page.url %>" />
+  <meta property="og:image" content="<%= photo_path member.photo %>" />
+<% end %>
+
 <h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
 <% if member.photo %>
   <%= photograph member.photo %>
