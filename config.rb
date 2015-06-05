@@ -196,6 +196,10 @@ helpers do
 
     partial '_photograph', locals: { image: img, photo: photo, photographer: photographer }
   end
+
+  def hostname
+    'http://' + `cat source/CNAME`.chomp
+  end
 end
 
 set :css_dir, 'stylesheets'
