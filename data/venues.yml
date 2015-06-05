@@ -15,3 +15,33 @@ niagara-park:
   address: '16 Washington Avenue, Niagara Park, New South Wales, 2250'
   lat: -33.382878
   lon: 151.352909
+
+luna-park:
+  name: Big Top, Luna Park
+  address: '1 Olympic Drive, Milsons Point, New South Wales, 2061'
+  lat: -33.847699
+  lon: 151.209838
+
+wollongong:
+  name: University of Wollongong
+  address: 'Northfields Avenue, Wollongong, New South Wales, 2522'
+  lat: -34.4053511
+  lon: 150.8773159
+
+penrith:
+  name: Penrith Valley Regional Sports Centre
+  address: '30 Herbert Street, Cambridge Park, New South Wales, 2747'
+  lat: -33.753342
+  lon: 150.73477
+
+north-ryde:
+  name: Ryde Community Sports Centre
+  address: 'Kent Road, North Ryde, New South Wales, 2113'
+  lat: -33.787395
+  lon: 151.112416
+
+katoomba:
+  name: Katoomba Sports and Aquatic Centre
+  address: 'Catalina Ave, Katoomba, New South Wales, 2780'
+  lat: -33.715798
+  lon: 150.303779

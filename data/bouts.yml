@@ -73,6 +73,7 @@
     us: 159
     them: 171
   slug: 2014-08-30-nbrg-vs-ccrg
+  venue: niagara-park
 
 - datetime: 2014-08-16T18:30:00+10:00
   against: srdl
@@ -81,6 +82,7 @@
     us: 14
     them: 285
   slug: 2014-08-16-nbrg-vs-srdl
+  venue: luna-park
 
 - datetime: 2014-07-26T16:30:00+10:00
   nickname: Rollergeddon
@@ -90,6 +92,7 @@
     us: 163
     them: 135
   slug: 2014-07-26-nbrg-vs-nrdl
+  venue: wollongong
 
 - datetime: 2014-07-19T15:00:00+10:00
   against: ccrg
@@ -99,6 +102,7 @@
     us: 110
     them: 247
   slug: 2014-07-19-nbrg-vs-ccrg
+  venue: hurstville
 
 - datetime: 2014-07-05T15:00:00+10:00
   against: s2d2
@@ -107,6 +111,7 @@
     us: 149
     them: 143
   slug: 2014-07-05-nbrg-vs-s2d2
+  venue: penrith
 
 - datetime: 2014-06-28T15:00:00+10:00
   against: hard
@@ -116,6 +121,7 @@
     us: 180
     them: 151
   slug: 2014-06-28-nbrg-vs-hard
+  venue: south-windsor
 
 - datetime: 2014-05-31T15:00:00+10:00
   against: iwrdl
@@ -125,6 +131,7 @@
     us: 186
     them: 184
   slug: 2014-05-31-nbrg-vs-iwrdl
+  venue: north-ryde
 
 - datetime: 2014-04-26T15:00:00+10:00
   against: ocd
@@ -134,3 +141,4 @@
     us: 163
     them: 92
   slug: 2014-04-26-nbrg-vs-ocd
+  venue: katoomba
