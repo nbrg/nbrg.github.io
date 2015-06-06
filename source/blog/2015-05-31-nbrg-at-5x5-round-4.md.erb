@@ -9,5 +9,7 @@ Round 4 of the [Five By Five tournament](http://5x5derby.com/) will see Northern
 
 Find out more about the whole day on [the Facebook event](<%= bout.facebook_event %>), and be sure to keep an eye on [Downunder Derby TV](https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A) for a live feed of the whole day.
 
+Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
+
 <%= partial 'bouts/scoreboard', locals: { bout: bout } %>
 <%= partial 'bouts/venue', locals: { venue: data.venues[bout.venue] } %>
