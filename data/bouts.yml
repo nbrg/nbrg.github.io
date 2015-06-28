@@ -12,6 +12,10 @@
   slug: 2015-06-27-nbrg-vs-bmrdl
   tournament: 2015-5x5
   venue: liverpool
+  won: them
+  score:
+    us: 87
+    them: 217
 
 - datetime: 2015-05-23T15:00:00+10:00
   against: ccrdu
