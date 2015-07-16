@@ -1,0 +1,16 @@
+---
+title: 'NBRG face-off against Inner West'
+date: 2015-07-15
+tags: bouts
+---
+<% bout = bout_by_slug '2015-07-18-nbrg-vs-iwrdl' %>
+Round 5 of the [Five by Five tournament](http://5x5derby.com/) is set to be a heated round of Roller Derby. The Northern Beaches Roller Girls will be facing off against Inner West Roller Derby League in what is expected to be a fierce competition.
+
+Inner West have been training hard and it's showing, their performance in this tournament has been impressive. Not to be outdone, NBRG have upped their numbers again with several skaters returning for this game. It's going to be a exciting game.
+
+Find out more about the whole day on the [Facebook event](https://www.facebook.com/events/434496553390040/), and be sure to keep an eye on [Downunder Derby TV](https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A) for a live feed of the whole day.
+
+Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
+
+<%= partial 'bouts/scoreboard', locals: { bout: bout } %>
+<%= partial 'bouts/venue', locals: { venue: data.venues[bout.venue] } %>
