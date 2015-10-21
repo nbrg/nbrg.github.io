@@ -1,0 +1,14 @@
+---
+:id: 2SRlLNVY6Aq8UiO20ig4gG
+:nickname: '5x5 Battlegrounds: Round 4'
+:against:
+  :id: 3Zh4LYHt2gg4AO6gMi4mUu
+:won: false
+:datetime: !ruby/object:DateTime 2014-07-19 15:00:00.000000000 +10:00
+:scoreUs: 110
+:scoreThem: 247
+:venue:
+  :id: 75kOLvbdAW2IwYCsYW6E2Y
+:tournament:
+  :id: 5MFfTnmWruGywqM6WEa0yU
+:slug: 2014-07-19-nbrg-vs-ccrg

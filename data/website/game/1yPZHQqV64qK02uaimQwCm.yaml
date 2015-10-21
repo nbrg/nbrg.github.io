@@ -1,0 +1,14 @@
+---
+:id: 1yPZHQqV64qK02uaimQwCm
+:against:
+  :id: 12CtHwlKKiaOiauKMMYgum
+:datetime: !ruby/object:DateTime 2014-06-28 15:00:00.000000000 +10:00
+:won: true
+:scoreUs: 180
+:scoreThem: 151
+:venue:
+  :id: 1c7q4FAl42WME4IyC2i46y
+:tournament:
+  :id: 5MFfTnmWruGywqM6WEa0yU
+:nickname: '5x5 Battlegrounds: Round 3'
+:slug: 2014-06-28-nbrg-vs-hard
