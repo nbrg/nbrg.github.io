@@ -1,4 +1,4 @@
-<h2><a href="/bouts/<%= bout.slug %>"><%= data.leagues[bout.against].nickname %> vs. NBRG</a></h2>
-<img class="them" src="/images/leagues/<%= data.leagues[bout.against].nickname.downcase %>.png" alt="" width="44" />
+<h2><a href="/bouts/<%= bout.slug %>"><%= data.website.league[bout.against.id].nickname %> vs. NBRG</a></h2>
+<img class="them" src="/images/leagues/<%= data.website.league[bout.against.id].nickname.downcase %>.png" alt="" width="44" />
 <img class="us" src="/images/leagues/nbrg.png" alt="" width="44" />
 <%= datetime_tag bout.datetime %>

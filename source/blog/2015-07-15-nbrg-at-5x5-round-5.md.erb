@@ -10,7 +10,9 @@ Inner West have been training hard and it's showing, their performance in this t
 
 Find out more about the whole day on the [Facebook event](https://www.facebook.com/events/434496553390040/), and be sure to keep an eye on [Downunder Derby TV](https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A) for a live feed of the whole day.
 
-Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
+<% if bout %>
+  Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
 
-<%= partial 'bouts/scoreboard', locals: { bout: bout } %>
-<%= partial 'bouts/venue', locals: { venue: data.venues[bout.venue] } %>
+  <%= partial 'bouts/scoreboard', locals: { bout: bout } %>
+  <%= partial 'bouts/venue', locals: { venue: data.website.venue[bout.venue.id] } %>
+<% end %>

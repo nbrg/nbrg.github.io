@@ -28,6 +28,32 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+class GameMapper < ContentfulMiddleman::Mapper::Base
+  def map(context, entry)
+    super
+    against = entry.against.resolve()
+    context.slug = "#{entry.datetime.strftime('%Y-%m-%d')}-nbrg-vs-#{against.nickname}".downcase
+  end
+end
+
+activate :contentful do |f|
+  f.space = {
+    website: 'woqj76ijzwsc'
+  }
+  f.access_token = ENV['contentful_access_token']
+  f.cda_query = {
+    include: 1
+  }
+  f.content_types = {
+    game: {
+      id: 'GwKw7RBbEq00EeKw2KYiK',
+      mapper: GameMapper
+    },
+    league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    venue: '26QoxGy4wUKQQOcEoiqAGk'
+  }
+end
+
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-53595551-1'
   ga.development = false
@@ -48,15 +74,6 @@ activate :sitemap do |sitemap|
 end
 
 page "/feed.xml", layout: false
-
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -86,7 +103,7 @@ data.teams.each do |id,team|
 end
 
 ignore '/bouts/bout.html'
-data.bouts.each do |bout|
+data.website.game.each do |id,bout|
   proxy "/bouts/#{bout.slug}.html", '/bouts/bout.html', locals: {
     bout: bout,
   }
@@ -144,12 +161,16 @@ helpers do
     data.tournaments.values.sort_by { |t| t.date.from }
   end
 
+  def bouts
+    data.website.game.map { |_,bout| bout }
+  end
+
   def upcoming_bouts
-    data.bouts.select { |b| b.datetime >= Date.today }.sort_by(&:datetime)
+    bouts.select { |b| b.datetime >= Date.today }.sort_by(&:datetime)
   end
 
   def past_bouts
-    data.bouts.select { |b| b.datetime < Date.today }.sort_by(&:datetime).reverse
+    bouts.select { |b| b.datetime < Date.today }.sort_by(&:datetime).reverse
   end
 
   def bouts_for_tournament(tournament)
@@ -157,7 +178,7 @@ helpers do
   end
 
   def bout_by_slug(slug)
-    data.bouts.select { |b| b.slug == slug }.first
+    bouts.select { |b| b.slug == slug }.first
   end
 
   def datetime_tag(date, format='%-d %b, %Y at %l:%M%P')

@@ -12,4 +12,4 @@ Find out more about the whole day on [the Facebook event](<%= bout.facebook_even
 Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
 
 <%= partial 'bouts/scoreboard', locals: { bout: bout } %>
-<%= partial 'bouts/venue', locals: { venue: data.venues[bout.venue] } %>
+<%= partial 'bouts/venue', locals: { venue: data.website.venue[bout.venue.id] } %>

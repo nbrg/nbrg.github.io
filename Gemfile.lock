@@ -31,6 +31,15 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    contentful (0.5.0)
+      http (~> 0.6)
+      multi_json (~> 1)
+    contentful_middleman (1.1.1)
+      contentful
+      middleman-blog (~> 3.5)
+      middleman-core (~> 3.3)
+    domain_name (0.5.25)
+      unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.8)
@@ -40,6 +49,15 @@ GEM
     hitimes (1.2.2)
     hooks (0.4.0)
       uber (~> 0.0.4)
+    http (0.9.8)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    http-form_data (1.0.1)
+    http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.2)
     kramdown (1.6.0)
@@ -131,12 +149,16 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   builder (~> 3.0)
+  contentful_middleman
   middleman (~> 3.3.10)
   middleman-autoprefixer
   middleman-blog (~> 3.5.3)
