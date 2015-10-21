@@ -50,6 +50,7 @@ activate :contentful do |f|
       mapper: GameMapper
     },
     league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    tournament: '31CyTyGhMQ8wiyAU2ks6SU',
     venue: '26QoxGy4wUKQQOcEoiqAGk'
   }
 end
@@ -110,7 +111,7 @@ data.website.game.each do |id,bout|
 end
 
 ignore '/tournaments/tournament.html'
-data.tournaments.each do |id,tournament|
+data.website.tournament.each do |id,tournament|
   proxy "/tournaments/#{tournament.slug}.html", '/tournaments/tournament.html', locals: {
     tournament: tournament,
   }
@@ -158,11 +159,11 @@ helpers do
   end
 
   def tournaments
-    data.tournaments.values.sort_by { |t| t.date.from }
+    data.website.tournament.values.sort_by { |t| t.from }
   end
 
   def bouts
-    data.website.game.map { |_,bout| bout }
+    data.website.game.values
   end
 
   def upcoming_bouts
@@ -174,7 +175,7 @@ helpers do
   end
 
   def bouts_for_tournament(tournament)
-    data.bouts.select { |b| b.tournament == tournament.slug }.sort_by(&:datetime)
+    bouts.select { |b| b.tournament && b.tournament.id == tournament.id }.sort_by(&:datetime)
   end
 
   def bout_by_slug(slug)
