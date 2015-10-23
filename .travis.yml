@@ -5,6 +5,7 @@ script:
 - git config --global user.name $GIT_NAME
 - git config --global user.email $GIT_EMAIL
 - git remote set-url origin https://jagregory:$GH_TOKEN@github.com/nbrg/nbrg.github.io.git
+- bundle exec middleman contentful
 - bundle exec middleman deploy
 branches:
   only:
