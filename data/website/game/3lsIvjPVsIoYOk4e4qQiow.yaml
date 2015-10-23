@@ -1,0 +1,14 @@
+---
+:id: 3lsIvjPVsIoYOk4e4qQiow
+:nickname: '5x5 Battlegrounds: Grand Final'
+:against:
+  :id: 3Zh4LYHt2gg4AO6gMi4mUu
+:datetime: !ruby/object:DateTime 2014-08-30 18:00:00.000000000 +10:00
+:won: false
+:scoreUs: 171
+:scoreThem: 159
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 5MFfTnmWruGywqM6WEa0yU
+:slug: 2014-08-30-nbrg-vs-ccrg

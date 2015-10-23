@@ -1,0 +1,14 @@
+---
+:id: 26I7hRyGBmEy2oEwCAyGqO
+:nickname: '5x5 Battlegrounds: Round 3'
+:against:
+  :id: 37y7zInTwIy4sQo0KyyEk6
+:datetime: !ruby/object:DateTime 2015-05-23 15:00:00.000000000 +10:00
+:won: false
+:scoreUs: 147
+:scoreThem: 202
+:venue:
+  :id: 1c7q4FAl42WME4IyC2i46y
+:tournament:
+  :id: 1YJ1QZ0zPCUgA4WOg8EWii
+:slug: 2015-05-23-nbrg-vs-ccrdu

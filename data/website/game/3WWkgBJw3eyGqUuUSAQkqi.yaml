@@ -1,0 +1,14 @@
+---
+:id: 3WWkgBJw3eyGqUuUSAQkqi
+:nickname: 'ERRD Smackdown: CCRG'
+:against:
+  :id: 3Zh4LYHt2gg4AO6gMi4mUu
+:datetime: !ruby/object:DateTime 2014-10-05 13:00:00.000000000 +11:00
+:won: false
+:scoreUs: 162
+:scoreThem: 188
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 4LKoQ9sGb68c4sa2k6sCua
+:slug: 2014-10-05-nbrg-vs-ccrg

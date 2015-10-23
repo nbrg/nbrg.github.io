@@ -1,0 +1,15 @@
+---
+:id: uUlfOLlmpicA2sAyIE0cI
+:nickname: 'ERRD Battlegrounds: PMRDL'
+:against:
+  :id: 7djPclnzGwy0k8aoOm4s4o
+:datetime: !ruby/object:DateTime 2015-10-03 11:00:00.000000000 +10:00
+:won: true
+:scoreUs: 207
+:scoreThem: 199
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 5riLhKCmAME6KmEIq6gQSA
+:facebookEvent: 
+:slug: 2015-10-03-nbrg-vs-pmrdl

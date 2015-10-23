@@ -1,0 +1,14 @@
+---
+:id: 3D78aFXzjWQoYe2AW6kWw2
+:nickname: 'ERRD Smackdown: WSR'
+:against:
+  :id: 4oxKBD2bEIcuEwIcGuQgCm
+:datetime: !ruby/object:DateTime 2014-10-04 09:30:00.000000000 +10:00
+:won: false
+:scoreUs: 71
+:scoreThem: 332
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 4LKoQ9sGb68c4sa2k6sCua
+:slug: 2014-10-04-nbrg-vs-wsr

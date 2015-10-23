@@ -1,0 +1,14 @@
+---
+:id: 3XdXlywYrmAKE0u04WYOAC
+:nickname: '5x5 Battlegrounds: Round 1'
+:against:
+  :id: 12CtHwlKKiaOiauKMMYgum
+:datetime: !ruby/object:DateTime 2015-03-21 15:00:00.000000000 +11:00
+:won: true
+:scoreUs: 264
+:scoreThem: 123
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 1YJ1QZ0zPCUgA4WOg8EWii
+:slug: 2015-03-21-nbrg-vs-hard

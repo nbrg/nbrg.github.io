@@ -1,9 +1,68 @@
+- datetime: 2015-11-28T13:00:00+11:00
+  against: wsr
+  slug: 2015-11-28-nbrg-vs-wsr
+  venue: velodrome
+
+- datetime: 2015-10-04T16:30:00+11:00
+  against: vdl
+  tournament: 2015-errd-smackdown
+  won: us
+  score:
+    us: 240
+    them: 151
+  slug: 2014-10-05-nbrg-vs-vdl
+  venue: niagara-park
+
+- datetime: 2015-10-04T11:00:00+11:00
+  against: ocd
+  tournament: 2015-errd-smackdown
+  won: them
+  score:
+    us: 206
+    them: 212
+  slug: 2015-10-04-nbrg-vs-ocd
+  venue: niagara-park
+
+- datetime: 2015-10-03T11:00:00+10:00
+  against: pmrdl
+  tournament: 2015-errd-smackdown
+  won: us
+  score:
+    us: 207
+    them: 199
+  slug: 2015-10-03-nbrg-vs-pmrdl
+  venue: niagara-park
+
+- datetime: 2015-08-29T13:00:00+10:00
+  against: bmrdl
+  nickname: "5x5 Battlegrounds: Final"
+  slug: 2015-08-29-nbrg-vs-bmrdl
+  tournament: 2015-5x5
+  venue: liverpool
+  won: us
+  score:
+    us: 262
+    them: 141
+
+- datetime: 2015-08-16T13:00:00+10:00
+  against: ocd
+  slug: 2015-08-16-nbrg-vs-ocd
+  venue: bateau-bay
+  won: them
+  score:
+    us: 132
+    them: 160
+
 - datetime: 2015-07-18T15:00:00+10:00
   against: iwrdl
   nickname: "5x5 Battlegrounds: Round 5"
   slug: 2015-07-18-nbrg-vs-iwrdl
   tournament: 2015-5x5
   venue: niagara-park
+  won: them
+  score:
+    us: 126
+    them: 218
 
 - datetime: 2015-06-27T13:00:00+10:00
   against: bmrdl

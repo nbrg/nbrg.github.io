@@ -1,0 +1,15 @@
+---
+:id: 4Os6OFDj6M844M2e2yA0E6
+:nickname: 'ERRD Battlegrounds: VDL'
+:against:
+  :id: 7f0jzf9CE0kOGCqQEQcO0k
+:datetime: !ruby/object:DateTime 2015-10-04 16:30:00.000000000 +11:00
+:won: true
+:scoreUs: 240
+:scoreThem: 151
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 5riLhKCmAME6KmEIq6gQSA
+:facebookEvent: 
+:slug: 2015-10-04-nbrg-vs-vdl

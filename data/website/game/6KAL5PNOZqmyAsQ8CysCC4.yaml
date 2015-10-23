@@ -1,0 +1,14 @@
+---
+:id: 6KAL5PNOZqmyAsQ8CysCC4
+:nickname: 'ERRD Smackdown: WIRD'
+:against:
+  :id: 72uPcP7lcsE4U0YUEOMecc
+:datetime: !ruby/object:DateTime 2014-10-05 18:30:00.000000000 +11:00
+:won: false
+:scoreUs: 104
+:scoreThem: 241
+:venue:
+  :id: 5Tc3WrdmH6okWsMWU4guC0
+:tournament:
+  :id: 4LKoQ9sGb68c4sa2k6sCua
+:slug: 2014-10-05-nbrg-vs-wird

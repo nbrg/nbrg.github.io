@@ -1,0 +1,15 @@
+---
+:id: 1dRvTEFhmYmusSIg6Yweao
+:nickname: '5x5 Battlegrounds: Round 4'
+:against:
+  :id: 2oegmuSl0USG0sMYOQaoUe
+:datetime: !ruby/object:DateTime 2015-06-27 13:00:00.000000000 +10:00
+:won: false
+:scoreUs: 87
+:scoreThem: 217
+:venue:
+  :id: 5dXhXEjEmQCmo2smMS4KyA
+:tournament:
+  :id: 1YJ1QZ0zPCUgA4WOg8EWii
+:facebookEvent: https://www.facebook.com/events/436818826477861/
+:slug: 2015-06-27-nbrg-vs-bmrdl
