@@ -3,13 +3,25 @@
 :nickname: '5x5 Battlegrounds: Round 5'
 :against:
   :id: 1wn0OB3qnCMKEm0QOsCAOa
+  :name: Inner West Roller Derby League
+  :nickname: IWRDL
+  :website: http://innerwestrollerderby.com/
 :datetime: !ruby/object:DateTime 2015-07-18 15:00:00.000000000 +10:00
 :won: false
 :scoreUs: 126
 :scoreThem: 218
 :venue:
   :id: 5Tc3WrdmH6okWsMWU4guC0
+  :name: Niagara Park Stadium
+  :location:
+    :lat: -33.382851
+    :lon: 151.352668
+  :address: 16 Washington Avenue, Niagara Park, New South Wales, 2250
 :tournament:
   :id: 1YJ1QZ0zPCUgA4WOg8EWii
+  :slug: 2015-5x5
+  :name: 5x5 Battlegrounds (2015)
+  :from: !ruby/object:DateTime 2015-03-21 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2015-07-18 00:00:00.000000000 Z
 :facebookEvent: 
 :slug: 2015-07-18-nbrg-vs-iwrdl

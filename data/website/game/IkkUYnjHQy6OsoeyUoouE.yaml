@@ -3,13 +3,25 @@
 :nickname: '5x5 Battlegrounds: Final'
 :against:
   :id: 2oegmuSl0USG0sMYOQaoUe
+  :name: Blue Mountains Roller Derby League
+  :nickname: BMRDL
+  :website: http://bluemountainsrollerderby.com/
 :datetime: !ruby/object:DateTime 2015-08-29 13:00:00.000000000 +10:00
 :won: true
 :scoreUs: 262
 :scoreThem: 141
 :venue:
   :id: 5dXhXEjEmQCmo2smMS4KyA
+  :name: Whitlam Leisure Centre
+  :location:
+    :lat: -33.9258453
+    :lon: 150.9148219
+  :address: 90a Memorial Avenue, Liverpool, New South Wales, 2170
 :tournament:
   :id: 1YJ1QZ0zPCUgA4WOg8EWii
+  :slug: 2015-5x5
+  :name: 5x5 Battlegrounds (2015)
+  :from: !ruby/object:DateTime 2015-03-21 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2015-07-18 00:00:00.000000000 Z
 :facebookEvent: 
 :slug: 2015-08-29-nbrg-vs-bmrdl

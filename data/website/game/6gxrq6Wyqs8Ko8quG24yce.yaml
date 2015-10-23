@@ -2,13 +2,25 @@
 :id: 6gxrq6Wyqs8Ko8quG24yce
 :against:
   :id: 1wn0OB3qnCMKEm0QOsCAOa
+  :name: Inner West Roller Derby League
+  :nickname: IWRDL
+  :website: http://innerwestrollerderby.com/
 :datetime: !ruby/object:DateTime 2014-05-31 15:00:00.000000000 +10:00
 :won: true
 :scoreUs: 186
 :scoreThem: 184
 :venue:
   :id: 6iMbSanRYWOmWEWisAckc0
+  :name: Ryde Community Sports Centre
+  :location:
+    :lat: -33.7910285
+    :lon: 151.11554950000004
+  :address: Kent Road, North Ryde, New South Wales, 2113
 :tournament:
   :id: 5MFfTnmWruGywqM6WEa0yU
+  :slug: 2014-5x5
+  :name: 5x5 Battlegrounds (2014)
+  :from: !ruby/object:DateTime 2014-04-26 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-08-30 00:00:00.000000000 Z
 :nickname: '5x5 Battlegrounds: Round 2'
 :slug: 2014-05-31-nbrg-vs-iwrdl

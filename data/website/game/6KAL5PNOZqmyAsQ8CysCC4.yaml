@@ -3,12 +3,25 @@
 :nickname: 'ERRD Smackdown: WIRD'
 :against:
   :id: 72uPcP7lcsE4U0YUEOMecc
+  :name: Wollongong Illawarra Roller Derby
+  :nickname: WIRD
+  :website: http://wird.com.au/
 :datetime: !ruby/object:DateTime 2014-10-05 18:30:00.000000000 +11:00
 :won: false
 :scoreUs: 104
 :scoreThem: 241
 :venue:
   :id: 5Tc3WrdmH6okWsMWU4guC0
+  :name: Niagara Park Stadium
+  :location:
+    :lat: -33.382851
+    :lon: 151.352668
+  :address: 16 Washington Avenue, Niagara Park, New South Wales, 2250
 :tournament:
   :id: 4LKoQ9sGb68c4sa2k6sCua
+  :slug: 2014-errd-smackdown
+  :name: Eastern Region Roller Derby Smackdown (2014)
+  :from: !ruby/object:DateTime 2014-10-04 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-10-06 00:00:00.000000000 Z
+  :nickname: ERRD (2014)
 :slug: 2014-10-05-nbrg-vs-wird

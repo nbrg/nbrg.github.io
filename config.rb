@@ -31,7 +31,7 @@ end
 class GameMapper < ContentfulMiddleman::Mapper::Base
   def map(context, entry)
     super
-    against = entry.against.resolve()
+    against = entry.against
     context.slug = "#{entry.datetime.strftime('%Y-%m-%d')}-nbrg-vs-#{against.nickname}".downcase
   end
 end
@@ -50,6 +50,7 @@ activate :contentful do |f|
       mapper: GameMapper
     },
     league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    sponsor: '39dTz3KNpm8SAAoyWCSCKC',
     tournament: '31CyTyGhMQ8wiyAU2ks6SU',
     venue: '26QoxGy4wUKQQOcEoiqAGk'
   }

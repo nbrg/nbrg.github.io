@@ -3,13 +3,26 @@
 :nickname: 'ERRD Battlegrounds: OCD'
 :against:
   :id: 1bhh8iVrcukq0uwoygW4Qw
+  :name: OutCast Derby
+  :nickname: OCD
+  :website: http://outcastderby.com.au/
 :datetime: !ruby/object:DateTime 2015-10-04 11:00:00.000000000 +11:00
 :won: false
 :scoreUs: 206
 :scoreThem: 212
 :venue:
   :id: 5Tc3WrdmH6okWsMWU4guC0
+  :name: Niagara Park Stadium
+  :location:
+    :lat: -33.382851
+    :lon: 151.352668
+  :address: 16 Washington Avenue, Niagara Park, New South Wales, 2250
 :tournament:
   :id: 5riLhKCmAME6KmEIq6gQSA
+  :slug: eastern-region-roller-derby-smackdown-2015
+  :name: 'Eastern Region Roller Derby: Smackdown (2015)'
+  :nickname: ERRD (2015)
+  :from: !ruby/object:DateTime 2015-10-03 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2015-10-04 00:00:00.000000000 Z
 :facebookEvent: 
 :slug: 2015-10-04-nbrg-vs-ocd

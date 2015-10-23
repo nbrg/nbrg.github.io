@@ -2,12 +2,20 @@
 :id: 5I4TvcxCko2sq4kQMMaww0
 :against:
   :id: 1Kk292ZbK0e2IwCgy0WQMs
+  :name: South Side Derby Dolls
+  :nickname: S2D2
+  :website: http://southsidederby.com/
 :datetime: !ruby/object:DateTime 2014-07-05 15:00:00.000000000 +10:00
 :won: true
 :scoreUs: 149
 :scoreThem: 143
 :venue:
   :id: 3mm8m6fAlaI0G8SSuIs4mC
+  :name: Penrith Valley Regional Sports Centre
+  :location:
+    :lat: -33.754407
+    :lon: 150.73502099999996
+  :address: 30 Herbert Street, Cambridge Park, New South Wales, 2747
 :tournament: 
 :nickname: NBRG vs S2D2
 :slug: 2014-07-05-nbrg-vs-s2d2

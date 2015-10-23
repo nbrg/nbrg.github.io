@@ -2,13 +2,25 @@
 :id: 1yPZHQqV64qK02uaimQwCm
 :against:
   :id: 12CtHwlKKiaOiauKMMYgum
+  :name: Hawkesbury/Hills Area Roller Derby
+  :nickname: HARD
+  :website: http://www.skatehard.com.au/
 :datetime: !ruby/object:DateTime 2014-06-28 15:00:00.000000000 +10:00
 :won: true
 :scoreUs: 180
 :scoreThem: 151
 :venue:
   :id: 1c7q4FAl42WME4IyC2i46y
+  :name: Hawkesbury Indoor Stadium
+  :location:
+    :lat: -33.627003
+    :lon: 150.80419299999994
+  :address: 16 Stewart Street, South Windsor, New South Wales, 2756
 :tournament:
   :id: 5MFfTnmWruGywqM6WEa0yU
+  :slug: 2014-5x5
+  :name: 5x5 Battlegrounds (2014)
+  :from: !ruby/object:DateTime 2014-04-26 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-08-30 00:00:00.000000000 Z
 :nickname: '5x5 Battlegrounds: Round 3'
 :slug: 2014-06-28-nbrg-vs-hard

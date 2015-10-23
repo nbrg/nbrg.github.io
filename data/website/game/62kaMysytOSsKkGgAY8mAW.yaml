@@ -3,12 +3,20 @@
 :nickname: NBRG vs OCD
 :against:
   :id: 1bhh8iVrcukq0uwoygW4Qw
+  :name: OutCast Derby
+  :nickname: OCD
+  :website: http://outcastderby.com.au/
 :datetime: !ruby/object:DateTime 2015-08-16 13:00:00.000000000 +10:00
 :won: false
 :scoreUs: 132
 :scoreThem: 160
 :venue:
   :id: 6wI3eZcCJi0QiqEmUS2e22
+  :name: Bateau Bay PCYC
+  :location:
+    :lat: -33.3849755
+    :lon: 151.472572
+  :address: The Entrance Rd, Bateau Bay NSW 2261
 :tournament: 
 :facebookEvent: 
 :slug: 2015-08-16-nbrg-vs-ocd

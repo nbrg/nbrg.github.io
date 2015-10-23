@@ -3,12 +3,24 @@
 :nickname: '5x5 Battlegrounds: Round 4'
 :against:
   :id: 3Zh4LYHt2gg4AO6gMi4mUu
+  :name: Central Coast Roller Girls
+  :nickname: CCRG
+  :website: http://www.centralcoastrollergirls.com.au/
 :won: false
 :datetime: !ruby/object:DateTime 2014-07-19 15:00:00.000000000 +10:00
 :scoreUs: 110
 :scoreThem: 247
 :venue:
   :id: 75kOLvbdAW2IwYCsYW6E2Y
+  :name: Hurstville Aquatic Leisure Centre
+  :location:
+    :lat: -33.962853
+    :lon: 151.091307
+  :address: Corner of King Georges & Forest Rd, Hurstville, New South Wales, 2221
 :tournament:
   :id: 5MFfTnmWruGywqM6WEa0yU
+  :slug: 2014-5x5
+  :name: 5x5 Battlegrounds (2014)
+  :from: !ruby/object:DateTime 2014-04-26 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-08-30 00:00:00.000000000 Z
 :slug: 2014-07-19-nbrg-vs-ccrg

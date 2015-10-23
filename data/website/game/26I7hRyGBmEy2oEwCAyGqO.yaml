@@ -3,12 +3,24 @@
 :nickname: '5x5 Battlegrounds: Round 3'
 :against:
   :id: 37y7zInTwIy4sQo0KyyEk6
+  :name: Central Coast Roller Derby United
+  :nickname: CCRDU
+  :website: https://www.facebook.com/CCRDU
 :datetime: !ruby/object:DateTime 2015-05-23 15:00:00.000000000 +10:00
 :won: false
 :scoreUs: 147
 :scoreThem: 202
 :venue:
   :id: 1c7q4FAl42WME4IyC2i46y
+  :name: Hawkesbury Indoor Stadium
+  :location:
+    :lat: -33.627003
+    :lon: 150.80419299999994
+  :address: 16 Stewart Street, South Windsor, New South Wales, 2756
 :tournament:
   :id: 1YJ1QZ0zPCUgA4WOg8EWii
+  :slug: 2015-5x5
+  :name: 5x5 Battlegrounds (2015)
+  :from: !ruby/object:DateTime 2015-03-21 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2015-07-18 00:00:00.000000000 Z
 :slug: 2015-05-23-nbrg-vs-ccrdu

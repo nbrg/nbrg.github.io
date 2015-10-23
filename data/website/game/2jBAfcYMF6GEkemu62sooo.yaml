@@ -2,13 +2,25 @@
 :id: 2jBAfcYMF6GEkemu62sooo
 :against:
   :id: 1bhh8iVrcukq0uwoygW4Qw
+  :name: OutCast Derby
+  :nickname: OCD
+  :website: http://outcastderby.com.au/
 :datetime: !ruby/object:DateTime 2014-04-26 15:00:00.000000000 +10:00
 :won: true
 :scoreUs: 163
 :scoreThem: 92
 :venue:
   :id: 6SBc2h3ig06AE0eEmIwGqS
+  :name: Katoomba Sports and Aquatic Centre
+  :location:
+    :lat: -33.7157985
+    :lon: 150.30377939999994
+  :address: Catalina Ave, Katoomba, New South Wales, 2780
 :tournament:
   :id: 5MFfTnmWruGywqM6WEa0yU
+  :slug: 2014-5x5
+  :name: 5x5 Battlegrounds (2014)
+  :from: !ruby/object:DateTime 2014-04-26 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-08-30 00:00:00.000000000 Z
 :nickname: '5x5 Battlegrounds: Round 1'
 :slug: 2014-04-26-nbrg-vs-ocd

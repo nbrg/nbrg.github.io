@@ -3,12 +3,25 @@
 :nickname: 'ERRD Smackdown: WSR'
 :against:
   :id: 4oxKBD2bEIcuEwIcGuQgCm
+  :name: Western Sydney Rollers
+  :nickname: WSR
+  :website: http://www.westernsydneyrollers.com.au/
 :datetime: !ruby/object:DateTime 2014-10-04 09:30:00.000000000 +10:00
 :won: false
 :scoreUs: 71
 :scoreThem: 332
 :venue:
   :id: 5Tc3WrdmH6okWsMWU4guC0
+  :name: Niagara Park Stadium
+  :location:
+    :lat: -33.382851
+    :lon: 151.352668
+  :address: 16 Washington Avenue, Niagara Park, New South Wales, 2250
 :tournament:
   :id: 4LKoQ9sGb68c4sa2k6sCua
+  :slug: 2014-errd-smackdown
+  :name: Eastern Region Roller Derby Smackdown (2014)
+  :from: !ruby/object:DateTime 2014-10-04 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2014-10-06 00:00:00.000000000 Z
+  :nickname: ERRD (2014)
 :slug: 2014-10-04-nbrg-vs-wsr

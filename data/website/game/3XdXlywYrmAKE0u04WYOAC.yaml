@@ -3,12 +3,24 @@
 :nickname: '5x5 Battlegrounds: Round 1'
 :against:
   :id: 12CtHwlKKiaOiauKMMYgum
+  :name: Hawkesbury/Hills Area Roller Derby
+  :nickname: HARD
+  :website: http://www.skatehard.com.au/
 :datetime: !ruby/object:DateTime 2015-03-21 15:00:00.000000000 +11:00
 :won: true
 :scoreUs: 264
 :scoreThem: 123
 :venue:
   :id: 5Tc3WrdmH6okWsMWU4guC0
+  :name: Niagara Park Stadium
+  :location:
+    :lat: -33.382851
+    :lon: 151.352668
+  :address: 16 Washington Avenue, Niagara Park, New South Wales, 2250
 :tournament:
   :id: 1YJ1QZ0zPCUgA4WOg8EWii
+  :slug: 2015-5x5
+  :name: 5x5 Battlegrounds (2015)
+  :from: !ruby/object:DateTime 2015-03-21 00:00:00.000000000 Z
+  :to: !ruby/object:DateTime 2015-07-18 00:00:00.000000000 Z
 :slug: 2015-03-21-nbrg-vs-hard

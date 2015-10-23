@@ -3,11 +3,19 @@
 :nickname: NBRG vs SRDL
 :against:
   :id: hjYKGSSFQkk0g88Sm0QYg
+  :name: Sydney Roller Derby League
+  :nickname: SRDL
+  :website: http://www.sydneyrollerderby.com/
 :won: false
 :datetime: !ruby/object:DateTime 2014-08-16 18:30:00.000000000 +10:00
 :scoreUs: 14
 :scoreThem: 285
 :venue:
   :id: 49m2tIgthuso0Qc8kIs4gA
+  :name: Big Top, Luna Park
+  :location:
+    :lat: -33.849322
+    :lon: 151.21128739999995
+  :address: 1 Olympic Drive, Milsons Point, New South Wales, 2061
 :tournament: 
 :slug: 2014-08-16-nbrg-vs-srdl
