@@ -1,4 +1,5 @@
 ---
+cache: bundler
 language: ruby
 script:
 - git config --global user.name $GIT_NAME
