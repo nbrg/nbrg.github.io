@@ -50,6 +50,7 @@ activate :contentful do |f|
       mapper: GameMapper
     },
     league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    photographer: '2noUTFTyrGGEaqCiIKoKK0',
     sponsor: '39dTz3KNpm8SAAoyWCSCKC',
     tournament: '31CyTyGhMQ8wiyAU2ks6SU',
     venue: '26QoxGy4wUKQQOcEoiqAGk'
@@ -215,7 +216,7 @@ helpers do
   def photograph(img)
     photo = data.photos[img]
     raise "Unrecognised photo #{img}" unless photo
-    photographer = data.photographers[photo.photographer]
+    photographer = data.website.photographer[photo.photographer]
 
     partial '_photograph', locals: { image: img, photo: photo, photographer: photographer }
   end
