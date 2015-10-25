@@ -50,6 +50,7 @@ activate :contentful do |f|
       mapper: GameMapper
     },
     league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    photo: '3ZWZ13o8HSAGUM6KWKwEMm',
     photographer: '2noUTFTyrGGEaqCiIKoKK0',
     sponsor: '39dTz3KNpm8SAAoyWCSCKC',
     tournament: '31CyTyGhMQ8wiyAU2ks6SU',
@@ -208,17 +209,20 @@ helpers do
   end
 
   def photo_path(img)
-    photo = data.photos[img]
-    raise "Unrecognised photo #{img}" unless photo
-    "/images/photos/#{photo.photographer}/#{img}"
+    if photo = data.photos[img]
+      photographer = data.website.photographer[photo.photographer]
+      "/images/photos/#{photographer}/#{img}"
+    elsif photo = data.website.photo.values.select { |p| p.title == img }.first
+      photo.photo.url
+    else
+      raise "Unrecognised photo #{img}"
+    end
   end
 
-  def photograph(img)
-    photo = data.photos[img]
-    raise "Unrecognised photo #{img}" unless photo
-    photographer = data.website.photographer[photo.photographer]
-
-    partial '_photograph', locals: { image: img, photo: photo, photographer: photographer }
+  def photograph(name)
+    photo = data.website.photo.values.select { |p| p.title == name }.first
+    raise "Unrecognised photo #{name}" unless photo
+    partial '_photograph', locals: { image: name, photo: photo, photographer: photo.photographer }
   end
 
   def hostname

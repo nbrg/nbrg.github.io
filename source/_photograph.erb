@@ -1,11 +1,11 @@
 <div class="photo">
   <img src="<%= photo_path image %>" alt="" title="Photograph by <%= photographer.name %>">
   <p>Photograph by <a href="<%= photographer.link %>"><%= photographer.name %></a>
-    <% if photo.original_album_link %>
-      &middot; <a href="<%= photo.original_album_link %>">Album</a>
+    <% if photo.originalAlbumLink %>
+      &middot; <a href="<%= photo.originalAlbumLink %>">Album</a>
     <% end %>
-    <% if photo.original_photo_link %>
-      &middot; <a href="<%= photo.original_photo_link %>">Original</a>
+    <% if photo.originalPhotoLink %>
+      &middot; <a href="<%= photo.originalPhotoLink %>">Original</a>
     <% end %>
   </p>
 </div>
