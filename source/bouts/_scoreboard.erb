@@ -1,7 +1,12 @@
 <% against = data.website.league[bout.against.id] %>
 <section class="bout-scoreboard">
   <div class="team <%= bout.won ? bout.won ? 'winner' : 'loser' : '' %>">
-    <h2><span>Northern Beaches Roller Girls</span></h2>
+    <h2>
+      <span>Northern Beaches Roller Girls</span>
+      <% if bout.team %>
+        <em><%= bout.team.name %></em>
+      <% end %>
+    </h2>
     <img src="/images/leagues/nbrg.png" width="128" />
     <% if bout.scoreUs %>
       <p><%= bout.scoreUs %></p>
@@ -9,7 +14,12 @@
   </div>
 
   <div class="team <%= !bout.won ? 'winner' : 'loser' %>">
-    <h2><a href="<%= against.website %>"><span><%= against.name %></span></a></h2>
+    <h2>
+      <a href="<%= against.website %>"><span><%= against.name %></span></a>
+      <% if bout.againstTeam %>
+        <em><%= bout.againstTeam.name %></em>
+      <% end %>
+    </h2>
     <img src="/images/leagues/<%= against.nickname.downcase %>.png" width="128" />
     <% if bout.scoreThem %>
       <p><%= bout.scoreThem %></p>
