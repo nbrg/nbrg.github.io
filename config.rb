@@ -192,15 +192,9 @@ helpers do
     datetime_tag(date, '%l:%M%P')
   end
 
-  def lineups_for_player(player)
-    id = player.is_a?(String) ? player : player.slug
-    lineups = []
-    data.teams.each { |team_id,team|
-      team['lineups']
-        .select { |lu_id,lu| lu['players'].include? id }
-        .each { |lu_id,_| lineups << [team_id,lu_id] }
-    }
-    lineups
+  def teams_for_player(player)
+    id = player.is_a?(String) ? player : player.id
+    data.website.team.values.select { |team| team.players.select(&:id).include?(id) }
   end
 
   def photo_path(img)
