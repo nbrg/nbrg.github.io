@@ -17,9 +17,9 @@ article_class: member
   <%= photograph member.photo %>
 <% end %>
 
-<% teams_for_player(member.slug).each do |team| %>
+<% teams_for_player(member).each do |team| %>
   <p><%= member.nickname || member.name %> <%= team.year == 2015 ? 'is' : 'was' %> a
-  member of <a href="/teams/<%= team.slug %>/<%= lineup_id %>">the <%= lineup_id %> lineup
+  member of <a href="/teams/<%= team.slug %>">the <%= team.year %> lineup
   of <%= team.name %></a>.</p>
 <% end %>
 

@@ -193,8 +193,12 @@ helpers do
   end
 
   def teams_for_player(player)
-    id = player.is_a?(String) ? player : player.id
-    data.website.team.values.select { |team| team.players.select(&:id).include?(id) }
+    data.website.team.values.select { |team|
+      [team.players, team.captains, team.benchManagers, team.lineupManagers]
+        .flatten
+        .map(&:id)
+        .include?(player.id)
+    }
   end
 
   def photo_path(img)
