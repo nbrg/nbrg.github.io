@@ -1,6 +1,6 @@
 <h1>Teams</h1>
 <ul>
-  <% data.teams.each do |slug,team| %>
-    <li><a href="/teams/<%= slug %>"><%= team.name %></a></li>
+  <% data.website.team.each do |_,team| %>
+    <li><a href="/teams/<%= team.slug %>"><%= team.name %><%= team.year ? " (#{team.year})" : "" %></a></li>
   <% end %>
 </ul>

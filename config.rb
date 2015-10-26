@@ -55,6 +55,7 @@ activate :contentful do |f|
     photo: '3ZWZ13o8HSAGUM6KWKwEMm',
     photographer: '2noUTFTyrGGEaqCiIKoKK0',
     sponsor: '39dTz3KNpm8SAAoyWCSCKC',
+    team: '3yGKYOVrZY8kGu4SKSoaye',
     tournament: '31CyTyGhMQ8wiyAU2ks6SU',
     venue: '26QoxGy4wUKQQOcEoiqAGk'
   }
@@ -94,17 +95,9 @@ end
 
 ignore '/teams/team.html'
 ignore '/teams/lineup.html'
-data.teams.each do |id,team|
-  team.lineups.each do |year,lineup|
-    proxy "/teams/#{id}/#{year}.html", '/teams/lineup.html', layout: 'one-column', locals: {
-      team: team,
-      year: year,
-      lineup: lineup,
-    }
-  end
-
-  proxy "/teams/#{id}.html", '/teams/team.html', locals: {
-    team: team,
+data.website.team.each do |_,team|
+  proxy "/teams/#{team.slug}.html", '/teams/lineup.html', layout: 'one-column', locals: {
+    team: team
   }
 end
 
@@ -211,24 +204,19 @@ helpers do
   end
 
   def photo_path(img)
-    if img.id
-      img.photo.url
-    elsif photo = data.photos[img]
-      photographer = data.website.photographer[photo.photographer]
-      "/images/photos/#{photographer}/#{img}"
-    elsif photo = data.website.photo.values.select { |p| p.title == img }.first
-      photo.photo.url
+    if img.is_a? String
+      data.website.photo.values.select { |p| p.title == img }.first.photo.url
     else
-      raise "Unrecognised photo #{img}"
+      img.photo.url
     end
   end
 
   def photograph(name)
-    photo = if name.id
+    photo = if name.is_a? String
+      data.website.photo.values.select { |p| p.title == name }.first
+    else
       # is a photo
       name
-    else
-      data.website.photo.values.select { |p| p.title == name }.first
     end
     raise "Unrecognised photo #{name}" unless photo
     partial '_photograph', locals: { image: name, photo: photo, photographer: photo.photographer }
