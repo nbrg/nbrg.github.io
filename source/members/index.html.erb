@@ -11,7 +11,7 @@ title: League Members
 
 <h1>Members</h1>
 <ul>
-  <% data.members.each do |slug,member| %>
-    <li><a href="/members/<%= slug %>"><%= member.name %></a></li>
+  <% data.website.member.values.sort_by(&:name).each do |member| %>
+    <li><a href="/members/<%= member.slug %>"><%= member.name %></a></li>
   <% end %>
 </ul>

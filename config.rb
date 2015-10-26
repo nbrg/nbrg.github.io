@@ -42,7 +42,8 @@ activate :contentful do |f|
   }
   f.access_token = ENV['contentful_access_token']
   f.cda_query = {
-    include: 1
+    include: 2,
+    limit: 1000
   }
   f.content_types = {
     game: {
@@ -50,6 +51,7 @@ activate :contentful do |f|
       mapper: GameMapper
     },
     league: '5LCZ0WqZ7qsiiuAqYGi6qe',
+    member: '6vGfQlnZC00aYeuWEW4MMO',
     photo: '3ZWZ13o8HSAGUM6KWKwEMm',
     photographer: '2noUTFTyrGGEaqCiIKoKK0',
     sponsor: '39dTz3KNpm8SAAoyWCSCKC',
@@ -84,8 +86,8 @@ page "/feed.xml", layout: false
 ###
 
 ignore '/members/member.html'
-data.members.each do |id,member|
-  proxy "/members/#{id}.html", '/members/member.html', locals: {
+data.website.member.values.each do |member|
+  proxy "/members/#{member.slug}.html", '/members/member.html', locals: {
     member: member,
   }
 end
@@ -209,7 +211,9 @@ helpers do
   end
 
   def photo_path(img)
-    if photo = data.photos[img]
+    if img.id
+      img.photo.url
+    elsif photo = data.photos[img]
       photographer = data.website.photographer[photo.photographer]
       "/images/photos/#{photographer}/#{img}"
     elsif photo = data.website.photo.values.select { |p| p.title == img }.first
@@ -220,7 +224,12 @@ helpers do
   end
 
   def photograph(name)
-    photo = data.website.photo.values.select { |p| p.title == name }.first
+    photo = if name.id
+      # is a photo
+      name
+    else
+      data.website.photo.values.select { |p| p.title == name }.first
+    end
     raise "Unrecognised photo #{name}" unless photo
     partial '_photograph', locals: { image: name, photo: photo, photographer: photo.photographer }
   end

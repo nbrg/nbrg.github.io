@@ -1,7 +1,7 @@
 <a href="/members/<%= member.slug %>">
   <% if member.photo %>
     <div class="photo-circle">
-      <img src="/images/photos/willow-belle/<%= member.photo %>" alt="" />
+      <img src="<%= member.photo.photo.url %>?w=50" alt="" />
     </div>
   <% end %>
   <h2>
