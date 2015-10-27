@@ -1,7 +1,9 @@
 <%
   content_for(:title, "#{team.name} (#{team.year})")
-  captains = team.captains.sort_by(&:name)
-  players = team.players.sort_by(&:name)
+  captains = (team.captains || []).sort_by(&:name)
+  players = (team.players || []).sort_by(&:name)
+  benchManagers = (team.benchManagers || []).sort_by(&:name)
+  lineupManagers = (team.lineupManagers || []).sort_by(&:name)
   prior_lineups = data.website.team.values
     .select { |other| other.league == team.league && other.name == team.name }
 %>
@@ -27,10 +29,10 @@
   <% end %>
 </ul>
 <ul class="lineup">
-  <% team.benchManagers.each do |benchie| %>
+  <% benchManagers.each do |benchie| %>
     <li><%= partial 'teams/member', locals: { member: benchie, role: 'Bench Manager' } %></li>
   <% end %>
-  <% team.lineupManagers.each do |lineup| %>
+  <% lineupManagers.each do |lineup| %>
     <li><%= partial 'teams/member', locals: { member: lineup, role: 'Bench Manager' } %></li>
   <% end %>
 </ul>

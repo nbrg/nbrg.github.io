@@ -196,6 +196,7 @@ helpers do
     data.website.team.values.select { |team|
       [team.players, team.captains, team.benchManagers, team.lineupManagers]
         .flatten
+        .compact
         .map(&:id)
         .include?(player.id)
     }
