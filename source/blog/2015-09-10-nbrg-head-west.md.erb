@@ -1,0 +1,16 @@
+---
+title: 'NBRG head out West'
+date: 2015-09-10
+tags: bouts
+---
+<% bout = bout_by_slug '2015-11-28-nbrg-vs-wsr' %>
+To wrap up and put a bow on the 2015 Derby year for Northern Beaches Roller Girls they are playing in a fun invitational bout against Western Sydney Rollers. The Sirens will be playing in the opening game for WSRs Grand Final event.
+
+Find out more about the whole day on the [Facebook event](https://www.facebook.com/events/442310295956609/).
+
+<% if bout %>
+  Our game will start <%= bout.datetime.strftime('%-d %b, %Y at %l:%M%P') %>.
+
+  <%= partial 'bouts/scoreboard', locals: { bout: bout } %>
+  <%= partial 'bouts/venue', locals: { venue: data.website.venue[bout.venue.id] } %>
+<% end %>
