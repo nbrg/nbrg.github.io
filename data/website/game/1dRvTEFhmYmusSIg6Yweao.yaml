@@ -24,4 +24,295 @@
   :from: !ruby/object:DateTime 2015-03-21 00:00:00.000000000 Z
   :to: !ruby/object:DateTime 2015-07-18 00:00:00.000000000 Z
 :facebookEvent: https://www.facebook.com/events/436818826477861/
+:team:
+  :id: 2l5B4tKefa8wg8cG6esUcY
+  :slug: the-sirens
+  :name: The Sirens
+  :year: 2015
+  :league:
+    :id: 2jRfPiWwrOmq2AgWMCygie
+    :name: Northern Beaches Roller Girls
+    :nickname: NBRG
+    :website: http://www.nbrg.com.au
+  :benchManagers:
+  - :id: 4d2UAd7itOEMgyAYWEygcK
+    :slug: sponge-scott-no-pants
+    :name: Sponge Scott No Pants
+  :lineupManagers:
+  - :id: 2Cvl8JjlaAQOWWUwweW6Gs
+    :slug: ragequit
+    :name: Ragequit
+    :photo:
+      :id: 6RPywqzkkMeIouoyaYEaqe
+      :title: 'Portrait: Ragequit'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: ragequit
+        :url: "//images.contentful.com/woqj76ijzwsc/pfdyLzSjscYWaQ0OI0Ksq/00ca5f5e2dbaf5f371d7bf2710755e3a/ragequit.jpg"
+    :realName: James Gregory
+    :bio: |
+      **Why did you get involved in Derby?** When my partner, Yorkshire Terror, had her first game in May 2014 I came along out of being a supportive partner and a small amount of curiosity, and didn't really know what I was getting myself into. One confusing and dizzying game later I was immediately hooked on the sport, and quickly started figuring out how it worked (I like puzzles). Learning about how inclusive and awesome the community and sport is just cemented the whole thing for me, and fast forward a year and I'm a lineup manager and spend way too much of my time thinking about Derby.
+
+      **Things which annoy me:** Inefficiency. Wilful ignorance. Gender stereotyping, and societal norms.
+
+      **Likes:** Rational thought. Insatiable curiosity. Making things.
+
+      **Favourite food:** Coffee. Cocktails. Beer. Any food which compliments those things.
+
+      **Favourite quote:** "He attacked everything in life with a mix of extraordinary genius and naive incompetence, and it was often difficult to tell which was which." -- Douglas Adams
+  :captains:
+  - :id: 69Dlm3rXtmQiUKK6yYKKqS
+    :slug: natural-born-killer
+    :name: Natural Born Killer
+    :number: '66'
+    :photo:
+      :id: 1ot7fjJFr6QyiyYCeWmQU0
+      :title: 'Portrait: Natural Born Killer'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: natural-born-killer
+        :url: "//images.contentful.com/woqj76ijzwsc/4kQ1s4hHtukq840yuykewA/ec13de44f1d932022440a9dfa9037cfb/natural-born-killer.jpg"
+    :realName: Natalie Aiken
+    :bio: |
+      **Why you started playing Derby?** Skating + Full contact = Fun times
+
+      **What annoys you the most?** A Jammer getting through on the inside
+
+      **Likes:** Learning new things
+
+      **Favourite Food:** Carrot Cake
+
+      **Favourite quote or motto:** "We are and we are becoming"
+  :players:
+  - :id: U9We2kK5qgEKqGcQGiAI
+    :slug: betty-rocker
+    :name: Betty Rocker
+    :number: '1956'
+    :photo:
+      :id: 5LwLNAfaDKiSGgsksaqye4
+      :title: 'Portrait: Betty Rocker'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: betty-rocker
+        :url: "//images.contentful.com/woqj76ijzwsc/6Uq5gdFv9YCUKYEaWUmaog/de999606f996a2db7c9cc68ec1735a41/betty-rocker.jpg"
+    :realName: Ghilaine Hammond-Baillie
+    :bio: |-
+      **Why did you start playing Derby?** Because I loved skating and thought the possibility of being a derby girl was too cool to pass up
+
+      **Likes:** Baking and Sleeping in
+
+      **What annoys me the most:** The high risk of injury in this sport. It's sad when passionate players can't play any more
+
+      **Favourite Food:** Burgers and anything that's a Dessert
+
+      **Favourite Quote:** "I may not be the coolest, I may not be the best, but there will never be another footprint on the earth quite the same as mine." -- Atmosphere
+  - :id: 21hA2h9CZW2MySgAgakaWO
+    :slug: crush-n-over
+    :name: Crush n Over
+    :number: '181'
+    :photo:
+      :id: 400Esh96co6ISSC88aiIQs
+      :title: 'Portrait: Crush n Over'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: crush-n-over
+        :url: "//images.contentful.com/woqj76ijzwsc/3Sb2Gp6szKOgwGCSOqCIKK/dceb18398c8cc7666b7feb500d61e48c/crush-n-over.jpg"
+    :realName: Angela Cushway
+    :bio: |
+      **Why did you start playing Derby:** I saw a picture on Instagram of a pair of skates, and words that said "My Roller Derby Wife"; I was intrigued. As a kid I was on my skates my whole youth and loved it that much. It brought back so many great memories that I thought "Well I'm game to get back on my skates, why the hell not?!"
+
+      **What annoys you the most?** When bad things happen to good people...
+
+      **Likes:** Other than derby! Photography, spending time with my kids, skating, playing my ukulele, listening to music and singing out loud. Horse riding and antique furniture scouting/shopping. Any thing vintage...
+
+      **Favourite Food:** Can I say food (s) ?!... Red Wine with homemade lasagna, gin and tonic on a summers day, sashimi and great black coffee but not together lol
+
+      **Favorite quote:** "Life is like a camera, just focus on what's important and capture the good times, develop from the negatives and if things don't work out, just take another shot"
+  - :id: 3UMDVc5A7CUAsEKeCyuY0M
+    :slug: flash-burn
+    :name: Flash Burn
+    :number: '350'
+    :photo:
+      :id: 6arUnZfdJe2QU2Oqmc8gEW
+      :title: 'Portrait: Flash Burn'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: flash-burn
+        :url: "//images.contentful.com/woqj76ijzwsc/4OX4rkUjm04860sUeuGQS0/2c2cacb7803244915882d9a76f1b5580/flash-burn.jpg"
+    :realName: Amanda Lockton
+    :bio: |
+      **Why did you start playing Derby?** I have always loved skating, and I found roller derby at a time when I needed to make a fresh start after marriage breakdown.
+
+      **What annoys you the most?** Bitchiness, negativity, and petty, narrow minded people.
+
+      **Likes:** Skating; camping; creating beautiful things from steel; my car; my home, and my gorgeous kids.
+
+      **Favourite Food:** Beef jerky... and beer.
+
+      **Favourite quote:** "Some people live more in 20 years than others do in 80. It's not the time that matters, it's the person." Dr Who
+  - :id: 7JJEiWhGo0IKEO6SeMs8cM
+    :slug: kp-karnage
+    :name: KP Karnage
+    :number: 0089
+    :photo:
+      :id: kJSDDKg4a4WIWkSiUo0Wi
+      :title: 'Portrait: KP Karnage'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: kp-karnage
+        :url: "//images.contentful.com/woqj76ijzwsc/x1yr2wIlkOkSMOaoaiqKe/15adbfb87ceec19b675176799c25dd14/kp-karnage.jpg"
+    :realName: Katie Peterson
+    :bio: |-
+      **Why did you start playing Derby?** I had just moved to Sydney and I saw an article about NBRG in the Manly Daily and decided to give it a go, and I am still rolling with it.
+
+      **What annoys you the most?** Mmmmm... this is a tricky one!
+
+      **Likes:** Australia, wandering the globe, good books, drinking tea, blogging, taking photographs.
+
+      **Favourite Food(s):** Cheddar cheese, blue cheese, goats cheese, Mozzarella, Brie and so on... I like cheese!
+
+      **Favourite quote or motto:** "Don't quit your daydream"
+  - :id: 5n2J9cwuHeIOeIiMma8Kgo
+    :slug: metallikez
+    :name: Metallikez
+    :number: '210'
+    :photo:
+      :id: 5gt9CsEY64egIgOwM8YCO0
+      :title: 'Portrait: Metallikez'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: metallikez
+        :url: "//images.contentful.com/woqj76ijzwsc/4hQ8B2QE9aGwI8KgycYsUA/7cf1d370f5a9b77cac9e333cfa8dea64/metallikez.jpg"
+    :realName: Kerrie-anne Busch
+    :bio: |-
+      **Why did you start playing Derby?** I finally found a sport that suits my personality, I can get out all my aggression, and all the girls are awesome.
+
+      **What annoys you most?** Tardiness, liars, and when it rains on my days off work.
+
+      **Likes:** Eating, relaxing in the sun, singing in the car and shower, and doing art and craft with my daughter Charlotte
+
+      **Favorite foods:** Mexican, Pad Thai and Sushi.
+
+      **Favorite quote:** "It's better to regret something you did than something you didn't do."
+  - :id: 7ob8O3gTbUC2S24iEwQsMW
+    :slug: miss-priss
+    :name: Miss Priss
+    :number: '68'
+    :photo:
+      :id: 2l9GAWWo5mSOKuMUmwSIs4
+      :title: 'Portrait: Miss Priss'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: miss-priss
+        :url: "//images.contentful.com/woqj76ijzwsc/uyesx8qwkogoyoSWW6Guk/e780b298e7eb44122aab0e106e57f006/miss-priss.jpg"
+    :realName: Sonia Collingwood
+    :bio: |-
+      **Why did you start playing Derby?** I grew up skating in the Xanadu era and had a roller rink just around the corner so spent a lot of time there. A few years ago I got given a shiny pair of Starfires, saw Whip It, and thought it was a great way to get back into skating. It's taken a bit of time to get the Kira out, but I think it's been knocked out of me now.
+
+      **What annoys you the most?** Rudeness and dirt.
+
+      **Likes:** Sunshine, travelling and time to do nothing.
+
+      **Favourite Food:** Cheese, and pretty much all baked goods.
+
+      **Favourite quote or motto:** I'm not sure if it's original but it was shared by a local Manly surfer a lifetime ago and it's stuck with me... "Through time and space, the dream of endless perfection".
+  - :id: 5eo3VLRzgAS0oqQiAi4CUi
+    :slug: nasty-noodle
+    :name: Nasty Noodle
+    :number: 0807
+    :photo:
+      :id: 5aud9G73tuG428OM6Qw4EU
+      :title: 'Portrait: Nasty Noodle'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: nasty-noodle
+        :url: "//images.contentful.com/woqj76ijzwsc/5Yf1BLFD8c6M0AswQUsUqK/a629c579e175b4402fbdd4a8bd13584e/nasty-noodle.jpg"
+    :realName: Rachel Ang
+  - :id: 5g2ukEv6kwEqAqKqAqsIUs
+    :slug: unsteddie
+    :name: Unsteddie
+    :number: '161'
+    :photo:
+      :id: 4gF5mxRVF64ASM2264GKKk
+      :title: 'Portrait: Unsteddie'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+      :photo:
+        :title: unsteddie
+        :url: "//images.contentful.com/woqj76ijzwsc/3JoCvOSefugG0KggcoOyaw/4da8805185bcf8a76d182ad1c8c0496c/unsteddie.jpg"
+    :realName: Edwina Foulsham
+    :bio: |-
+      **Why you started playing Derby?** It sounded like fun, I love a challenge and I have anger management issues...
+
+      **What annoys you the most?** Inconsiderate jerks and people who are crap to the environment
+
+      **Likes:** Making people laugh. Derby. Being in, on or around the water
+
+      **Favourite Food:** Potato in all forms, followed closely by popcorn
+
+      **Favourite quote or motto:** If you can't be a good example -- just be a horrible warning.
+  - :id: 7nao51K8rmcci6IGWoIAuC
+    :slug: yorkshire-terror
+    :name: Yorkshire Terror
+    :number: '85'
+    :photo:
+      :id: 6pBzEh7SRUWk0Mg6AIMokM
+      :title: 'Portrait: Yorkshire Terror'
+      :photographer:
+        :id: 1lBph8C9wwGQyS0wwCSgU2
+        :name: Willow Belle Portraits
+        :link: http://www.willowbelle.com.au
+      :photo:
+        :title: yorkshire-terror
+        :url: "//images.contentful.com/woqj76ijzwsc/5iqI9eO528cKSKgqSOmacW/d1f4524f15c7da25b8abc83c81efb005/yorkshire-terror.jpg"
+    :realName: Sara Peterson
+    :bio: |-
+      **Why did you start playing roller derby?** To make some pals, and get fit. Bonus that now get to hit pals!
+
+      **What annoys you the most?** Bullies and negative people
+
+      **Likes:** Roller derby, rock concerts, cooking, and I'm a little bit crafty
+
+      **Favourite foods:** Beer, Beer, and more Beer! Beer is one of the food groups right?
+
+      **Favourite quote/motto:** "Just fucking do it!" -- Anonymous
+  - :id: 2Wqigh9xm8igiKyIayS2Cs
+    :slug: ravenus-demon
+    :name: Raveonus Demon
+    :number: '616'
+    :bio: |-
+      __Why did you get involved in Derby?__ Because I'm crazy.
+
+      __Things which annoy me:__ Sydney traffic and Sydney drivers.
+
+      __Likes?__ Camping, road trips and getting my hands dirty.
+
+      __Favourite food?__ Spaghetti Bolognese
+
+      __Favourite quote?__ Born to bleed, fighting to succeed, built to endure what this world throws at me.
+  - :id: 1611wEYwkG2aeg6qAGio2M
+    :slug: punky-bruise-ya
+    :name: Punky Bruise-Ya
+    :number: '46'
+  - :id: 4eLnNkX8iQOSCYyYysoSO0
+    :slug: hide-de-sausage
+    :name: Hide de Sausage
+    :number: '010'
+  - :id: 6GfC9oTeIEGM8iiAQOScAs
+    :slug: gogo
+    :name: Gogo
+    :number: '36'
+  - :id: 5rSkkcPBxC6SQCgSESaICU
+    :slug: mad-menace
+    :name: Mad Menace
+    :number: '124'
 :slug: 2015-06-27-nbrg-vs-bmrdl
