@@ -3,13 +3,14 @@ article_class: member
 ---
 <%
   content_for(:title, member.name)
+  teams = teams_for_player(member)
 %>
 <% content_for(:head) do %>
   <meta property="og:title" content="<%= member.name %>" />
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="<%= hostname + current_page.url %>" />
-  <meta property="og:image" content="<%= hostname + photo_path(member.photo) %>" />
-  <meta property="og:description" content="<%= member.name %> <%= teams_for_player(member).select(&:slug).include?('the-sirens-2015') ? 'is a member of the 2015 Northern Beaches Roller Girls Sirens' : 'was a member of the Northern Beaches Roller Girls Sirens' %>." />
+  <meta property="og:image" content="<%= member.photo ? photo_path(member.photo) : "#{hostname}/images/leagues/nbrg.png" %>" />
+  <meta property="og:description" content="<%= member.name %> <%= teams.length > 0 ? 'is a member of the Northern Beaches Roller Girls Sirens' : 'is retired from the Northern Beaches Roller Girls Sirens' %>." />
 <% end %>
 
 <h1><%= member.name %><% if member.number %> <em>#<%= member.number %></em><% end %></h1>
@@ -17,10 +18,13 @@ article_class: member
   <%= photograph member.photo %>
 <% end %>
 
-<% teams_for_player(member).each do |team| %>
-  <p><%= member.nickname || member.name %> <%= team.year == 2015 ? 'is' : 'was' %> a
-  member of <a href="/teams/<%= team.slug %>">the <%= team.year %> lineup
-  of <%= team.name %></a>.</p>
+<% if teams.length > 0 %>
+  <% teams.each do |team| %>
+    <p><%= member.nickname || member.name %> is a
+      member of <a href="/teams/<%= team.slug %>"> <%= team.name %></a>.</p>
+  <% end %>
+<% else %>
+  <p><%= member.nickname || member.name %> is retired from the Northern Beaches Roller Girls.</p>
 <% end %>
 
 <% if member.bio %>
