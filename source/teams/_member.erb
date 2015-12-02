@@ -1,9 +1,7 @@
 <a href="/members/<%= member.slug %>">
-  <% if member.photo %>
-    <div class="photo-circle">
-      <img src="<%= member.photo.photo.url %>?w=50" alt="" />
-    </div>
-  <% end %>
+  <div class="photo-circle">
+    <img src="<%= member.photo ? "#{member.photo.photo.url}?w=50" : "/images/leagues/nbrg.png" %>" alt="" width="50" />
+  </div>
   <h2>
     <% if role %><em class="role"><%= role %></em><% end %>
     <%= member.name %>
