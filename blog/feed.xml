@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link rel="icon" href="/images/favicon.png">
+
+    <title>Northern Beaches Roller Girls</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+
+    <meta property="fb:app_id" content="1440497169566148" />
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZQZ-1K2lJAveN6hO0AmZMltyW9okKhj4" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header class="">
+      <h1><a href="/"><span>Northern Beaches</span> <span>Roller Girls</span></a></h1>
+      <nav>
+        <ul>
+            <li class=" ">
+              <a href="/">Home</a>
+            </li>
+            <li class=" ">
+              <a href="/bouts/">Bouts</a>
+            </li>
+            <li class=" ">
+              <a href="/training/">Training</a>
+            </li>
+            <li class=" ">
+              <a href="/juniors/">Juniors</a>
+            </li>
+            <li class=" ">
+              <a href="/join/">Join Us</a>
+            </li>
+            <li class="nested ">
+              <a href="javascript:void(0)">About</a>
+                <ul>
+                    <li class=""><a href="/media/">Media</a></li>
+                    <li class=""><a href="/teams/the-sirens/">The Sirens</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="columns">
+        <article class="">
+    <?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/blog</id>
+  <link href="http://blog.url.com/blog"/>
+  <link href="http://blog.url.com/blog/feed.xml" rel="self"/>
+  <updated>2015-09-10T10:00:00+10:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>NBRG head out West</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/09/10/nbrg-head-west/"/>
+    <id>http://blog.url.com/blog/2015/09/10/nbrg-head-west/</id>
+    <published>2015-09-10T10:00:00+10:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;To wrap up and put a bow on the 2015 Derby year for Northern Beaches Roller Girls they are playing in a fun invitational bout against Western Sydney Rollers. The Sirens will be playing in the opening game for WSRs Grand Final event.&lt;/p&gt;
+
+&lt;p&gt;Find out more about the whole day on the &lt;a href="https://www.facebook.com/events/442310295956609/"&gt;Facebook event&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our game will start 28 Nov, 2015 at  3:00pm.&lt;/p&gt;
+
+&lt;section class="bout-scoreboard"&gt;
+  &lt;div class="team "&gt;
+    &lt;h2&gt;
+      &lt;span&gt;Northern Beaches Roller Girls&lt;/span&gt;
+        &lt;em&gt;The Sirens&lt;/em&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/nbrg.png" width="128" /&gt;
+      &lt;p&gt;96&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="team winner"&gt;
+    &lt;h2&gt;
+      &lt;a href="http://www.westernsydneyrollers.com.au/"&gt;&lt;span&gt;Western Sydney Rollers&lt;/span&gt;&lt;/a&gt;
+        &lt;em&gt;The Riot Squad&lt;/em&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/wsr.png" width="128" /&gt;
+      &lt;p&gt;147&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="venue" data-map="" data-lat="-33.754407" data-lon="150.73502099999996"&gt;
+  &lt;h2&gt;&lt;span&gt;Penrith Valley Regional Sports Centre&lt;/span&gt;&lt;/h2&gt;
+  &lt;p&gt;30 Herbert Street, Cambridge Park, New South Wales, 2747&lt;/p&gt;
+&lt;/section&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>NBRG face-off against Inner West</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/07/15/nbrg-at-5x5-round-5/"/>
+    <id>http://blog.url.com/blog/2015/07/15/nbrg-at-5x5-round-5/</id>
+    <published>2015-07-15T10:00:00+10:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Round 5 of the &lt;a href="http://5x5derby.com/"&gt;Five by Five tournament&lt;/a&gt; is set to be a heated round of Roller Derby. The Northern Beaches Roller Girls will be facing off against Inner West Roller Derby League in what is expected to be a fierce competition.&lt;/p&gt;
+
+&lt;p&gt;Inner West have been training hard and it's showing, their performance in this tournament has been impressive. Not to be outdone, NBRG have upped their numbers again with several skaters returning for this game. It's going to be a exciting game.&lt;/p&gt;
+
+&lt;p&gt;Find out more about the whole day on the &lt;a href="https://www.facebook.com/events/434496553390040/"&gt;Facebook event&lt;/a&gt;, and be sure to keep an eye on &lt;a href="https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A"&gt;Downunder Derby TV&lt;/a&gt; for a live feed of the whole day.&lt;/p&gt;
+
+&lt;p&gt;Our game will start 18 Jul, 2015 at  3:00pm.&lt;/p&gt;
+
+&lt;section class="bout-scoreboard"&gt;
+  &lt;div class="team "&gt;
+    &lt;h2&gt;
+      &lt;span&gt;Northern Beaches Roller Girls&lt;/span&gt;
+        &lt;em&gt;The Sirens&lt;/em&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/nbrg.png" width="128" /&gt;
+      &lt;p&gt;126&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="team winner"&gt;
+    &lt;h2&gt;
+      &lt;a href="http://innerwestrollerderby.com/"&gt;&lt;span&gt;Inner West Roller Derby League&lt;/span&gt;&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/iwrdl.png" width="128" /&gt;
+      &lt;p&gt;218&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="venue" data-map="" data-lat="-33.382851" data-lon="151.352668"&gt;
+  &lt;h2&gt;&lt;span&gt;Niagara Park Stadium&lt;/span&gt;&lt;/h2&gt;
+  &lt;p&gt;16 Washington Avenue, Niagara Park, New South Wales, 2250&lt;/p&gt;
+&lt;/section&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>NBRG take on Blue Mountains</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/05/31/nbrg-at-5x5-round-4/"/>
+    <id>http://blog.url.com/blog/2015/05/31/nbrg-at-5x5-round-4/</id>
+    <published>2015-05-31T10:00:00+10:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Round 4 of the &lt;a href="http://5x5derby.com/"&gt;Five By Five tournament&lt;/a&gt; will see Northern Beaches Roller Girls take on the mountain ladies, Blue Mountains Roller Derby League. This will be the first time these two teams have faced each other, and based on the Five by Five so far it's set to be a great game.&lt;/p&gt;
+
+&lt;p&gt;Find out more about the whole day on &lt;a href=""&gt;the Facebook event&lt;/a&gt;, and be sure to keep an eye on &lt;a href="https://www.youtube.com/channel/UChPpcqHOoYgVncGd1Yxem7A"&gt;Downunder Derby TV&lt;/a&gt; for a live feed of the whole day.&lt;/p&gt;
+
+&lt;p&gt;Our game will start 27 Jun, 2015 at  1:00pm.&lt;/p&gt;
+
+&lt;section class="bout-scoreboard"&gt;
+  &lt;div class="team "&gt;
+    &lt;h2&gt;
+      &lt;span&gt;Northern Beaches Roller Girls&lt;/span&gt;
+        &lt;em&gt;The Sirens&lt;/em&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/nbrg.png" width="128" /&gt;
+      &lt;p&gt;87&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="team winner"&gt;
+    &lt;h2&gt;
+      &lt;a href="http://bluemountainsrollerderby.com/"&gt;&lt;span&gt;Blue Mountains Roller Derby League&lt;/span&gt;&lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;img src="/images/leagues/bmrdl.png" width="128" /&gt;
+      &lt;p&gt;217&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="venue" data-map="" data-lat="-33.9258453" data-lon="150.9148219"&gt;
+  &lt;h2&gt;&lt;span&gt;Whitlam Leisure Centre&lt;/span&gt;&lt;/h2&gt;
+  &lt;p&gt;90a Memorial Avenue, Liverpool, New South Wales, 2170&lt;/p&gt;
+&lt;/section&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Club 567 Roller Disco</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/04/13/club-567-roller-disco/"/>
+    <id>http://blog.url.com/blog/2015/04/13/club-567-roller-disco/</id>
+    <published>2015-04-13T10:00:00+10:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;The Northern Beaches Roller Girls will be taking part in a Roller Disco Fluoro Party for National Youth Week, in partnership with Warringah Council.&lt;/p&gt;
+
+&lt;p&gt;The event is for students in school years 5, 6, and 7, and is at &lt;a href="https://plus.google.com/110322117677004744423/about?gl=au&amp;amp;hl=en"&gt;YOYO's Youth Centre in Frenchs Forest&lt;/a&gt;. $10 entry including skate hire, thanks to &lt;a href="http://www.skaterhq.com.au"&gt;SkaterHQ&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bookings are essential, call 9942 2401 or email &lt;a href="&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#121;&amp;#111;&amp;#117;&amp;#116;&amp;#104;&amp;#064;&amp;#119;&amp;#097;&amp;#114;&amp;#114;&amp;#105;&amp;#110;&amp;#103;&amp;#097;&amp;#104;&amp;#046;&amp;#110;&amp;#115;&amp;#119;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#097;&amp;#117;"&gt;&amp;#121;&amp;#111;&amp;#117;&amp;#116;&amp;#104;&amp;#064;&amp;#119;&amp;#097;&amp;#114;&amp;#114;&amp;#105;&amp;#110;&amp;#103;&amp;#097;&amp;#104;&amp;#046;&amp;#110;&amp;#115;&amp;#119;&amp;#046;&amp;#103;&amp;#111;&amp;#118;&amp;#046;&amp;#097;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="/images/blog/2015-04-13-club-567-roller-disco.jpg" /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Fresh Meat 2015</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/02/22/fresh-meat-2015/"/>
+    <id>http://blog.url.com/blog/2015/02/22/fresh-meat-2015/</id>
+    <published>2015-02-22T11:00:00+11:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello Ladies and Gentlemen,&lt;/p&gt;
+
+&lt;p&gt;Northern Beaches Roller Girls are starting our next Fresh Meat intake on the 6th of March. If you're interested in becoming a part of our crazy Derby family, drop an email to &lt;a href="&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#105;&amp;#110;&amp;#064;&amp;#110;&amp;#098;&amp;#114;&amp;#103;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#046;&amp;#097;&amp;#117;"&gt;&amp;#106;&amp;#111;&amp;#105;&amp;#110;&amp;#064;&amp;#110;&amp;#098;&amp;#114;&amp;#103;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#046;&amp;#097;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div id="fb-root"&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
+&lt;div class="fb-post" data-href="https://www.facebook.com/video.php?v=996934447002706" data-width="466"&gt;&lt;div class="fb-xfbml-parse-ignore"&gt;&lt;a href="https://www.facebook.com/video.php?v=996934447002706"&gt;Post&lt;/a&gt; by &lt;a href="https://www.facebook.com/NorthernBeachesRollerGirls"&gt;Northern Beaches Roller Girls&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Northern Beaches Wants You!</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2015/01/31/northern-beaches-wants-you/"/>
+    <id>http://blog.url.com/blog/2015/01/31/northern-beaches-wants-you/</id>
+    <published>2015-01-31T11:00:00+11:00</published>
+    <updated>2016-03-15T23:54:43+11:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Have you ever wanted to play Roller Derby? &lt;strong&gt;Of course you have!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Come along to our Information Day to learn all about the Northern Beaches Roller Girls, Roller Derby, and how you can get involved. Has Derby piqued your interest but you're not sure it's for you? Come along and chat to our girls.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sunday 22nd February, 9am - 12pm
+&lt;a href="https://www.google.com.au/maps/place/Curl+Curl+Youth+and+Community+Centre/@-33.766947,151.288658,15z/data=!4m2!3m1!1s0x0:0xf32454deda4e7b5c?sa=X&amp;amp;amp;ei=sD3MVPn4BIyD8gWHu4GwCg&amp;amp;amp;ved=0CHEQ_BIwCw"&gt;Curl Curl Youth &amp;amp; Community Centre&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There'll be skating and Roller Derby demos, talks, merch, and more!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don't have skates? Don't worry!&lt;/strong&gt; &lt;a href="http://www.skaterhq.com.au/"&gt;SkaterHQ&lt;/a&gt; will be with us all morning offering cheap skate hire for you to have a go, no strings attached.&lt;/p&gt;
+
+&lt;p&gt;To register your interest please fill this form out: &lt;a href="http://goo.gl/forms/Zwo5AuFu1C"&gt;http://goo.gl/forms/Zwo5AuFu1C&lt;/a&gt; or email us on &lt;a href="&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#105;&amp;#110;&amp;#064;&amp;#110;&amp;#098;&amp;#114;&amp;#103;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#046;&amp;#097;&amp;#117;"&gt;&amp;#106;&amp;#111;&amp;#105;&amp;#110;&amp;#064;&amp;#110;&amp;#098;&amp;#114;&amp;#103;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#046;&amp;#097;&amp;#117;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can check us out on our &lt;a href="https://www.facebook.com/NorthernBeachesRollerGirls"&gt;Facebook Page&lt;/a&gt; too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="/images/blog/2015-01-31-northern-beaches-wants-you.png" /&gt;&lt;/p&gt;
+</content>
+  </entry>
+</feed>
+
+  </article>
+  <aside class="sidebar">
+    
+      <section class="upcoming" data-hide-none=".bouts li">
+  <h1><span>Come Watch Us</span></h1>
+  <ul class="bouts">
+  </ul>
+</section>
+
+      <section class="social">
+  <h1><span>Social Media</span></h1>
+  <ul>
+    <li><a href="https://www.facebook.com/NorthernBeachesRollerGirls" title="NorthernBeachesRollerGirls on Facebook"><img src="/images/facebook.png" height="32" width="32" alt=""></a></li>
+    <li><a href="http://instagram.com/northernbeachesrollergirls?ref=badge" title="northernbeachesrollergirls on Instagram"><img src="/images/instagram.png" height="32" width="32" alt=""></a></li>
+    <li><a href="https://twitter.com/nbrollers" title="@nbrollers on Twitter"><img src="/images/twitter.png" width="32" height="32" alt=""></a></li>
+    <li><a href="https://www.youtube.com/channel/UCmMCLP7QMMXaBYKTwElg1KQ" title="YouTube"><img src="/images/youtube.png" width="32" height="32" alt=""></a></li>
+  </ul>
+</section>
+
+    <section class="sponsors">
+  <h1><span>Sponsors</span></h1>
+  <ul>
+      <li>
+        <a href="http://www.thesandshotel.com.au/">
+          <img src="//images.contentful.com/woqj76ijzwsc/gwBDRzh1TysG2IMQOq8ga/22d20424aa2e6002c7f2c2279cade540/narrabeen-sands.png" width="204" />
+        </a>
+      </li>
+      <li>
+        <a href="http://www.skaterhq.com.au/">
+          <img src="//images.contentful.com/woqj76ijzwsc/IBPIy0Shc2a6CsSmSweoe/ab7e77c48af9f1fd84c9041d2c9b7f0e/skaterhq.png" width="204" />
+        </a>
+      </li>
+      <li>
+        <a href="http://www.vicatsecurity.com.au/">
+          <img src="//images.contentful.com/woqj76ijzwsc/4sI9mcIin6WqWKYScaAAeu/cc70a89afcd55b193c280b7e5fe3a8a5/vicat-security.jpg" width="204" />
+        </a>
+      </li>
+  </ul>
+</section>
+
+  </aside>
+
+    </div>
+    <footer>
+      <p>Site by <a href="http://www.jagregory.com">James Gregory</a>. <a href="mailto:james@jagregory.com">Get in touch</a>.</p>
+    </footer>
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+    <script type="text/javascript">!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-53595551-1","auto"),ga("send","pageview");</script>
+  </body>
+</html>
